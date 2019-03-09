@@ -3372,7 +3372,9 @@ $(".acontent ul").on("click","li",function () {
             "ArticleId":$(this).attr("id"),
         },
         success: function (data) {
-
+            console.log(data)
+            $(".acontent").empty();
+            $(".acontent").append("<img src="+data.data.CoverPhoto+">"+"<div>"+data.data.Body+"</div>");
         }
 })
 });

@@ -1386,7 +1386,7 @@ a:hover{
     width: 1140px;
     background-color: #fff;
     margin: 20px auto;
-    height: 350px;
+    height: 400px;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -1419,4 +1419,14 @@ a:hover{
 }
 .zc img{
     width: 100px;
+}
+.acontent img{
+    float: left;
+    width: 50%;
+    /*height: 100%;*/
+}
+.acontent div{
+    float: right;
+    width: 50%;
+    height: 100%;
 }
