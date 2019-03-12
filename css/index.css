@@ -369,9 +369,9 @@ li{
 
 .slider{
     /*height: 400px;*/
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     clear: both;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .slider .focusNews{
     margin-bottom: 15px;
@@ -535,8 +535,8 @@ li{
 
 .news-content{
     height: 420px;
-    border-top: 2px solid #0080c9;
-    margin-bottom: 15px;
+    /*border-top: 2px solid #0080c9;*/
+    /*margin-bottom: 15px;*/
     background-color: #fff;
 }
 .news-content .news-head{
@@ -1182,7 +1182,36 @@ li{
 a:hover{
     color: #0084cf;
 }
+@media screen and (max-width:666px){
+    .search-box{
+        position: absolute;
+        top: 99px;
+        width: 300px;
+        right: 14%;
 
+    }
+    .header-nav{
+        position: absolute;
+        top: 160px;
+        width: 92%;
+    }
+    #logo{
+        margin-left: 10%;
+    }
+    .header-banner{
+        left: 36%;
+    }
+    .content{
+        margin-top: 20px;
+    }
+    .header-nav .main-nav li{
+        width: 11%;
+
+    }
+    .header-nav .main-nav li a{
+        font-size: 12px;
+    }
+}
 
 .ma-content{
     padding: 10px;
@@ -1276,7 +1305,7 @@ a:hover{
 .ma-center>div{
     font-size: 16px;
     text-indent: 2em;
-    padding: 20px 40px;
+    /*padding: 20px 40px;*/
 }
 .ma-center>p{
     text-align: center;
@@ -1346,6 +1375,7 @@ a:hover{
 }
 .ma-center .firstli .x-pic img{
     width: 100%;
+    height: 100%;
     vertical-align: middle;
 }
 .ma-center .firstli .x-zi{

@@ -558,435 +558,435 @@ var routes = [
            `
         }
     },
-    {
-        path: "/ssqh",
-        component: {
-            template: `
-            <div>
-    <div class="path container">
-        <em>您的位置：</em><a href="/">首页</a>
-        &gt;<a href="" class="patha"></a>
-    </div>
-    <div class="ma-content container row">
-        <div class="ma-left col-lg-3">
-            <h3>专栏</h3>
-            <div class="">
-                <ul class="menuList">
-                    <li><a href="javascript:;" class="li0"></a></li>
-                    <li><a href="javascript:;" class="li1"></a></li>
-                    <li><a href="javascript:;" class="li2"></a></li>
-                    <li><a href="javascript:;" class="li3"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="ma-right col-lg-9">
-            <h3 class="title"></h3>
-            <div class="xx-zi">
-                <span name="time">发表时间　2019-03-05 08:33:38</span>
-                <span name="name">发表编辑　admin</span>
-            </div>
-            <div class="ma-center">
-                <div class="firstli">
-                    <div class="x-pic">
-                        <img src="" alt="">
-                    </div>
-                    <div class="x-zi">
-                        <h1></h1>
-                        <h3>
-                            <p></p>
-                            <a href="">查看详情</a>
-                       </h3>
-                    </div>
-                </div>
-                <ul>
-                <li><router-link to="/page1"></router-link><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                </ul>
-                <div class="wenben">
-                   
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-            `
-        }
-    },
-    {
-        path: "/xwsx",
-        component: {
-            template: `
-            <div>
-    <div class="path container">
-        <em>您的位置：</em><a href="/">首页</a>
-        &gt;<a href="" class="patha"></a>
-    </div>
-    <div class="ma-content container row">
-        <div class="ma-left col-lg-3">
-            <h3>专栏</h3>
-            <div class="">
-                <ul class="menuList">
-                    <li><a href="javascript:;" class="li4"></a></li>
-                    <li><a href="javascript:;" class="li5"></a></li>
-                    <li><a href="javascript:;" class="li6"></a></li>
-                    <li><a href="javascript:;" class="li7"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="ma-right col-lg-9">
-            <h3 class="title"></h3>
-            <div class="xx-zi">
-                <span name="time">发表时间　2019-03-05 08:33:38</span>
-                <span name="name">发表编辑　admin</span>
-            </div>
-            <div class="ma-center">
-                <div class="firstli">
-                    <div class="x-pic">
-                        <img src="" alt="">
-                    </div>
-                    <div class="x-zi">
-                        <h1></h1>
-                        <h3>
-                            <p></p>
-                            <a href="">查看详情</a>
-                       </h3>
-                    </div>
-                </div>
-                <ul>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                </ul>
-                <div class="wenben">
-                   
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-            `
-        }
-    },
-    {
-        path: "/aqsc",
-        component: {
-            template: `
-            <div>
-    <div class="path container">
-        <em>您的位置：</em><a href="/">首页</a>
-        &gt;<a href="" class="patha"></a>
-    </div>
-    <div class="ma-content container row">
-        <div class="ma-left col-lg-3">
-            <h3>专栏</h3>
-            <div class="">
-                <ul class="menuList">
-                    <li><a href="javascript:;" class="li8"></a></li>
-                    <li><a href="javascript:;" class="li9"></a></li>
-                    <li><a href="javascript:;" class="li10"></a></li>
-                    <li><a href="javascript:;" class="li11"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="ma-right col-lg-9">
-            <h3 class="title"></h3>
-            <div class="xx-zi">
-                <span name="time">发表时间　2019-03-05 08:33:38</span>
-                <span name="name">发表编辑　admin</span>
-            </div>
-            <div class="ma-center">
-                <div class="firstli">
-                    <div class="x-pic">
-                        <img src="" alt="">
-                    </div>
-                    <div class="x-zi">
-                        <h1></h1>
-                        <h3>
-                            <p></p>
-                            <a href="">查看详情</a>
-                       </h3>
-                    </div>
-                </div>
-                <ul>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                </ul>
-                <div class="wenben">
-                   
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-            `
-        }
-    },
-    {
-        path: "/qhdj",
-        component: {
-            template: `
-            <div>
-    <div class="path container">
-        <em>您的位置：</em><a href="/">首页</a>
-        &gt;<a href="" class="patha"></a>
-    </div>
-    <div class="ma-content container row">
-        <div class="ma-left col-lg-3">
-            <h3>专栏</h3>
-            <div class="">
-                <ul class="menuList">
-                    <li><a href="javascript:;" class="li12"></a></li>
-                    <li><a href="javascript:;" class="li13"></a></li>
-                    <li><a href="javascript:;" class="li14"></a></li>
-                    <li><a href="javascript:;" class="li15"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="ma-right col-lg-9">
-            <h3 class="title"></h3>
-            <div class="xx-zi">
-                <span name="time">发表时间　2019-03-05 08:33:38</span>
-                <span name="name">发表编辑　admin</span>
-            </div>
-            <div class="ma-center">
-                <div class="firstli">
-                    <div class="x-pic">
-                        <img src="" alt="">
-                    </div>
-                    <div class="x-zi">
-                        <h1></h1>
-                        <h3>
-                            <p></p>
-                            <a href="">查看详情</a>
-                       </h3>
-                    </div>
-                </div>
-                <ul>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                </ul>
-                <div class="wenben">
-                   
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-             `
-        }
-    },
-    {
-        path: "/jygl",
-        component: {
-            template: `
-            <div>
-    <div class="path container">
-        <em>您的位置：</em><a href="/">首页</a>
-        &gt;<a href="" class="patha"></a>
-    </div>
-    <div class="ma-content container row">
-        <div class="ma-left col-lg-3">
-            <h3>专栏</h3>
-            <div class="">
-                <ul class="menuList">
-                    <li><a href="javascript:;" class="li16"></a></li>
-                    <li><a href="javascript:;" class="li17"></a></li>
-                    <li><a href="javascript:;" class="li18"></a></li>
-                    <li><a href="javascript:;" class="li19"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="ma-right col-lg-9">
-            <h3 class="title"></h3>
-            <div class="xx-zi">
-                <span name="time">发表时间　2019-03-05 08:33:38</span>
-                <span name="name">发表编辑　admin</span>
-            </div>
-            <div class="ma-center">
-                <div class="firstli">
-                    <div class="x-pic">
-                        <img src="" alt="">
-                    </div>
-                    <div class="x-zi">
-                        <h1></h1>
-                        <h3>
-                            <p></p>
-                            <a href="">查看详情</a>
-                       </h3>
-                    </div>
-                </div>
-                <ul>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                </ul>
-                <div class="wenben">
-                   
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-            `
-        }
-    },
-    {
-        path: "/xfqh",
-        component: {
-            template: `
-            <div>
-    <div class="path container">
-        <em>您的位置：</em><a href="/">首页</a>
-        &gt;<a href="" class="patha"></a>
-    </div>
-    <div class="ma-content container row">
-        <div class="ma-left col-lg-3">
-            <h3>专栏</h3>
-            <div class="">
-                <ul class="menuList">
-                    <li><a href="javascript:;" class="li20"></a></li>
-                    <li><a href="javascript:;" class="li21"></a></li>
-                    <li><a href="javascript:;" class="li22"></a></li>
-                    <li><a href="javascript:;" class="li23"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="ma-right col-lg-9">
-            <h3 class="title"></h3>
-            <div class="xx-zi">
-                <span name="time">发表时间　2019-03-05 08:33:38</span>
-                <span name="name">发表编辑　admin</span>
-            </div>
-            <div class="ma-center">
-                <div class="firstli">
-                    <div class="x-pic">
-                        <img src="" alt="">
-                    </div>
-                    <div class="x-zi">
-                        <h1></h1>
-                        <h3>
-                            <p></p>
-                            <a href="">查看详情</a>
-                       </h3>
-                    </div>
-                </div>
-                <ul>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                </ul>
-                <div class="wenben">
-                   
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-            `
-        }
-    },
-    {
-        path: "/qhwy",
-        component: {
-            template: `
-            <div>
-    <div class="path container">
-        <em>您的位置：</em><a href="/">首页</a>
-        &gt;<a href="" class="patha"></a>
-    </div>
-    <div class="ma-content container row">
-        <div class="ma-left col-lg-3">
-            <h3>专栏</h3>
-            <div class="">
-                <ul class="menuList">
-                    <li><a href="javascript:;" class="li24"></a></li>
-                    <li><a href="javascript:;" class="li25"></a></li>
-                    <li><a href="javascript:;" class="li26"></a></li>
-                    <li><a href="javascript:;" class="li27"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="ma-right col-lg-9">
-            <h3 class="title"></h3>
-            <div class="xx-zi">
-                <span name="time">发表时间　2019-03-05 08:33:38</span>
-                <span name="name">发表编辑　admin</span>
-            </div>
-            <div class="ma-center">
-                <div class="firstli">
-                    <div class="x-pic">
-                        <img src="" alt="">
-                    </div>
-                    <div class="x-zi">
-                        <h1></h1>
-                        <h3>
-                            <p></p>
-                            <a href="">查看详情</a>
-                       </h3>
-                    </div>
-                </div>
-                <ul>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                <li><a href=""></a><span class="date"></span></li>
-                </ul>
-                <div class="wenben">
-                   
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-            `
-        }
-    },
-    {
-        path: "/ma",
-        component: {
-            template: `
-            <div>
-    <div class="path container">
-        <em>您的位置：</em><a href="/">首页</a>
-        &gt;<a href="">官方二维码</a>
-    </div>
-    <div class="ma-content container row">
-       <div class="ma-left col-lg-3">
-           <h3>官方微信群</h3>
-       </div>
-        <div class="ma-right col-lg-9">
-            <h3 class="title">官方微信群</h3>
-            <div class="property">
-                <span>【字体：<a href="javascript:;" data-power-command="reducefont">小</a> <a href="javascript:;" data-power-command="enlargefont">大</a>】</span>
-            </div>
-            <div class="ma-center">
-            
-                <p>请扫描以下二维码进入“官方微信群”</p>
-                <p><img src="img/erweima.jpg" alt=""></p>
-                
-            </div>
-        </div>
-    </div>
-</div>
-            `
-        }
-    },
+//     {
+//         path: "/ssqh",
+//         component: {
+//             template: `
+//             <div>
+//     <div class="path container">
+//         <em>您的位置：</em><a href="/">首页</a>
+//         &gt;<a href="" class="patha"></a>
+//     </div>
+//     <div class="ma-content container row">
+//         <div class="ma-left col-lg-3">
+//             <h3>专栏</h3>
+//             <div class="">
+//                 <ul class="menuList">
+//                     <li><a href="javascript:;" class="li0"></a></li>
+//                     <li><a href="javascript:;" class="li1"></a></li>
+//                     <li><a href="javascript:;" class="li2"></a></li>
+//                     <li><a href="javascript:;" class="li3"></a></li>
+//                 </ul>
+//             </div>
+//         </div>
+//         <div class="ma-right col-lg-9">
+//             <h3 class="title"></h3>
+//             <div class="xx-zi">
+//                 <span name="time">发表时间　2019-03-05 08:33:38</span>
+//                 <span name="name">发表编辑　admin</span>
+//             </div>
+//             <div class="ma-center">
+//                 <div class="firstli">
+//                     <div class="x-pic">
+//                         <img src="" alt="">
+//                     </div>
+//                     <div class="x-zi">
+//                         <h1></h1>
+//                         <h3>
+//                             <p></p>
+//                             <a href="">查看详情</a>
+//                        </h3>
+//                     </div>
+//                 </div>
+//                 <ul>
+//                 <li><router-link to="/page1"></router-link><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 </ul>
+//                 <div class="wenben">
+//
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+// </div>
+//             `
+//         }
+//     },
+//     {
+//         path: "/xwsx",
+//         component: {
+//             template: `
+//             <div>
+//     <div class="path container">
+//         <em>您的位置：</em><a href="/">首页</a>
+//         &gt;<a href="" class="patha"></a>
+//     </div>
+//     <div class="ma-content container row">
+//         <div class="ma-left col-lg-3">
+//             <h3>专栏</h3>
+//             <div class="">
+//                 <ul class="menuList">
+//                     <li><a href="javascript:;" class="li4"></a></li>
+//                     <li><a href="javascript:;" class="li5"></a></li>
+//                     <li><a href="javascript:;" class="li6"></a></li>
+//                     <li><a href="javascript:;" class="li7"></a></li>
+//                 </ul>
+//             </div>
+//         </div>
+//         <div class="ma-right col-lg-9">
+//             <h3 class="title"></h3>
+//             <div class="xx-zi">
+//                 <span name="time">发表时间　2019-03-05 08:33:38</span>
+//                 <span name="name">发表编辑　admin</span>
+//             </div>
+//             <div class="ma-center">
+//                 <div class="firstli">
+//                     <div class="x-pic">
+//                         <img src="" alt="">
+//                     </div>
+//                     <div class="x-zi">
+//                         <h1></h1>
+//                         <h3>
+//                             <p></p>
+//                             <a href="">查看详情</a>
+//                        </h3>
+//                     </div>
+//                 </div>
+//                 <ul>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 </ul>
+//                 <div class="wenben">
+//
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+// </div>
+//             `
+//         }
+//     },
+//     {
+//         path: "/aqsc",
+//         component: {
+//             template: `
+//             <div>
+//     <div class="path container">
+//         <em>您的位置：</em><a href="/">首页</a>
+//         &gt;<a href="" class="patha"></a>
+//     </div>
+//     <div class="ma-content container row">
+//         <div class="ma-left col-lg-3">
+//             <h3>专栏</h3>
+//             <div class="">
+//                 <ul class="menuList">
+//                     <li><a href="javascript:;" class="li8"></a></li>
+//                     <li><a href="javascript:;" class="li9"></a></li>
+//                     <li><a href="javascript:;" class="li10"></a></li>
+//                     <li><a href="javascript:;" class="li11"></a></li>
+//                 </ul>
+//             </div>
+//         </div>
+//         <div class="ma-right col-lg-9">
+//             <h3 class="title"></h3>
+//             <div class="xx-zi">
+//                 <span name="time">发表时间　2019-03-05 08:33:38</span>
+//                 <span name="name">发表编辑　admin</span>
+//             </div>
+//             <div class="ma-center">
+//                 <div class="firstli">
+//                     <div class="x-pic">
+//                         <img src="" alt="">
+//                     </div>
+//                     <div class="x-zi">
+//                         <h1></h1>
+//                         <h3>
+//                             <p></p>
+//                             <a href="">查看详情</a>
+//                        </h3>
+//                     </div>
+//                 </div>
+//                 <ul>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 </ul>
+//                 <div class="wenben">
+//
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+// </div>
+//             `
+//         }
+//     },
+//     {
+//         path: "/qhdj",
+//         component: {
+//             template: `
+//             <div>
+//     <div class="path container">
+//         <em>您的位置：</em><a href="/">首页</a>
+//         &gt;<a href="" class="patha"></a>
+//     </div>
+//     <div class="ma-content container row">
+//         <div class="ma-left col-lg-3">
+//             <h3>专栏</h3>
+//             <div class="">
+//                 <ul class="menuList">
+//                     <li><a href="javascript:;" class="li12"></a></li>
+//                     <li><a href="javascript:;" class="li13"></a></li>
+//                     <li><a href="javascript:;" class="li14"></a></li>
+//                     <li><a href="javascript:;" class="li15"></a></li>
+//                 </ul>
+//             </div>
+//         </div>
+//         <div class="ma-right col-lg-9">
+//             <h3 class="title"></h3>
+//             <div class="xx-zi">
+//                 <span name="time">发表时间　2019-03-05 08:33:38</span>
+//                 <span name="name">发表编辑　admin</span>
+//             </div>
+//             <div class="ma-center">
+//                 <div class="firstli">
+//                     <div class="x-pic">
+//                         <img src="" alt="">
+//                     </div>
+//                     <div class="x-zi">
+//                         <h1></h1>
+//                         <h3>
+//                             <p></p>
+//                             <a href="">查看详情</a>
+//                        </h3>
+//                     </div>
+//                 </div>
+//                 <ul>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 </ul>
+//                 <div class="wenben">
+//
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+// </div>
+//              `
+//         }
+//     },
+//     {
+//         path: "/jygl",
+//         component: {
+//             template: `
+//             <div>
+//     <div class="path container">
+//         <em>您的位置：</em><a href="/">首页</a>
+//         &gt;<a href="" class="patha"></a>
+//     </div>
+//     <div class="ma-content container row">
+//         <div class="ma-left col-lg-3">
+//             <h3>专栏</h3>
+//             <div class="">
+//                 <ul class="menuList">
+//                     <li><a href="javascript:;" class="li16"></a></li>
+//                     <li><a href="javascript:;" class="li17"></a></li>
+//                     <li><a href="javascript:;" class="li18"></a></li>
+//                     <li><a href="javascript:;" class="li19"></a></li>
+//                 </ul>
+//             </div>
+//         </div>
+//         <div class="ma-right col-lg-9">
+//             <h3 class="title"></h3>
+//             <div class="xx-zi">
+//                 <span name="time">发表时间　2019-03-05 08:33:38</span>
+//                 <span name="name">发表编辑　admin</span>
+//             </div>
+//             <div class="ma-center">
+//                 <div class="firstli">
+//                     <div class="x-pic">
+//                         <img src="" alt="">
+//                     </div>
+//                     <div class="x-zi">
+//                         <h1></h1>
+//                         <h3>
+//                             <p></p>
+//                             <a href="">查看详情</a>
+//                        </h3>
+//                     </div>
+//                 </div>
+//                 <ul>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 </ul>
+//                 <div class="wenben">
+//
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+// </div>
+//             `
+//         }
+//     },
+//     {
+//         path: "/xfqh",
+//         component: {
+//             template: `
+//             <div>
+//     <div class="path container">
+//         <em>您的位置：</em><a href="/">首页</a>
+//         &gt;<a href="" class="patha"></a>
+//     </div>
+//     <div class="ma-content container row">
+//         <div class="ma-left col-lg-3">
+//             <h3>专栏</h3>
+//             <div class="">
+//                 <ul class="menuList">
+//                     <li><a href="javascript:;" class="li20"></a></li>
+//                     <li><a href="javascript:;" class="li21"></a></li>
+//                     <li><a href="javascript:;" class="li22"></a></li>
+//                     <li><a href="javascript:;" class="li23"></a></li>
+//                 </ul>
+//             </div>
+//         </div>
+//         <div class="ma-right col-lg-9">
+//             <h3 class="title"></h3>
+//             <div class="xx-zi">
+//                 <span name="time">发表时间　2019-03-05 08:33:38</span>
+//                 <span name="name">发表编辑　admin</span>
+//             </div>
+//             <div class="ma-center">
+//                 <div class="firstli">
+//                     <div class="x-pic">
+//                         <img src="" alt="">
+//                     </div>
+//                     <div class="x-zi">
+//                         <h1></h1>
+//                         <h3>
+//                             <p></p>
+//                             <a href="">查看详情</a>
+//                        </h3>
+//                     </div>
+//                 </div>
+//                 <ul>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 </ul>
+//                 <div class="wenben">
+//
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+// </div>
+//             `
+//         }
+//     },
+//     {
+//         path: "/qhwy",
+//         component: {
+//             template: `
+//             <div>
+//     <div class="path container">
+//         <em>您的位置：</em><a href="/">首页</a>
+//         &gt;<a href="" class="patha"></a>
+//     </div>
+//     <div class="ma-content container row">
+//         <div class="ma-left col-lg-3">
+//             <h3>专栏</h3>
+//             <div class="">
+//                 <ul class="menuList">
+//                     <li><a href="javascript:;" class="li24"></a></li>
+//                     <li><a href="javascript:;" class="li25"></a></li>
+//                     <li><a href="javascript:;" class="li26"></a></li>
+//                     <li><a href="javascript:;" class="li27"></a></li>
+//                 </ul>
+//             </div>
+//         </div>
+//         <div class="ma-right col-lg-9">
+//             <h3 class="title"></h3>
+//             <div class="xx-zi">
+//                 <span name="time">发表时间　2019-03-05 08:33:38</span>
+//                 <span name="name">发表编辑　admin</span>
+//             </div>
+//             <div class="ma-center">
+//                 <div class="firstli">
+//                     <div class="x-pic">
+//                         <img src="" alt="">
+//                     </div>
+//                     <div class="x-zi">
+//                         <h1></h1>
+//                         <h3>
+//                             <p></p>
+//                             <a href="">查看详情</a>
+//                        </h3>
+//                     </div>
+//                 </div>
+//                 <ul>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 <li><a href=""></a><span class="date"></span></li>
+//                 </ul>
+//                 <div class="wenben">
+//
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+// </div>
+//             `
+//         }
+//     },
+//     {
+//         path: "/ma",
+//         component: {
+//             template: `
+//             <div>
+//     <div class="path container">
+//         <em>您的位置：</em><a href="/">首页</a>
+//         &gt;<a href="">官方二维码</a>
+//     </div>
+//     <div class="ma-content container row">
+//        <div class="ma-left col-lg-3">
+//            <h3>官方微信群</h3>
+//        </div>
+//         <div class="ma-right col-lg-9">
+//             <h3 class="title">官方微信群</h3>
+//             <div class="property">
+//                 <span>【字体：<a href="javascript:;" data-power-command="reducefont">小</a> <a href="javascript:;" data-power-command="enlargefont">大</a>】</span>
+//             </div>
+//             <div class="ma-center">
+//
+//                 <p>请扫描以下二维码进入“官方微信群”</p>
+//                 <p><img src="img/erweima.jpg" alt=""></p>
+//
+//             </div>
+//         </div>
+//     </div>
+// </div>
+//             `
+//         }
+//     },
     {
         path: "/callme",
         component: {
@@ -1056,19 +1056,7 @@ var routes = [
             `
         }
     },
-    {
-        path: "/search",
-        component: {
-            template: `
-    <div class="acontent">
-        <p>找到以下搜索结果:</p>
-        <ul>
-           
-        </ul>
-    </div>
-            `
-        }
-    }
+
     //     {
     //         path:"/page3",
     //         component:{
@@ -2088,7 +2076,7 @@ $(".li1").click(function () {
             for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").attr("id", data.data.lst_categoryarticlelist[i].Id)
+                $(".ma-center li a").attr("id", data.data.lst_categoryarticlelist[i].Id);
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2106,6 +2094,8 @@ $(".li1").click(function () {
         },
         success: function (data) {
             // console.log(data.data);
+            // $(".title").css("display","none")
+            $(".xx-zi").css("display","none")
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
@@ -3382,4 +3372,9 @@ $(".searchcon ul").on("click", "li", function () {
         }
     })
 });
+$(".links a").click(function () {
+    $(".content-in").css("display","none")
+    $(".content").css("display","none")
+    $("#ma").css("display","block")
+})
 
