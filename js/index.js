@@ -36,7 +36,7 @@ var routes = [
                         <ul class="test">
                             <li>
                                     
-                                            <a href="#"><img  src=""></a>
+                                 <a href="#"><img  src=""></a>
                                        
                                 
                             </li>
@@ -239,7 +239,7 @@ var routes = [
                 <div class="col-lg-4">
                     <div class="news-head">
                         <ul>
-                            <li class="on"><a></a></li>
+                            <li class="on"><a href="">安全生产</a></li>
                             <li class="" style="display: none"><a ></a></li>
                             <li class="" style="display: none"><a ></a></li>
                         </ul>
@@ -559,9 +559,9 @@ var routes = [
         }
     },
     {
-        path:"/ssqh",
-        component:{
-            template:`
+        path: "/ssqh",
+        component: {
+            template: `
             <div>
     <div class="path container">
         <em>您的位置：</em><a href="/">首页</a>
@@ -616,9 +616,9 @@ var routes = [
         }
     },
     {
-        path:"/xwsx",
-        component:{
-            template:`
+        path: "/xwsx",
+        component: {
+            template: `
             <div>
     <div class="path container">
         <em>您的位置：</em><a href="/">首页</a>
@@ -673,9 +673,9 @@ var routes = [
         }
     },
     {
-        path:"/aqsc",
-        component:{
-            template:`
+        path: "/aqsc",
+        component: {
+            template: `
             <div>
     <div class="path container">
         <em>您的位置：</em><a href="/">首页</a>
@@ -730,9 +730,9 @@ var routes = [
         }
     },
     {
-        path:"/qhdj",
-        component:{
-            template:`
+        path: "/qhdj",
+        component: {
+            template: `
             <div>
     <div class="path container">
         <em>您的位置：</em><a href="/">首页</a>
@@ -787,9 +787,9 @@ var routes = [
         }
     },
     {
-        path:"/jygl",
-        component:{
-            template:`
+        path: "/jygl",
+        component: {
+            template: `
             <div>
     <div class="path container">
         <em>您的位置：</em><a href="/">首页</a>
@@ -844,9 +844,9 @@ var routes = [
         }
     },
     {
-        path:"/xfqh",
-        component:{
-            template:`
+        path: "/xfqh",
+        component: {
+            template: `
             <div>
     <div class="path container">
         <em>您的位置：</em><a href="/">首页</a>
@@ -901,9 +901,9 @@ var routes = [
         }
     },
     {
-        path:"/qhwy",
-        component:{
-            template:`
+        path: "/qhwy",
+        component: {
+            template: `
             <div>
     <div class="path container">
         <em>您的位置：</em><a href="/">首页</a>
@@ -959,7 +959,7 @@ var routes = [
     },
     {
         path: "/ma",
-        component:{
+        component: {
             template: `
             <div>
     <div class="path container">
@@ -1057,9 +1057,9 @@ var routes = [
         }
     },
     {
-        path:"/search",
-        component:{
-            template:`
+        path: "/search",
+        component: {
+            template: `
     <div class="acontent">
         <p>找到以下搜索结果:</p>
         <ul>
@@ -1069,96 +1069,96 @@ var routes = [
             `
         }
     }
-//     {
-//         path:"/page3",
-//         component:{
-//             template:`
-//             <div>
-//     <div class="path container">
-//         <em>您的位置：</em><a href="/">首页</a>
-//         &gt;<a href="">产品介绍</a>
-//     </div>
-//     <div class="ma-content container row">
-//         <div class="ma-left col-lg-3">
-//             <h3>专栏</h3>
-//             <div class="bd">
-//                 <ul class="menuList">
-//                     <li><router-link to="/page">企业简介</router-link></li>
-//                     <li><router-link to="/page1">企业文化</router-link></li>
-//                     <li><router-link to="/page2">企业荣誉</router-link></li>
-//                     <li class="on"><router-link to="/page3">产品介绍</router-link></li>
-//                 </ul>
-//             </div>
-//         </div>
-//         <div class="ma-right col-lg-9">
-//             <h3 class="title">产品介绍</h3>
-//             <div class="property">
-//                 <span>【字体：<a href="javascript:;">小</a> <a href="javascript:;">大</a>】</span>
-//             </div>
-//             <div class="ma-center">
-//                 <div>
-//
-//                 </div>
-//             </div>
-//         </div>
-//     </div>
-// </div>
-//             `
-//         }
-//     },
+    //     {
+    //         path:"/page3",
+    //         component:{
+    //             template:`
+    //             <div>
+    //     <div class="path container">
+    //         <em>您的位置：</em><a href="/">首页</a>
+    //         &gt;<a href="">产品介绍</a>
+    //     </div>
+    //     <div class="ma-content container row">
+    //         <div class="ma-left col-lg-3">
+    //             <h3>专栏</h3>
+    //             <div class="bd">
+    //                 <ul class="menuList">
+    //                     <li><router-link to="/page">企业简介</router-link></li>
+    //                     <li><router-link to="/page1">企业文化</router-link></li>
+    //                     <li><router-link to="/page2">企业荣誉</router-link></li>
+    //                     <li class="on"><router-link to="/page3">产品介绍</router-link></li>
+    //                 </ul>
+    //             </div>
+    //         </div>
+    //         <div class="ma-right col-lg-9">
+    //             <h3 class="title">产品介绍</h3>
+    //             <div class="property">
+    //                 <span>【字体：<a href="javascript:;">小</a> <a href="javascript:;">大</a>】</span>
+    //             </div>
+    //             <div class="ma-center">
+    //                 <div>
+    //
+    //                 </div>
+    //             </div>
+    //         </div>
+    //     </div>
+    // </div>
+    //             `
+    //         }
+    //     },
 ];
 const routers = new VueRouter({
-   routes: routes,
+    routes: routes,
 });
 new Vue({
     el: '#main',
     router: routers,
 });
 // lunbotu
- var $focusNews= $(".focusNews");
- var $test = $(".bd");
- var $imageLis = $(".test li");
- var $cilclesLis = $(".hd ul li");
- $(".test ul").append($imageLis.eq(0).clone());
- var idx = 0;
- var timer = setInterval(rightBtnHandler, 2000);
-    $focusNews.mouseenter(function(){
-        clearInterval(timer);
-    });
-    $focusNews.mouseleave(function(){
-        timer = setInterval(rightBtnHandler, 2000);
-    });
-    $(".rightBtn").mouseenter(rightBtnHandler);
-    function rightBtnHandler(){
-        if($test.is(":animated")) return;
-        idx++;
-        $test.animate({"left" : -570 * idx},300,function(){
-            if(idx > 4){
-                idx = 0;
-                $test.css("left",0);
-            }
-        });
-        changeCircle();
-    }
-    $(".leftBtn").mouseenter(function(){
-        if($test.is(":animated")) return;
-        idx--;
-        if(idx < 0){
-            idx = 4;
-            $test.css("left",-5 * 570);
+var $focusNews = $(".focusNews");
+var $test = $(".bd");
+var $imageLis = $(".test li");
+var $cilclesLis = $(".hd ul li");
+$(".test ul").append($imageLis.eq(0).clone());
+var idx = 0;
+var timer = setInterval(rightBtnHandler, 2000);
+$focusNews.mouseenter(function () {
+    clearInterval(timer);
+});
+$focusNews.mouseleave(function () {
+    timer = setInterval(rightBtnHandler, 2000);
+});
+$(".rightBtn").mouseenter(rightBtnHandler);
+function rightBtnHandler() {
+    if ($test.is(":animated")) return;
+    idx++;
+    $test.animate({ "left": -570 * idx }, 300, function () {
+        if (idx > 4) {
+            idx = 0;
+            $test.css("left", 0);
         }
-        $test.animate({"left" : -570 * idx},300);
-        changeCircle();
     });
-    $cilclesLis.mouseenter(function(){
-        idx = $(this).index();
-        $test.animate({"left" : -570 * idx},300);
-        changeCircle();
-    });
-    function changeCircle(){
-        var n = idx <= 4 ? idx : 0;
-        $cilclesLis.eq(n).addClass("on").siblings().removeClass("on");
+    changeCircle();
+}
+$(".leftBtn").mouseenter(function () {
+    if ($test.is(":animated")) return;
+    idx--;
+    if (idx < 0) {
+        idx = 4;
+        $test.css("left", -5 * 570);
     }
+    $test.animate({ "left": -570 * idx }, 300);
+    changeCircle();
+});
+$cilclesLis.mouseenter(function () {
+    idx = $(this).index();
+    $test.animate({ "left": -570 * idx }, 300);
+    changeCircle();
+});
+function changeCircle() {
+    var n = idx <= 4 ? idx : 0;
+    $cilclesLis.eq(n).addClass("on").siblings().removeClass("on");
+}
 // 选项卡
 //     $(".hd6 li").mouseenter(function ()
 //     {
@@ -1205,14 +1205,14 @@ new Vue({
 //         $(".about-photo-bd ul").hide().eq($(this).index()).show();
 //     });
 // 获取数据
-$(function(){
-    function loadData(){
+$(function () {
+    function loadData() {
         // 首页数据
         $.ajax({
             type: "POST",
             url: "http://kxqh.api.milisx.xyz/api/custom/qhhomedata",
             dateType: "json",
-            data:{
+            data: {
                 "part_one": {
                     "categoryid": "ac1e5571-d81f-4fc7-886c-c4ba6d7a871a",
                     "PageIndex": 1,
@@ -1244,29 +1244,29 @@ $(function(){
                     "PageSize": 10
                 }
             },
-            success: function(data){
-                    console.log(data)
-               for( var i = 0; i < data.data.lst_part_one.length; i ++){
-                   // console.log(data.data.lst_part_one[i].Id);
+            success: function (data) {
+                console.log(data)
+                for (var i = 0; i < data.data.lst_part_one.length; i++) {
+                    // console.log(data.data.lst_part_one[i].Id);
                     $(".bd1 li a").eq(i).text(data.data.lst_part_one[i].Title);
-                   $(".bd1 li a").eq(i).attr("id",data.data.lst_part_one[i].Id)
-                   $(".bd1 .date").eq(i).text(data.data.lst_part_one[i].CreateTime);
-                   $(".bd2 li a").eq(i).text(data.data.lst_part_two[i].Title);
-                   $(".bd2 li a").eq(i).attr("id",data.data.lst_part_two[i].Id)
-                   $(".bd2 .date").eq(i).text(data.data.lst_part_two[i].CreateTime)
-                   $(".test img").eq(i).attr('src',data.data.lst_part_one[i].CoverPhoto)
-               }
-               for( var i = 0; i < data.data.lst_part_four.length; i ++){
+                    $(".bd1 li a").eq(i).attr("id", data.data.lst_part_one[i].Id)
+                    $(".bd1 .date").eq(i).text(data.data.lst_part_one[i].CreateTime);
+                    $(".bd2 li a").eq(i).text(data.data.lst_part_two[i].Title);
+                    $(".bd2 li a").eq(i).attr("id", data.data.lst_part_two[i].Id)
+                    $(".bd2 .date").eq(i).text(data.data.lst_part_two[i].CreateTime)
+                    $(".test img").eq(i).attr('src', data.data.lst_part_one[i].CoverPhoto)
+                }
+                for (var i = 0; i < data.data.lst_part_four.length; i++) {
                     $(".new-center li a").eq(i).text(data.data.lst_part_four[i].Title);
-                   $(".new-center li a").eq(i).attr("id",data.data.lst_part_four[i].Id)
+                    $(".new-center li a").eq(i).attr("id", data.data.lst_part_four[i].Id)
                     $(".new-center .date").eq(i).text(data.data.lst_part_four[i].CreateTime);
                     $(".new-center1 li a").eq(i).text(data.data.lst_part_five[i].Title);
-                   $(".new-center1 li a").eq(i).attr("id",data.data.lst_part_five[i].Id)
+                    $(".new-center1 li a").eq(i).attr("id", data.data.lst_part_five[i].Id)
                     $(".new-center1 .date").eq(i).text(data.data.lst_part_five[i].CreateTime)
                 }
-                for( var i = 0; i < data.data.lst_part_six.length; i ++){
+                for (var i = 0; i < data.data.lst_part_six.length; i++) {
                     $(".new-click li a").eq(i).text(data.data.lst_part_six[i].Title);
-                    $(".new-click li a").eq(i).attr("id",data.data.lst_part_six[i].Id)
+                    $(".new-click li a").eq(i).attr("id", data.data.lst_part_six[i].Id)
                     $(".new-click .date").eq(i).text(data.data.lst_part_six[i].CreateTime);
                 }
 
@@ -1277,20 +1277,20 @@ $(function(){
             type: "POST",
             url: "http://kxqh.api.milisx.xyz/api/custom/qhhomenav",
             dataType: "json",
-            data:{},
-            success: function(data){
+            data: {},
+            success: function (data) {
                 var text = "";
                 var text1 = "";
-                var index =0;
-                for( var i = 0; i < data.data.length; i ++){
+                var index = 0;
+                for (var i = 0; i < data.data.length; i++) {
                     text = data.data[i].Name;
-                    $(".navt").eq(i-1).text(text);
-                    $(".navt").eq(i-1).attr("id",data.data[i].Id);
-                    for(var j = 0;j <data.data[i].List_VNC.length; j ++){
-                        index ++;
+                    $(".navt").eq(i - 1).text(text);
+                    $(".navt").eq(i - 1).attr("id", data.data[i].Id);
+                    for (var j = 0; j < data.data[i].List_VNC.length; j++) {
+                        index++;
                         text1 = data.data[i].List_VNC[j].Name;
-                        $(".navc").eq(index-1).text(text1);
-                        $(".navc").eq(index-1).attr("id",data.data[i].List_VNC[j].Id);
+                        $(".navc").eq(index - 1).text(text1);
+                        $(".navc").eq(index - 1).attr("id", data.data[i].List_VNC[j].Id);
                     }
                 }
                 console.log(data);
@@ -1416,93 +1416,93 @@ $(function(){
 // $(".navt7").click(function () {
 //
 // });
-$(".bd1 li").on("click","a",function () {
+$(".bd1 li").on("click", "a", function () {
     console.log($(this).attr("id"))
     $.ajax({
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": $(this).attr("id")
         },
         success: function (data) {
             console.log(data.data);
             $(".ma-right h3").text(data.data.Title);
             $(".ma-center div").html(data.data.Body);
-            $(".ma-center img").attr('src',data.data.CoverPhoto);
+            $(".ma-center img").attr('src', data.data.CoverPhoto);
             // $(".aa1").text("公司要闻")
         }
     })
 });
-$(".bd2 li").on("click","a",function () {
+$(".bd2 li").on("click", "a", function () {
     console.log($(this).attr("id"))
     $.ajax({
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": $(this).attr("id")
         },
         success: function (data) {
             console.log(data.data);
             $(".ma-right h3").text(data.data.Title);
             $(".ma-center div").html(data.data.Body);
-            $(".ma-center img").attr('src',data.data.CoverPhoto);
+            $(".ma-center img").attr('src', data.data.CoverPhoto);
             // $(".aa1").text("公司要闻")
         }
     })
 });
-$(".new-center li").on("click","a",function () {
+$(".new-center li").on("click", "a", function () {
     console.log($(this).attr("id"))
     $.ajax({
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": $(this).attr("id")
         },
         success: function (data) {
             console.log(data.data);
             $(".ma-right h3").text(data.data.Title);
             $(".ma-center div").html(data.data.Body);
-            $(".ma-center img").attr('src',data.data.CoverPhoto);
+            $(".ma-center img").attr('src', data.data.CoverPhoto);
             // $(".aa1").text("公司要闻")
         }
     })
 })
-$(".new-center1 li").on("click","a",function () {
+$(".new-center1 li").on("click", "a", function () {
     console.log($(this).attr("id"))
     $.ajax({
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": $(this).attr("id")
         },
         success: function (data) {
             console.log(data.data);
             $(".ma-right h3").text(data.data.Title);
             $(".ma-center div").html(data.data.Body);
-            $(".ma-center img").attr('src',data.data.CoverPhoto);
+            $(".ma-center img").attr('src', data.data.CoverPhoto);
             // $(".aa1").text("公司要闻")
         }
     })
 })
-$(".new-click li").on("click","a",function () {
+$(".new-click li").on("click", "a", function () {
     console.log($(this).attr("id"))
     $.ajax({
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": $(this).attr("id")
         },
         success: function (data) {
             console.log(data.data);
-            $(".ma-center img").css("display","block")
+            $(".ma-center img").css("display", "block")
             $(".ma-right h3").text(data.data.Title);
             $(".ma-center div").html(data.data.Body);
-            $(".ma-center img").attr('src',data.data.CoverPhoto);
+            $(".ma-center img").attr('src', data.data.CoverPhoto);
             // $(".aa1").text("公司要闻")
         }
     })
@@ -2073,7 +2073,7 @@ $(".li1").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "b1c97066-0750-49d8-9b34-cb3f85f3a097",
             "PageIndex": 1,
             "PageSize": 12
@@ -2082,14 +2082,14 @@ $(".li1").click(function () {
             // console.log(data.data);
             $(".patha").text("企业文化");
             $(".title").text("企业文化");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").attr("id",data.data.lst_categoryarticlelist[i].Id)
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").attr("id", data.data.lst_categoryarticlelist[i].Id)
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2101,16 +2101,16 @@ $(".li1").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "91a8822e-2cbd-4c1e-a1ea-dab964457a5c"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
-            $(".ma-center .xq").css("display","none")
-            $(".ma-center>img").css("display","none")
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2122,19 +2122,19 @@ $(".li0").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "2c1c1594-1aea-4c28-8e71-65e864edcd86"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".ma-center .wenben").css("display","block");
+            $(".ma-center .wenben").css("display", "block");
             $(".title").text(data.data.Title);
             $(".patha").text(data.data.Title);
             $(".ma-center .wenben").html(data.data.Body);
-            $(".ma-center ul").css("display","none");
-            $(".ma-center .firstli").css("display","none")
-            $(".ma-center>img").css("display","none")
-            $(".ma-center .xq").css("display","none")
+            $(".ma-center ul").css("display", "none");
+            $(".ma-center .firstli").css("display", "none")
+            $(".ma-center>img").css("display", "none")
+            $(".ma-center .xq").css("display", "none")
         },
     });
 
@@ -2146,19 +2146,19 @@ $(".li2").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "833fa9c6-d6e5-40b7-a1ea-829f5a0ebc15"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".ma-center .wenben").css("display","block");
+            $(".ma-center .wenben").css("display", "block");
             $(".title").text(data.data.Title);
             $(".patha").text(data.data.Title);
             $(".ma-center .wenben").html(data.data.Body);
-            $(".ma-center ul").css("display","none");
-            $(".ma-center .firstli").css("display","none")
-            $(".ma-center>img").css("display","none")
-            $(".ma-center .xq").css("display","none")
+            $(".ma-center ul").css("display", "none");
+            $(".ma-center .firstli").css("display", "none")
+            $(".ma-center>img").css("display", "none")
+            $(".ma-center .xq").css("display", "none")
         },
     });
 });
@@ -2167,7 +2167,7 @@ $(".li3").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "11dea9ec-4d9b-4c09-9926-97d12929920c",
             "PageIndex": 1,
             "PageSize": 12
@@ -2176,14 +2176,14 @@ $(".li3").click(function () {
             console.log(data.data);
             $(".title").text("产品介绍");
             $(".patha").text("产品介绍");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2195,16 +2195,16 @@ $(".li3").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "896a48d1-de14-4b2a-84fb-18862f481902"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
-            $(".ma-center>img").css("display","none")
-            $(".ma-center .xq").css("display","none")
+            $(".ma-center>img").css("display", "none")
+            $(".ma-center .xq").css("display", "none")
 
         },
     });
@@ -2214,7 +2214,7 @@ $(".li4").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "ac1e5571-d81f-4fc7-886c-c4ba6d7a871a",
             "PageIndex": 1,
             "PageSize": 12
@@ -2223,14 +2223,14 @@ $(".li4").click(function () {
             console.log(data.data);
             $(".patha").text("公司要闻");
             $(".title").text("公司要闻");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2242,12 +2242,12 @@ $(".li4").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "e8d16e6e-e783-4370-890b-6510578c3027"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2259,7 +2259,7 @@ $(".li5").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "a460675f-8a68-4bbb-b0cd-825f7578fe00",
             "PageIndex": 1,
             "PageSize": 12
@@ -2268,14 +2268,14 @@ $(".li5").click(function () {
             console.log(data.data);
             $(".patha").text("基层动态");
             $(".title").text("基层动态");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2287,12 +2287,12 @@ $(".li5").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "195c86eb-1e9c-4a86-8259-3653e137c179"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2304,7 +2304,7 @@ $(".li6").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "e6e0ea92-0f43-418b-b838-b88b69744e57",
             "PageIndex": 1,
             "PageSize": 12
@@ -2313,14 +2313,14 @@ $(".li6").click(function () {
             console.log(data.data);
             $(".patha").text("特别报道");
             $(".title").text("特别报道");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2332,12 +2332,12 @@ $(".li6").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "63226dcb-a850-40ee-948f-21cc3df7c5e3"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2349,7 +2349,7 @@ $(".li7").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "c8e12965-b96e-4d88-986b-5063e79bac7a",
             "PageIndex": 1,
             "PageSize": 12
@@ -2358,14 +2358,14 @@ $(".li7").click(function () {
             console.log(data.data);
             $(".patha").text("热点专题");
             $(".title").text("热点专题");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2377,12 +2377,12 @@ $(".li7").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "8ce04421-7f39-44c7-ae3d-a54f259aa1b7"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2394,7 +2394,7 @@ $(".li8").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "a5a566c1-0bc3-4bcb-a43d-aaf9644c13cd",
             "PageIndex": 1,
             "PageSize": 12
@@ -2403,14 +2403,14 @@ $(".li8").click(function () {
             console.log(data.data);
             $(".patha").text("生产动态");
             $(".title").text("生产动态");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2422,12 +2422,12 @@ $(".li8").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "bd8dc204-1241-48d7-acb5-6e16017666ce"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2439,7 +2439,7 @@ $(".li9").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "b6b4e273-fe79-4a92-9232-05d48696b2af",
             "PageIndex": 1,
             "PageSize": 12
@@ -2448,14 +2448,14 @@ $(".li9").click(function () {
             console.log(data.data);
             $(".patha").text("安全文化");
             $(".title").text("安全文化");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2467,12 +2467,12 @@ $(".li9").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "4a180fd3-675f-4ee0-9b17-7abf9bd90247"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2484,7 +2484,7 @@ $(".li10").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "f790e6c8-db86-4271-a4da-00ac17b0ac37",
             "PageIndex": 1,
             "PageSize": 12
@@ -2493,14 +2493,14 @@ $(".li10").click(function () {
             console.log(data.data);
             $(".patha").text("法律法规");
             $(".title").text("法律法规");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2512,12 +2512,12 @@ $(".li10").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "bfc776af-232d-4e37-aa75-3d30e95dce09"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2529,7 +2529,7 @@ $(".li11").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "64235dcc-ba31-4f35-8fcd-48a8b0982165",
             "PageIndex": 1,
             "PageSize": 12
@@ -2538,14 +2538,14 @@ $(".li11").click(function () {
             console.log(data.data);
             $(".patha").text("生态矿山");
             $(".title").text("生态矿山");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2557,12 +2557,12 @@ $(".li11").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "b196e032-3eae-4af0-ad37-756ab2ecb4d9"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2574,7 +2574,7 @@ $(".li12").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "cd5c323e-5d09-41f6-82b7-9a98b2431370",
             "PageIndex": 1,
             "PageSize": 12
@@ -2583,14 +2583,14 @@ $(".li12").click(function () {
             console.log(data.data);
             $(".patha").text("党建动态");
             $(".title").text("党建动态");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2602,12 +2602,12 @@ $(".li12").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "71719455-7879-4807-838d-7350cefeb31c"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2619,7 +2619,7 @@ $(".li13").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "37a17e18-c055-43e6-80be-147a81e78350",
             "PageIndex": 1,
             "PageSize": 12
@@ -2628,14 +2628,14 @@ $(".li13").click(function () {
             console.log(data.data);
             $(".patha").text("廉政建设");
             $(".title").text("廉政建设");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2647,12 +2647,12 @@ $(".li13").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "d48fe9de-654e-4a38-816b-6d391e9ec8d8"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2664,7 +2664,7 @@ $(".li14").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "27faa66a-c165-410c-8139-ad7318d41bfd",
             "PageIndex": 1,
             "PageSize": 12
@@ -2673,14 +2673,14 @@ $(".li14").click(function () {
             console.log(data.data);
             $(".patha").text("上级精神");
             $(".title").text("上级精神");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2692,12 +2692,12 @@ $(".li14").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "04a8d3ff-7b15-4755-91cf-4a936a2057ff"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2709,7 +2709,7 @@ $(".li15").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "722c2e2f-35d1-4712-84fb-4d78516ce7be",
             "PageIndex": 1,
             "PageSize": 12
@@ -2718,14 +2718,14 @@ $(".li15").click(function () {
             console.log(data.data);
             $(".patha").text("团建工作");
             $(".title").text("团建工作");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2737,12 +2737,12 @@ $(".li15").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "c2bc9fc7-07d9-4d3e-a73b-659092f100b8"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2754,7 +2754,7 @@ $(".li16").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "7a14ec45-a68d-4be0-a698-2a70e9122bf8",
             "PageIndex": 1,
             "PageSize": 12
@@ -2763,14 +2763,14 @@ $(".li16").click(function () {
             // console.log(data.data);
             $(".patha").text("经营动态");
             $(".title").text("经营动态");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2782,12 +2782,12 @@ $(".li16").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "86798375-632c-4d8a-9e4a-a1c8d2e38945"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2799,7 +2799,7 @@ $(".li17").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "24d61bb2-7670-40c0-bc62-a5f6324df3d2",
             "PageIndex": 1,
             "PageSize": 12
@@ -2808,14 +2808,14 @@ $(".li17").click(function () {
             console.log(data.data);
             $(".patha").text("创新高低");
             $(".title").text("创新高低");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2827,12 +2827,12 @@ $(".li17").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "2b8ba8bf-7964-436b-8dec-2b6bfef33425"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2844,7 +2844,7 @@ $(".li18").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "9be72063-ec73-4fa5-8be2-6f106f9591eb",
             "PageIndex": 1,
             "PageSize": 12
@@ -2853,14 +2853,14 @@ $(".li18").click(function () {
             console.log(data.data);
             $(".patha").text("降本增效");
             $(".title").text("降本增效");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2872,12 +2872,12 @@ $(".li18").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "445326c8-aa68-4b1a-94f6-d8c25ddd5f44"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2889,7 +2889,7 @@ $(".li19").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "6c8b4cdd-ef4b-4e3d-ae87-901be775867d",
             "PageIndex": 1,
             "PageSize": 12
@@ -2898,14 +2898,14 @@ $(".li19").click(function () {
             console.log(data.data);
             $(".patha").text("行业聚焦");
             $(".title").text("行业聚焦");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2917,12 +2917,12 @@ $(".li19").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "53b29788-9b8f-41ec-92b2-56978c1d2535"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2934,7 +2934,7 @@ $(".li20").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "ac435425-69ea-4aa9-bc1c-4952e72bae63",
             "PageIndex": 1,
             "PageSize": 12
@@ -2943,14 +2943,14 @@ $(".li20").click(function () {
             console.log(data.data);
             $(".patha").text("人文活动");
             $(".title").text("人文活动");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -2962,12 +2962,12 @@ $(".li20").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "48acf2d7-e25d-4f41-9644-129f5c9505bc"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -2979,7 +2979,7 @@ $(".li21").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "4cbfe924-8359-48cb-a11a-e20c8dbf69c5",
             "PageIndex": 1,
             "PageSize": 12
@@ -2988,14 +2988,14 @@ $(".li21").click(function () {
             console.log(data.data);
             $(".patha").text("职工风采");
             $(".title").text("职工风采");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -3007,12 +3007,12 @@ $(".li21").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "dee8fb92-dcec-4ba5-afce-2d3b5a4b14ca"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -3024,7 +3024,7 @@ $(".li22").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "ca89efd2-a5de-46c4-af68-78a8a962fb62",
             "PageIndex": 1,
             "PageSize": 12
@@ -3033,14 +3033,14 @@ $(".li22").click(function () {
             console.log(data.data);
             $(".patha").text("前和故事");
             $(".title").text("前和故事");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -3052,12 +3052,12 @@ $(".li22").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "0c03911f-bb56-4ef8-8d5f-c210908ba601"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -3069,7 +3069,7 @@ $(".li23").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "830e9ffd-6d44-40ab-9aa9-fd38141e1d5c",
             "PageIndex": 1,
             "PageSize": 12
@@ -3078,14 +3078,14 @@ $(".li23").click(function () {
             console.log(data.data);
             $(".patha").text("帮扶济困");
             $(".title").text("帮扶济困");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -3097,12 +3097,12 @@ $(".li23").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "e28f11d9-ce23-4483-a08e-d7d06a6c73a1"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -3114,7 +3114,7 @@ $(".li24").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "49d74a56-ec5b-4383-b3f8-7ee7bd995dd6",
             "PageIndex": 1,
             "PageSize": 12
@@ -3123,14 +3123,14 @@ $(".li24").click(function () {
             console.log(data.data);
             $(".patha").text("魅力前和");
             $(".title").text("魅力前和");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -3142,12 +3142,12 @@ $(".li24").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "cfd138e4-977e-43c1-acbe-43815d262820"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -3159,7 +3159,7 @@ $(".li25").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "9d0f6295-6b2e-42b5-84ad-ced75a776fc1",
             "PageIndex": 1,
             "PageSize": 12
@@ -3168,14 +3168,14 @@ $(".li25").click(function () {
             console.log(data.data);
             $(".patha").text("原创天地");
             $(".title").text("原创天地");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -3187,12 +3187,12 @@ $(".li25").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "6c6854d7-68ec-4a3e-827a-48c2681050f2"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -3205,7 +3205,7 @@ $(".li26").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "77378bd9-b680-404b-b6eb-ba2e5530e275",
             "PageIndex": 1,
             "PageSize": 12
@@ -3214,14 +3214,14 @@ $(".li26").click(function () {
             console.log(data.data);
             $(".patha").text("书香前和");
             $(".title").text("书香前和");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -3233,12 +3233,12 @@ $(".li26").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "615d3300-0893-4dc7-be50-f34c3eb115c0"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
 
@@ -3250,7 +3250,7 @@ $(".li27").click(function () {
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
         dateType: "json",
-        data:{
+        data: {
             "categoryid": "186120af-fdfa-4d89-b853-361afe92810b",
             "PageIndex": 1,
             "PageSize": 12
@@ -3259,14 +3259,14 @@ $(".li27").click(function () {
             console.log(data.data);
             $(".patha").text("阅读推荐");
             $(".title").text("阅读推荐");
-            $(".ma-center ul").css("display","block");
-            $(".firstli").css("display","block");
+            $(".ma-center ul").css("display", "block");
+            $(".firstli").css("display", "block");
 
-            for(var i =0 ; i< data.data.lst_categoryarticlelist.length; i ++){
+            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
-                $(".ma-center .wenben").css("display","none");
+                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
         },
@@ -3278,12 +3278,12 @@ $(".li27").click(function () {
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dateType: "json",
-        data:{
+        data: {
             "ArticleId": "a7844d0e-f590-4303-8043-fc3d5489ac7a"
         },
-        success: function(data){
+        success: function (data) {
             // console.log(data.data);
-            $(".firstli img").attr('src',data.data.CoverPhoto);
+            $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
         },
@@ -3317,23 +3317,23 @@ $(".li27").click(function () {
 //         }
 //     }
 // });
-$(".ma-center li").on("click","a",function () {
+$(".ma-center li").on("click", "a", function () {
     $.ajax({
-        type:"POST",
+        type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dataType: "json",
-        data:{
-            "ArticleId":$(this).attr("id"),
+        data: {
+            "ArticleId": $(this).attr("id"),
         },
         success: function (data) {
             // console.log(data.data);
-            $(".ma-center .xq").css("display","block");
+            $(".ma-center .xq").css("display", "block");
             $(".ma-right>h3").text(data.data.Title);
             $(".ma-center .xq").html(data.data.Body);
-            $(".ma-center img").attr('src',data.data.CoverPhoto);
-            $(".ma-center ul").css("display","none");
-            $(".ma-center .firstli").css("display","none");
-            $(".ma-center>img").css("display","block")
+            $(".ma-center img").attr('src', data.data.CoverPhoto);
+            $(".ma-center ul").css("display", "none");
+            $(".ma-center .firstli").css("display", "none");
+            $(".ma-center>img").css("display", "block")
         }
     })
 });
@@ -3341,41 +3341,41 @@ $(".ma-center li").on("click","a",function () {
 $(".button").click(function () {
     var txt = $(".search").val();
     // console.log(txt.length)
-    if(txt.length == 0){
-         alert("请输入要搜索的内容")
-    }else {
+    if (txt.length == 0) {
+        alert("请输入要搜索的内容")
+    } else {
         $.ajax({
-            type:"post",
-            url:"http://kxqh.api.milisx.xyz/api/content/getarticlesearchlist",
-            dateType:"json",
-            data:{
+            type: "post",
+            url: "http://kxqh.api.milisx.xyz/api/content/getarticlesearchlist",
+            dateType: "json",
+            data: {
                 "Title": txt,
                 "PageIndex": 1,
                 "PageSize": 12
             },
             success: function (data) {
                 console.log(data)
-                for(var i =0 ; i < data.data.lst_articlesearchlist.length; i ++){
-                    $(".acontent ul").append(" <li id="+data.data.lst_articlesearchlist[i].Id+">"+data.data.lst_articlesearchlist[i].Title+"<span>"+data.data.lst_articlesearchlist[i].CreateTime+"</span>"+"</li>")
+                for (var i = 0; i < data.data.lst_articlesearchlist.length; i++) {
+$(".acontent ul").append(" <li id=" + data.data.lst_articlesearchlist[i].Id + ">" + data.data.lst_articlesearchlist[i].Title + "<span>" + data.data.lst_articlesearchlist[i].CreateTime + "</span>" + "</li>")
                 }
             }
         })
     }
 
 });
-$(".acontent ul").on("click","li",function () {
+$(".acontent ul").on("click", "li", function () {
     $.ajax({
-        type:"POST",
+        type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
         dataType: "json",
-        data:{
-            "ArticleId":$(this).attr("id"),
+        data: {
+            "ArticleId": $(this).attr("id"),
         },
         success: function (data) {
-            console.log(data)
+            console.log(data);
             $(".acontent").empty();
-            $(".acontent").append("<img src="+data.data.CoverPhoto+">"+"<div>"+data.data.Body+"</div>");
+            $(".acontent").append("<img src=" + data.data.CoverPhoto + ">" + "<div>" + data.data.Body + "</div>");
         }
-})
+    })
 });
 
