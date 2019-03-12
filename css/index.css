@@ -66,13 +66,13 @@ li{
 }
 @media screen and (max-width:1200px){
     .header-top-logo h1 a img{
-        width: 300px;
+        width: 100px;
         height: auto;
     }
 }
 @media screen and (max-width:992px){
     .header-top-logo h1 a img{
-        width: 250px;
+        width: 100px;
         height: auto;
     }
 }
@@ -81,7 +81,7 @@ li{
         margin-top: -25px;
     }
     .header-top-logo h1 a img{
-        width: 200px;
+        width: 79px;
         height: auto;
     }
 }
@@ -141,6 +141,7 @@ li{
     color: #fff;
     float: right;
     cursor: pointer;
+    text-align: center;
 }
 @media screen and (max-width:992px){
     .links{
@@ -173,13 +174,11 @@ li{
 }
 @media screen and (max-width:1200px){
     .header-banner{
-        top: 45px;
-        left: 320px;
+        top: 20px;
+        left: 112px;
+        font-size: 20px;
     }
-    .header-banner li{
-        width: 300px;
-        height: 50px;
-    }
+
 
 }
 
@@ -1056,6 +1055,7 @@ li{
         /*position: absolute;*/
         /*top: -60px;*/
     }
+
     .slider{
         display: none;
     }
@@ -1123,6 +1123,13 @@ li{
     .zhiku-left{
         display: none;
     }
+    .header-banner{
+        display: block;
+
+    }
+    .header-banner h3{
+        font-size: 30px;
+    }
 }
 
 
@@ -1167,6 +1174,9 @@ li{
     .header-nav .main-nav li:nth-child(10)
     {
         display: block;
+    }
+    .footer{
+        display: none;
     }
 }
 a:hover{
@@ -1435,4 +1445,36 @@ a:hover{
     float: right;
     width: 50%;
     height: 100%;
+}
+
+.searchcon{
+    width: 60%;
+    margin: 0  auto;
+}
+.searchcon p{
+    font-size: 18px;
+    color:#1a91d4;
+}
+.searchcon ul{
+    margin-top: 30px;
+}
+.searchcon ul li{
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 0 12px;
+    height: 40px;
+    border-bottom: 1px solid #7ecef4;
+    line-height: 40px;
+}
+.searchcon ul li span {
+    /*width: 14%;*/
+    font-size: 10px;
+    color: #676767;
+    font-weight: 100;
+    line-height: 40px;
+    float: right;
+}
+.searchcon img{
+    width: 100%;
 }

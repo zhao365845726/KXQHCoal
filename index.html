@@ -38,9 +38,9 @@
                     <div class="search-box">
                         <form action="">
                             <input type="text" class="search" placeholder="请输入关键字">
-                            <button type="submit" class="button">
-                                <router-link to="/search">搜索</router-link>
-                            </button>
+                            <div  class="button">
+                                搜索
+                            </div>
                         </form>
                     </div>
                     <div class="header-banner">
@@ -140,6 +140,17 @@
         </div>
         <!--内容-->
         <router-view></router-view>
+        <div id="search" style="display: none">
+            <div class="path container">
+                <em>您的位置：</em><a href="/">首页</a>
+            </div>
+            <div class="ma-content container row">
+                <div class="searchcon">
+                    <p>搜索到一下结果:</p>
+                    <ul></ul>
+                </div>
+            </div>
+        </div></div>
         <!--底部-->
         <div class="footer container">
             <div class="fotcontent row">

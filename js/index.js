@@ -3339,8 +3339,11 @@ $(".ma-center li").on("click", "a", function () {
 });
 
 $(".button").click(function () {
+    $(".content").css("display","none")
+    $(".content-in").css("display","none")
+    $("#search").css("display","block")
     var txt = $(".search").val();
-    // console.log(txt.length)
+    console.log(txt.length)
     if (txt.length == 0) {
         alert("请输入要搜索的内容")
     } else {
@@ -3354,16 +3357,17 @@ $(".button").click(function () {
                 "PageSize": 12
             },
             success: function (data) {
-                console.log(data)
+                // console.log(data);
                 for (var i = 0; i < data.data.lst_articlesearchlist.length; i++) {
-$(".acontent ul").append(" <li id=" + data.data.lst_articlesearchlist[i].Id + ">" + data.data.lst_articlesearchlist[i].Title + "<span>" + data.data.lst_articlesearchlist[i].CreateTime + "</span>" + "</li>")
+                    // console.log(data.data.lst_articlesearchlist[i].Id)
+$(".searchcon ul").append(" <li id=" + data.data.lst_articlesearchlist[i].Id + ">" + data.data.lst_articlesearchlist[i].Title + "<span>" + data.data.lst_articlesearchlist[i].CreateTime + "</span>" + "</li>")
                 }
             }
         })
     }
 
 });
-$(".acontent ul").on("click", "li", function () {
+$(".searchcon ul").on("click", "li", function () {
     $.ajax({
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
@@ -3373,8 +3377,8 @@ $(".acontent ul").on("click", "li", function () {
         },
         success: function (data) {
             console.log(data);
-            $(".acontent").empty();
-            $(".acontent").append("<img src=" + data.data.CoverPhoto + ">" + "<div>" + data.data.Body + "</div>");
+            $(".searchcon").empty();
+            $(".searchcon").append("<img src=" + data.data.CoverPhoto + ">" + "<div>" + data.data.Body + "</div>");
         }
     })
 });
