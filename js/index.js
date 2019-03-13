@@ -3348,6 +3348,9 @@ $(".button").click(function () {
             },
             success: function (data) {
                 // console.log(data);
+
+                $("#ma").css("display","none")
+                $(".searchcon ul").empty();
                 for (var i = 0; i < data.data.lst_articlesearchlist.length; i++) {
                     // console.log(data.data.lst_articlesearchlist[i].Id)
 $(".searchcon ul").append(" <li id=" + data.data.lst_articlesearchlist[i].Id + ">" + data.data.lst_articlesearchlist[i].Title + "<span>" + data.data.lst_articlesearchlist[i].CreateTime + "</span>" + "</li>")
@@ -3367,6 +3370,7 @@ $(".searchcon ul").on("click", "li", function () {
         },
         success: function (data) {
             console.log(data);
+
             $(".searchcon").empty();
             $(".searchcon").append("<img src=" + data.data.CoverPhoto + ">" + "<div>" + data.data.Body + "</div>");
         }
@@ -3375,6 +3379,7 @@ $(".searchcon ul").on("click", "li", function () {
 $(".links a").click(function () {
     $(".content-in").css("display","none")
     $(".content").css("display","none")
+    $("#search").css("display","none")
     $("#ma").css("display","block")
 })
 
