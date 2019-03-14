@@ -2112,6 +2112,7 @@ $(".li1").click(function () {
                 console.log(data.data.lst_categoryarticlelist[i].Id);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2186,6 +2187,7 @@ $(".li3").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2233,6 +2235,7 @@ $(".li4").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2280,6 +2283,7 @@ $(".li5").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2327,6 +2331,7 @@ $(".li6").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2374,6 +2379,7 @@ $(".li7").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2421,6 +2427,7 @@ $(".li8").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2468,6 +2475,7 @@ $(".li9").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2515,6 +2523,7 @@ $(".li10").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2562,6 +2571,7 @@ $(".li11").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2609,6 +2619,7 @@ $(".li12").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2656,6 +2667,7 @@ $(".li13").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2703,6 +2715,7 @@ $(".li14").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2750,6 +2763,7 @@ $(".li15").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2797,6 +2811,7 @@ $(".li16").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2844,6 +2859,7 @@ $(".li17").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2891,6 +2907,7 @@ $(".li18").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2938,6 +2955,7 @@ $(".li19").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2985,6 +3003,7 @@ $(".li20").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -3032,6 +3051,7 @@ $(".li21").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -3079,6 +3099,7 @@ $(".li22").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -3126,6 +3147,7 @@ $(".li23").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -3173,6 +3195,7 @@ $(".li24").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -3220,6 +3243,7 @@ $(".li25").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -3268,6 +3292,7 @@ $(".li26").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -3315,6 +3340,7 @@ $(".li27").click(function () {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                 $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -3442,5 +3468,24 @@ $(".links a").click(function () {
     $(".content").css("display","none")
     $("#search").css("display","none")
     $("#ma").css("display","block")
+});
+$(".x-zi a").click(function () {
+    $.ajax({
+        type: "POST",
+        url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+        dataType: "json",
+        data: {
+            "ArticleId": $(this).attr("id"),
+        },
+        success: function (data) {
+            // console.log(data.data);
+            $(".ma-center .xq").css("display", "block");
+            $(".ma-right>h3").text(data.data.Title);
+            $(".ma-center .xq").html(data.data.Body);
+            $(".ma-center img").attr('src', data.data.CoverPhoto);
+            $(".ma-center ul").css("display", "none");
+            $(".ma-center .firstli").css("display", "none");
+            $(".ma-center>img").css("display", "block")
+        }
+    })
 })
-
