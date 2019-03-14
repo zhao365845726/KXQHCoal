@@ -234,8 +234,9 @@ var routes = [
                     </div>
                 </div>
             </div>
-            
+            <div class="row content-banner"><img src="img/5bcd378b51126.jpg" alt=""></div>
             <div class="row news-content">
+           
                 <div class="col-lg-4">
                     <div class="news-head">
                         <ul>
@@ -545,7 +546,14 @@ var routes = [
             </div>
             
             <!--政务公开-->
-            
+            <div class="row meili">
+                <div class="meli-head"><h3>魅力前和</h3></div>
+               <div class="meli-pic row">
+                    <div class="pic-l"><img src="img/p1.jpg" alt=""><img src="img/p2.jpg" alt=""><img src="img/p3.jpg" alt=""></div>
+                    <div class="pic-c"><img src="img/p4.jpg" alt=""><img src="img/p5.jpg" alt=""><img src="img/p6.jpg" alt=""></div>
+                    <div class="pic-r"><img src="img/p7.jpg" alt=""><img src="img/p8.jpg" alt=""><img src="img/p9.jpg" alt=""></div>
+                </div>
+            </div>
             <!--推荐专栏-->
             
             <!--专题专栏-->
@@ -1120,7 +1128,7 @@ $(".rightBtn").mouseenter(rightBtnHandler);
 function rightBtnHandler() {
     if ($test.is(":animated")) return;
     idx++;
-    $test.animate({ "left": -570 * idx }, 300, function () {
+    $test.animate({ "left": -582 * idx }, 300, function () {
         if (idx > 4) {
             idx = 0;
             $test.css("left", 0);
@@ -1133,14 +1141,14 @@ $(".leftBtn").mouseenter(function () {
     idx--;
     if (idx < 0) {
         idx = 4;
-        $test.css("left", -5 * 570);
+        $test.css("left", -5 * 582);
     }
-    $test.animate({ "left": -570 * idx }, 300);
+    $test.animate({ "left": -582 * idx }, 300);
     changeCircle();
 });
 $cilclesLis.mouseenter(function () {
     idx = $(this).index();
-    $test.animate({ "left": -570 * idx }, 300);
+    $test.animate({ "left": -582 * idx }, 300);
     changeCircle();
 });
 function changeCircle() {
@@ -2056,6 +2064,33 @@ $(".new-click li").on("click", "a", function () {
 //         }
 //     })
 // });
+
+$(".li0").click(function () {
+    $.ajax({
+        type: "POST",
+        url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+        dateType: "json",
+        data: {
+            "ArticleId": "2c1c1594-1aea-4c28-8e71-65e864edcd86"
+        },
+        success: function (data) {
+            // console.log(data.data);
+            $(".ma-center .wenben").css("display", "block");
+            $(".title").text(data.data.Title);
+            $(".patha").text(data.data.Title);
+            $(".ma-center .wenben").html(data.data.Body);
+            $(".ma-center ul").css("display", "none");
+            $(".ma-center .firstli").css("display", "none")
+            $(".ma-center>img").css("display", "none")
+            $(".ma-center .xq").css("display", "none")
+        },
+    });
+
+
+
+});
+
+
 $(".li1").click(function () {
     $.ajax({
         type: "post",
@@ -2074,9 +2109,9 @@ $(".li1").click(function () {
             $(".firstli").css("display", "block");
 
             for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
-                // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
+                console.log(data.data.lst_categoryarticlelist[i].Id);
                 $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".ma-center li a").eq(i).attr("id",data.data.lst_categoryarticlelist[i].Id);
                 $(".ma-center .wenben").css("display", "none");
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
             }
@@ -2107,30 +2142,8 @@ $(".li1").click(function () {
 
 
 });
-$(".li0").click(function () {
-    $.ajax({
-        type: "POST",
-        url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
-        dateType: "json",
-        data: {
-            "ArticleId": "2c1c1594-1aea-4c28-8e71-65e864edcd86"
-        },
-        success: function (data) {
-            // console.log(data.data);
-            $(".ma-center .wenben").css("display", "block");
-            $(".title").text(data.data.Title);
-            $(".patha").text(data.data.Title);
-            $(".ma-center .wenben").html(data.data.Body);
-            $(".ma-center ul").css("display", "none");
-            $(".ma-center .firstli").css("display", "none")
-            $(".ma-center>img").css("display", "none")
-            $(".ma-center .xq").css("display", "none")
-        },
-    });
 
 
-
-});
 $(".li2").click(function () {
     $.ajax({
         type: "POST",
@@ -2240,6 +2253,8 @@ $(".li4").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2284,7 +2299,9 @@ $(".li5").click(function () {
             // console.log(data.data);
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
-            $(".firstli p").html(data.data.Body);
+            $(".firstli p").html(data.data.Body); 
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2330,6 +2347,8 @@ $(".li6").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2375,6 +2394,8 @@ $(".li7").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2420,6 +2441,8 @@ $(".li8").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2465,6 +2488,8 @@ $(".li9").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2510,6 +2535,8 @@ $(".li10").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2555,6 +2582,8 @@ $(".li11").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2600,6 +2629,8 @@ $(".li12").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2645,6 +2676,8 @@ $(".li13").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2690,6 +2723,8 @@ $(".li14").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2735,6 +2770,8 @@ $(".li15").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2780,6 +2817,8 @@ $(".li16").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2825,6 +2864,8 @@ $(".li17").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2870,6 +2911,8 @@ $(".li18").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2915,6 +2958,8 @@ $(".li19").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -2960,6 +3005,8 @@ $(".li20").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -3005,6 +3052,8 @@ $(".li21").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -3050,6 +3099,8 @@ $(".li22").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -3095,6 +3146,8 @@ $(".li23").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -3140,6 +3193,8 @@ $(".li24").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -3185,6 +3240,8 @@ $(".li25").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -3231,6 +3288,8 @@ $(".li26").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
 
         },
     });
@@ -3276,6 +3335,8 @@ $(".li27").click(function () {
             $(".firstli img").attr('src', data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
+            $(".ma-center .xq").css("display", "none")
+            $(".ma-center>img").css("display", "none")
         },
     });
 });
