@@ -1010,7 +1010,7 @@ li{
     padding: 20px 0;
     position: relative;
     background-color: #fff;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 /*.fot-left{*/
     /*float: left;*/
@@ -1130,6 +1130,15 @@ li{
     }
     .header-banner h3{
         font-size: 30px;
+    }
+    .meili{
+        display: none;
+    }
+    .frent-link{
+        display: none;
+    }
+    .footer{
+        display: none;
     }
 }
 
@@ -1524,13 +1533,14 @@ a:hover{
 }
 .meili{
     height: 500px;
-    background-color: #fff;
+    /*background-color: #fff;*/
     margin-top: 10px;
     /*overflow:hidden ;*/
 }
 .meli-head{
     border-bottom: 2px solid #0080c9;
     height: 54px;
+    background-color: #fff;
 }
 .meli-head h3{
     color: #0080c9;
@@ -1540,9 +1550,10 @@ a:hover{
 }
 .meli-pic{
     /*overflow: hidden;*/
-    width: 99%;
+    width: 100%;
     margin:0 auto ;
     position: relative;
+    background-color: #fff;
 }
 .meli-pic>div{
     /*overflow: hidden;*/
@@ -1560,7 +1571,7 @@ a:hover{
 }
 .pic-l img:nth-child(3){
     width: 94%;
-    height: 273px;
+    height: 299px;
 
 }
 .pic-c img:nth-child(1){
@@ -1569,11 +1580,12 @@ a:hover{
 }
 .pic-c img:nth-child(2){
     width: 46%;
+    height: 173px;
 
 }
 .pic-c img:nth-child(3){
     width: 46%;
-    height: 147px;
+    height: 173px;
 }
 .pic-r img:nth-child(1){
     width: 100%;
@@ -1610,4 +1622,23 @@ a:hover{
 }
 .meli-pic span{
     position: absolute;
+}
+.frent-link{
+    width: 100%;
+    height: 50px;
+    background-color: #e5e5e5;
+}
+.frent-link-in{
+    width: 52%;
+    margin: 0 auto;
+    border-left: 1px solid #ffffff;
+    height: 50px;
+}
+.frent-link-in ul li{
+    width: 33%;
+    float: left;
+    border-right:1px solid #ffffff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
 }

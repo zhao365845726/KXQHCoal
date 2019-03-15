@@ -549,9 +549,9 @@ var routes = [
             <div class="row meili">
                 <div class="meli-head"><h3>魅力前和</h3></div>
                <div class="meli-pic row">
-                    <div class="pic-l"><img src="img/p1.jpg" alt=""><img src="img/p2.jpg" alt=""><img src="img/p3.jpg" alt=""></div>
-                    <div class="pic-c"><img src="img/p4.jpg" alt=""><img src="img/p5.jpg" alt=""><img src="img/p6.jpg" alt=""></div>
-                    <div class="pic-r"><img src="img/p7.jpg" alt=""><img src="img/p8.jpg" alt=""><img src="img/p9.jpg" alt=""></div>
+                    <div class="pic-l"><img src="img/1.png" alt=""><img src="img/2.png" alt=""><img src="img/5.png" alt=""></div>
+                    <div class="pic-c"><img src="img/6.png" alt=""><img src="img/4.png" alt=""><img src="img/7.png" alt=""></div>
+                    <div class="pic-r"><img src="img/8.png" alt=""><img src="img/9.png" alt=""><img src="img/3.png" alt=""></div>
                 </div>
             </div>
             <!--推荐专栏-->
