@@ -14,10 +14,14 @@ var routes = [
                     <div id="scroll1">
                         <ul>
                             <li><router-link to="/page1"></router-link></li>
+                            <li><router-link to="/page1"></router-link></li>
+                            <li><router-link to="/page1"></router-link></li>
                         </ul>
                     </div>
                      <div id="scroll2">
                             <ul>
+                            <li><router-link to="/page1"></router-link></li>
+                            <li><router-link to="/page1"></router-link></li>
                             <li><router-link to="/page1"></router-link></li>
                             </ul>
                     </div>
@@ -512,7 +516,26 @@ var routes = [
                                 <em class="number">05</em>
                                 <router-link to="/page1"></router-link>
                             </li>
-                            
+                            <li>
+                                <em class="number">06</em>
+                                <router-link to="/page1"></router-link>
+                            </li>
+                            <li>
+                                <em class="number">07</em>
+                                <router-link to="/page1"></router-link>
+                            </li>
+                            <li>
+                                <em class="number">08</em>
+                                <router-link to="/page1"></router-link>
+                            </li>
+                            <li>
+                                <em class="number">09</em>
+                                <router-link to="/page1"></router-link>
+                            </li>
+                            <li>
+                                <em class="number">10</em>
+                                <router-link to="/page1"></router-link>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -1088,12 +1111,12 @@ var $imageLi = $(".test li");
 var $cilclesLi = $(".hd ul li");
 $(".test ul").append($imageLi.eq(0).clone());
 var idxa = 0;
-var timera = setInterval(rightBtnHandle, 2000);
+var timera = setInterval(rightBtnHandle, 4000);
 $focusNews.mouseenter(function () {
     clearInterval(timera);
 });
 $focusNews.mouseleave(function () {
-    timera = setInterval(rightBtnHandle, 2000);
+    timera = setInterval(rightBtnHandle, 4000);
 });
 $(".rightBt").mouseenter(rightBtnHandle);
 function rightBtnHandle() {

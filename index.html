@@ -290,12 +290,12 @@
         var $cilclesLis = $(".circles ol li");
         $(".m_unit").append($imageLis.eq(0).clone());
         var idx = 0;
-        var timer = setInterval(rightBtnHandler, 2000);
+        var timer = setInterval(rightBtnHandler, 4000);
         $carousel.mouseenter(function(){
             clearInterval(timer);
         });
         $carousel.mouseleave(function(){
-            timer = setInterval(rightBtnHandler, 2000);
+            timer = setInterval(rightBtnHandler, 4000);
         });
         $(".rightBtn").click(rightBtnHandler);
         function rightBtnHandler() {
