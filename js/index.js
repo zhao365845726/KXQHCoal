@@ -8,25 +8,20 @@ var routes = [
             template: `
             <div class="container">
         <div class="content">
-            <div class="headBox row">
-                <ul class="headNew col-lg-8 col-mid-12">
-                    <li class="toutiao"></li>
-                    <li class="headNew-content">
+            <div class="notice row">
+                <div class="part1"><h3>通知公告</h3></div> 
+                 <div class="part2" id="part2">
+                    <div id="scroll1">
                         <ul>
-                            <li><a class="tit" href="#" title=""></a></li>
-                            <li><a class="tit" href="#" title=""></a></li>
-                            <li><a class="tit" href="#" title=""> </a></li>
+                            <li><router-link to="/page1"></router-link></li>
                         </ul>
-                    </li>
-                </ul>
-                <div class="picLink col-lg-4 col-mid-0">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li><a  href="http://zx.sxgp.gov.cn" ></a></li>
-                    </ul>
-                </div>
+                    </div>
+                     <div id="scroll2">
+                            <ul>
+                            <li><router-link to="/page1"></router-link></li>
+                            </ul>
+                    </div>
+                 </div>           
             </div>
             
             <div class="slider row">
@@ -35,41 +30,19 @@ var routes = [
                     <div class="bd">
                         <ul class="test">
                             <li>
-                                    
                                  <a href="#"><img  src=""></a>
-                                       
-                                
                             </li>
                             <li>
-                                
-                                         <a href="#" ><img src=""></a>
-                                     
-                                
-                                
+                                 <a href="#" ><img src=""></a>
                             </li>
                             <li>
-                                
-                                    
-                                            <a href="#"><img  src=""></a>
-                                       
-                                
-                                
+                                  <a href="#"><img  src=""></a>
                             </li>
                             <li>
-                                
-                                   
-                                            <a href="#" ><img  src=""></a>
-                                    
-                                
-                                
+                                 <a href="#" ><img  src=""></a>
                             </li>
                             <li>
-                               
-                                  
-                                           <a href="#" ><img  src=""></a>
-                                      
-                                
-                                
+                                 <a href="#" ><img  src=""></a>
                             </li>
                         </ul>
                     </div>
@@ -240,7 +213,7 @@ var routes = [
                 <div class="col-lg-4">
                     <div class="news-head">
                         <ul>
-                            <li class="on"><a href="">安全生产</a></li>
+                            <li class="on"><a>安全生产</a><a href="security.html">+more</a></li>
                             <li class="" style="display: none"><a ></a></li>
                             <li class="" style="display: none"><a ></a></li>
                         </ul>
@@ -381,7 +354,7 @@ var routes = [
                 <div class="col-lg-4 bgc">
                     <div class="news-head1">
                         <ul>
-                            <li class="on"><a href="">前和党建</a></li>
+                            <li class="on"><a href="">前和党建</a><a href="qianhe.html">+more</a></li>
                             <li class="" style="display: none"><a  href=""></a></li>
                             <li class="" style="display: none"><a  href=""></a></li>
                         </ul>
@@ -515,7 +488,7 @@ var routes = [
                 </div>
                 <div class="col-lg-4 bgc">
                     <div class="news-head">
-                        <h3>热点专题</h3>
+                        <h3><span>热点专题</span><a href="newslist.html">+more</a></h3>
                     </div>
                     <div class="new-click">
                         <ul>
@@ -1049,9 +1022,7 @@ var routes = [
         </div>
         <div class="ma-right col-lg-9">
             <h3 class="title">企业文化</h3>
-            <div class="property">
-                <span>【字体：<a href="javascript:;">小</a> <a href="javascript:;">大</a>】</span>
-            </div>
+            
             <div class="ma-center">
             <img src="" alt="">
                 <div>
@@ -1113,47 +1084,47 @@ new Vue({
 // lunbotu
 var $focusNews = $(".focusNews");
 var $test = $(".bd");
-var $imageLis = $(".test li");
-var $cilclesLis = $(".hd ul li");
-$(".test ul").append($imageLis.eq(0).clone());
-var idx = 0;
-var timer = setInterval(rightBtnHandler, 2000);
+var $imageLi = $(".test li");
+var $cilclesLi = $(".hd ul li");
+$(".test ul").append($imageLi.eq(0).clone());
+var idxa = 0;
+var timera = setInterval(rightBtnHandle, 2000);
 $focusNews.mouseenter(function () {
-    clearInterval(timer);
+    clearInterval(timera);
 });
 $focusNews.mouseleave(function () {
-    timer = setInterval(rightBtnHandler, 2000);
+    timera = setInterval(rightBtnHandle, 2000);
 });
-$(".rightBtn").mouseenter(rightBtnHandler);
-function rightBtnHandler() {
+$(".rightBt").mouseenter(rightBtnHandle);
+function rightBtnHandle() {
     if ($test.is(":animated")) return;
-    idx++;
-    $test.animate({ "left": -582 * idx }, 300, function () {
-        if (idx > 4) {
-            idx = 0;
+    idxa++;
+    $test.animate({ "left": -582 * idxa }, 300, function () {
+        if (idxa > 4) {
+            idxa = 0;
             $test.css("left", 0);
         }
     });
-    changeCircle();
+    changeCircl();
 }
-$(".leftBtn").mouseenter(function () {
+$(".leftBt").mouseenter(function () {
     if ($test.is(":animated")) return;
-    idx--;
-    if (idx < 0) {
-        idx = 4;
+    idxa--;
+    if (idxa < 0) {
+        idxa = 4;
         $test.css("left", -5 * 582);
     }
     $test.animate({ "left": -582 * idx }, 300);
-    changeCircle();
+    changeCircl();
 });
-$cilclesLis.mouseenter(function () {
-    idx = $(this).index();
-    $test.animate({ "left": -582 * idx }, 300);
-    changeCircle();
+$cilclesLi.mouseenter(function () {
+    idxa = $(this).index();
+    $test.animate({ "left": -582 * idxa }, 300);
+    changeCircl();
 });
-function changeCircle() {
-    var n = idx <= 4 ? idx : 0;
-    $cilclesLis.eq(n).addClass("on").siblings().removeClass("on");
+function changeCircl() {
+    var n = idxa <= 4 ? idxa : 0;
+    $cilclesLi.eq(n).addClass("on").siblings().removeClass("on");
 }
 // 选项卡
 //     $(".hd6 li").mouseenter(function ()
@@ -1238,6 +1209,11 @@ $(function () {
                     "categoryid": "c8e12965-b96e-4d88-986b-5063e79bac7a",
                     "PageIndex": 1,
                     "PageSize": 10
+                },
+                "part_seven": {
+                    "categoryid": "71839a52-fbf9-47b7-a864-36e727b86023",
+                    "PageIndex": 1,
+                    "PageSize": 10
                 }
             },
             success: function (data) {
@@ -1265,7 +1241,12 @@ $(function () {
                     $(".new-click li a").eq(i).attr("id", data.data.lst_part_six[i].Id)
                     $(".new-click .date").eq(i).text(data.data.lst_part_six[i].CreateTime);
                 }
-
+                for (var i = 0; i < data.data.lst_part_seven.length; i++) {
+                    $("#scroll1 a").eq(i).text(data.data.lst_part_seven[i].Title);
+                    $("#scroll1 a").eq(i).attr("id", data.data.lst_part_seven[i].Id)
+                    $("#scroll2 a").eq(i).text(data.data.lst_part_seven[i].Title);
+                    $("#scroll2 a").eq(i).attr("id", data.data.lst_part_seven[i].Id)
+                }
             },
         });
         // 首页导航
@@ -1292,7 +1273,20 @@ $(function () {
                 console.log(data);
             }
         });
-        // 首善前和
+        // 友情链接
+        $.ajax({
+            type: "POST",
+            url: "http://kxqh.api.milisx.xyz/api/content/getfriendlinklist",
+            dataType: "json",
+            data: {"PageIndex": 1,
+                "PageSize": 10},
+            success: function (data) {
+               for(var i =0; i< data.data.length; i ++){
+                   $(".frent-link a" ).eq(i).text(data.data[i].Name).attr("href",data.data[i].Url);
+
+               }
+            }
+        });
 
     }
 
@@ -1412,8 +1406,61 @@ $(function () {
 // $(".navt7").click(function () {
 //
 // });
+$("#scroll2 li").on("click", "a", function () {
+    // console.log($(this).attr("id"))
+    $.ajax({
+        type: "post",
+        url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+        dateType: "json",
+        data: {
+            "ArticleId": $(this).attr("id")
+        },
+        success: function (data) {
+            // console.log(data.data);
+            $(".ma-right h3").text(data.data.Title);
+            $(".ma-center div").html(data.data.Body);
+            $(".ma-center img").attr('src', data.data.CoverPhoto);
+        }
+    })
+});
+$("#scroll1 li").on("click", "a", function () {
+    // console.log($(this).attr("id"))
+    $.ajax({
+        type: "post",
+        url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+        dateType: "json",
+        data: {
+            "ArticleId": $(this).attr("id")
+        },
+        success: function (data) {
+            // console.log(data.data);
+            $(".ma-right h3").text(data.data.Title);
+            $(".ma-center div").html(data.data.Body);
+            $(".ma-center img").attr('src', data.data.CoverPhoto);
+        }
+    })
+});
+$("#scroll2 li").on("click", "a", function () {
+    // console.log($(this).attr("id"))
+    $.ajax({
+        type: "post",
+        url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+        dateType: "json",
+        data: {
+            "ArticleId": $(this).attr("id")
+        },
+        success: function (data) {
+            // console.log(data.data);
+            $(".ma-right h3").text(data.data.Title);
+            $(".ma-center div").html(data.data.Body);
+            $(".ma-center img").attr('src', data.data.CoverPhoto);
+        }
+    })
+});
+
+
 $(".bd1 li").on("click", "a", function () {
-    console.log($(this).attr("id"))
+    // console.log($(this).attr("id"))
     $.ajax({
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
@@ -1431,7 +1478,7 @@ $(".bd1 li").on("click", "a", function () {
     })
 });
 $(".bd2 li").on("click", "a", function () {
-    console.log($(this).attr("id"))
+    // console.log($(this).attr("id"))
     $.ajax({
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
@@ -3489,3 +3536,28 @@ $(".x-zi a").click(function () {
         }
     })
 })
+// /*页码*/
+// if (firstFalg) {
+//     page(Math.ceil(data.Count / 6));
+//     firstFalg = false;
+// } else {
+//     $("#pageBar").whjPaging("setPage", currPages, Math.ceil(data.Count / 6));
+// }
+// // fenye
+// var page = function (i) {
+//     $('#pageBar').whjPaging({
+//         totalPage: i,
+//         showPageNum: 4,
+//         isShowFL: true,//首末页面
+//         isShowPageSizeOpt: false,
+//         isShowSkip: false,
+//         isShowRefresh: false,
+//         isShowTotalPage: false,
+//         isResetPage: true,
+//         callBack: function (currPage, pageSize) {
+//             companyListParam.PageIndex = currPage;
+//             currPages = currPage;
+//             companyListData();
+//         }
+//     });
+// };

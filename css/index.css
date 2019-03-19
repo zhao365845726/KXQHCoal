@@ -61,18 +61,18 @@ li{
     margin-top: 30px;
 }
 .header-top-logo h1 a img{
-    width: 136px;
-    height: 100px;
+    width: 120px;
+    height: 90px;
 }
 @media screen and (max-width:1200px){
     .header-top-logo h1 a img{
-        width: 100px;
+        width: 90px;
         height: auto;
     }
 }
 @media screen and (max-width:992px){
     .header-top-logo h1 a img{
-        width: 100px;
+        width: 80px;
         height: auto;
     }
 }
@@ -164,7 +164,7 @@ li{
 }
 .header-banner{
     position: absolute;
-    top: 44px;
+    top: 60px;
     left: 132px;
 }
 .header-banner h3{
@@ -174,8 +174,8 @@ li{
 }
 @media screen and (max-width:1200px){
     .header-banner{
-        top: 20px;
-        left: 112px;
+        top: 64px;
+        left: 98px;
         font-size: 20px;
     }
 
@@ -204,7 +204,10 @@ li{
     width: 100px;
     float: left;
 }
-
+.navbar-default{
+    border:none;
+    background-color: #f5f5f5;
+}
 
 .header-nav .main-nav li>ul{
     position: absolute;
@@ -530,18 +533,18 @@ li{
 }
 
 .news-content{
-    height: 420px;
+    height: 450px;
     /*border-top: 2px solid #0080c9;*/
     /*margin-bottom: 15px;*/
     background-color: #fff;
 }
 .news-content .news-head{
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     border-bottom: 1px solid #e4e4e4;
     height: 54px;
 }
 .news-content .news-head1{
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     border-bottom: 1px solid #e4e4e4;
     height: 54px;
 }
@@ -557,7 +560,7 @@ li{
     float: left;
     height: 54px;
     line-height: 52px;
-    width: 98.33%;
+    width: 100%;
     font-size: 18px;
     text-align: center;
 }
@@ -574,6 +577,26 @@ li{
     font-weight: 900;
     color:#0080c9
 }
+.news-content .news-head ul li a:nth-child(1){
+    float: left;
+    margin-left: 10px;
+}
+.news-content .news-head ul li a:nth-child(2){
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
+    color:#339dd9;
+}
+.news-content .news-head1 ul li a:nth-child(1){
+    float: left;
+    margin-left: 10px;
+}
+.news-content .news-head1 ul li a:nth-child(2){
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
+    color:#339dd9;
+}
 .news-content .news-head1 ul li a{
     font-size: 20px;
     font-weight: 900;
@@ -586,12 +609,12 @@ li{
     height: 300px;
 }
 .news-content .new-center ul li{
-    height: 34px;
-    line-height: 24px;
+    height: 37px;
+    line-height: 37px;
 }
 .news-content .new-center1 ul li{
-    height: 34px;
-    line-height: 24px;
+    height: 37px;
+    line-height: 37px;
 }
 .news-content .new-center ul li .date{
     font-size: 14px;
@@ -607,7 +630,7 @@ li{
 }
 .news-content .new-center ul li a{
     padding-left: 12px;
-    background: url(../img/icons.png) -2px -386px no-repeat;
+    background: url(../img/icons.png) -2px -378px no-repeat;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -616,7 +639,7 @@ li{
 }
 .news-content .new-center1 ul li a{
     padding-left: 12px;
-    background: url(../img/icons.png) -2px -386px no-repeat;
+    background: url(../img/icons.png) -2px -378px no-repeat;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -624,19 +647,29 @@ li{
     width: 272px;
 }
 .news-content .news-head h3{
-    line-height: 53px;
     border-bottom: 2px solid #0080c9;
     bottom: 0;
     padding: 0 15px;
     /* float: left; */
     height: 53px;
-    font-size: 18px;
     text-align: center;
-    font-size: 20px;
-    font-weight: 900;
+
     color:#0080c9
 }
+.news-content .news-head h3 span:nth-child(1){
+    line-height: 53px;
+    font-size: 20px;
+    font-weight: 800;
+    float: left;
+}
+.news-content .news-head h3 a{
+    float: right;
+    font-size: 16px;
+    line-height: 53px;
+    font-weight: 600;
+    color:#339dd9;
 
+}
 .news-content .new-click ul li{
     height: 37px;
     line-height: 37px;
@@ -1010,7 +1043,7 @@ li{
     padding: 20px 0;
     position: relative;
     background-color: #fff;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 /*.fot-left{*/
     /*float: left;*/
@@ -1028,6 +1061,17 @@ li{
     width: 840px;
     line-height: 26px;
     margin: 0 50px;
+}
+.fot-right>p:nth-child(1){
+    font-size: 16px;
+    font-weight: 800
+
+}
+.fot-right>p:nth-child(1) em{
+    font-size: 18px;
+    font-weight: 800;
+    color: #0084cf;
+
 }
 .fot-right .footNav{
     margin-left: -5px;
@@ -1129,7 +1173,7 @@ li{
 
     }
     .header-banner h3{
-        font-size: 30px;
+        font-size: 24px;
     }
     .meili{
         display: none;
@@ -1192,6 +1236,15 @@ li{
 a:hover{
     color: #0084cf;
 }
+@media screen and (max-width: 730px){
+    .header-banner h3 {
+        font-size: 20px;
+    }
+    .header-banner{
+        top: 35px;
+        left: 75px;
+    }
+}
 @media screen and (max-width:666px){
     .search-box{
         position: absolute;
@@ -1232,6 +1285,25 @@ a:hover{
     z-index: 1;
     text-align: left;
     margin:0 auto;
+}
+.fot-right div{
+    text-align: center;
+    line-height: 26px;
+    overflow: hidden;
+}
+.fot-right i.icon1 {
+    background: url(../img/ico1.png) 0 14px  no-repeat;
+    width: 25px;
+    height: 31px;
+    display: inline-block;
+    padding-top: 10px;
+}
+.fot-right div span{
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    font-size: 16px;
+    color:gray;
 }
 .ma-left{
     margin-bottom: 20px;
@@ -1359,18 +1431,18 @@ a:hover{
     display: inline-block;
     width: 80%;
     font-size: 16px;
-    line-height: 40px;
+    line-height: 53px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     color: #676767;
 }
 .ma-center ul li span{
-    width: 14%;
-    font-size: 16px;
+    width: 12%;
+    font-size: 14px;
     color: #676767;
     font-weight: 100;
-    line-height: 40px;
+    line-height: 53px;
     float: right;
 }
 .ma-center .firstli{
@@ -1526,12 +1598,13 @@ a:hover{
     /*width: 61.3%;*/
     margin: 0 auto;
     padding: 0;
-
+    overflow-x: hidden;
 
     
 }
 .banner img{
     width: 100%;
+    /*width: 1140px;*/
     height: 350px;
 }
 .content-banner{
@@ -1632,24 +1705,117 @@ a:hover{
     position: absolute;
 }
 .frent-link{
-    width: 100%;
     height: 50px;
     background-color: #e5e5e5;
+    margin-top: 5px;
 }
-.frent-link-in{
-    width: 52%;
-    margin: 0 auto;
-    border-left: 1px solid #ffffff;
-    height: 50px;
-}
-.frent-link-in ul li{
-    width: 33%;
+
+.frent-link ul li{
+    width: 16.6%;
     float: left;
     border-right:1px solid #ffffff;
     height: 50px;
     line-height: 50px;
     text-align: center;
 }
+.frent-link ul li:nth-child(6){
+    border:none
+}
+.ma1-content {
+    padding: 60px;
+    background: #fff;
+    max-width: 1200px;
+    position: relative;
+    min-height: 300px;
+    z-index: 1;
+    text-align: left;
+    margin: 0 auto;
+}
 .heads{
     padding: 0
+}
+.notice{
+    height: 50px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.notice-head{
+    border-bottom: 2px solid #0080c9;
+    height: 54px;
+    background-color: #fff;
+    margin: 0;
+}
+
+.email{
+    position: absolute;
+    top: 20px;
+    width: 100px;
+    height: 44px;
+    /*background-color: red;*/
+    right:14%
+}
+.email a{
+    line-height: 24px;
+    color: #999;
+}
+.email a i{
+    float: left;
+    display: block;
+    width: 24px;
+    height: 20px;
+    margin-right: 6px;
+    background: url(../img/ico1.png) no-repeat;
+}
+.email h4{
+    color: #0084cf;
+    height: 16px;
+    line-height: 23px;
+    font-size: 12px;
+}
+.notice .part1 {
+    float: left;
+    width: 13%;
+    height: 30px;
+}
+.notice .part1 h3{
+    color:#ffffff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #0084cf;
+    letter-spacing: 5px;
+}
+.notice .part2 {
+    float: left;
+    width: 80%;
+    height: 50px;
+    text-indent: 1em;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+#part2 ul {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#part2 ul li {
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    line-height: 50px;
+    color: #0084cf;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#part2 ul li a{
+    font-size: 15px;
+    color: #0084cf;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
