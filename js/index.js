@@ -1111,12 +1111,12 @@ var $imageLi = $(".test li");
 var $cilclesLi = $(".hd ul li");
 $(".test ul").append($imageLi.eq(0).clone());
 var idxa = 0;
-var timera = setInterval(rightBtnHandle, 4000);
+var timera = setInterval(rightBtnHandle, 5000);
 $focusNews.mouseenter(function () {
     clearInterval(timera);
 });
 $focusNews.mouseleave(function () {
-    timera = setInterval(rightBtnHandle, 4000);
+    timera = setInterval(rightBtnHandle, 5000);
 });
 $(".rightBt").mouseenter(rightBtnHandle);
 function rightBtnHandle() {
@@ -1293,7 +1293,6 @@ $(function () {
                         $(".navc").eq(index - 1).attr("id", data.data[i].List_VNC[j].Id);
                     }
                 }
-                console.log(data);
             }
         });
         // 友情链接

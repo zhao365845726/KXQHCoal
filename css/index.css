@@ -1211,6 +1211,9 @@ li{
     .box-right{
         width: 690px;
     }
+    .email{
+        display: none;
+    }
     .main-nav{
         width: 100%;
     }
@@ -1611,6 +1614,9 @@ a:hover{
     overflow: hidden;
     margin-bottom: 10px
 
+}
+.content-banner img{
+    width: 100%;
 }
 .meili{
     height: 500px;
