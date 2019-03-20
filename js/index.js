@@ -14,15 +14,15 @@ var routes = [
                     <div id="scroll1">
                         <ul>
                             <li><router-link to="/page1"></router-link></li>
-                            <li><router-link to="/page1"></router-link></li>
-                            <li><router-link to="/page1"></router-link></li>
+                            <!--<li><router-link to="/page1"></router-link></li>-->
+                            <!--<li><router-link to="/page1"></router-link></li>-->
                         </ul>
                     </div>
                      <div id="scroll2">
                             <ul>
                             <li><router-link to="/page1"></router-link></li>
-                            <li><router-link to="/page1"></router-link></li>
-                            <li><router-link to="/page1"></router-link></li>
+                            <!--<li><router-link to="/page1"></router-link></li>-->
+                            <!--<li><router-link to="/page1"></router-link></li>-->
                             </ul>
                     </div>
                  </div>           
@@ -1234,7 +1234,7 @@ $(function () {
                     "PageSize": 10
                 },
                 "part_seven": {
-                    "categoryid": "71839a52-fbf9-47b7-a864-36e727b86023",
+                    "categoryid": "381759a2-ea34-46a3-adc1-8e2d889f252b",
                     "PageIndex": 1,
                     "PageSize": 10
                 }
