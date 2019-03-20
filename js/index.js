@@ -14,15 +14,15 @@ var routes = [
                     <div id="scroll1">
                         <ul>
                             <li><router-link to="/page1"></router-link></li>
-                            <!--<li><router-link to="/page1"></router-link></li>-->
-                            <!--<li><router-link to="/page1"></router-link></li>-->
+                                
+                            
                         </ul>
                     </div>
                      <div id="scroll2">
                             <ul>
                             <li><router-link to="/page1"></router-link></li>
-                            <!--<li><router-link to="/page1"></router-link></li>-->
-                            <!--<li><router-link to="/page1"></router-link></li>-->
+                            
+                            
                             </ul>
                     </div>
                  </div>           

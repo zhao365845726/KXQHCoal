@@ -1778,6 +1778,9 @@ a:hover{
     line-height: 23px;
     font-size: 12px;
 }
+.notice{
+
+}
 .notice .part1 {
     float: left;
     width: 13%;
@@ -1794,11 +1797,14 @@ a:hover{
 }
 .notice .part2 {
     float: left;
-    width: 80%;
+    width: 87%;
     height: 50px;
     text-indent: 1em;
     overflow: hidden;
-    margin-left: 20px;
+    padding-left: 20px;
+    /*border:1px solid #ddd;*/
+    /*border-image: linear-gradient(#F80, #2ED) 20 20;*/
+
 }
 
 #part2 ul {
