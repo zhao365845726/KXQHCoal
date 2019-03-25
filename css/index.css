@@ -1372,18 +1372,18 @@ a:hover{
     padding: 14px 0 20px 0;
     overflow: hidden;
 }
-.ma-center p:nth-child(1){
+.ma-center>p:nth-child(1){
     height: 30px;
     line-height: 30px;
     text-align: center;
     margin-top: 50px;
     font-size: 18px;
 }
-.ma-center p:nth-child(2){
+.ma-center>p:nth-child(2){
     text-align: center;
     margin-top: 30px;
 }
-.ma-center p:nth-child(2) img{
+.ma-center>p:nth-child(2) img{
     width: 280px;
 
 }
