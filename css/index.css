@@ -14,18 +14,16 @@ li{
     margin: 0 auto;
 }
 .header .header-top{
-    padding: 0 150px;
-    height: 36px;
-    line-height: 36px;
-    background-color: #0084cf;
+    height: 174px;
     width: 100%;
-    color: #fff;
-    display: none;
-}
-.header .header-top .header-top-home{
+    background: url(../img/logobgc.png) no-repeat center;
+    /*-webkit-background-size: 100%;*/
+    background-size: 100%;
     position: relative;
-    margin: 0 auto;
-    height: 36px;
+}
+.header .header-top img{
+    margin-left: 19%;
+    margin-top: 40px;
 }
 
 
@@ -111,9 +109,9 @@ li{
 .search-box{
     height: 44px;
     position: absolute;
-    top: 70px;
-    right: 0;
     width: 260px;
+    bottom: 26px;
+    right: 361px;
 }
 .search-box .search{
     width: 190px;
@@ -188,21 +186,29 @@ li{
     }
 
 }
-
+.email:hover{
+    cursor: pointer;
+}
+.email:hover .tag{
+    display: block;
+}
 .header-nav{
     position: relative;
     background: #0084cf;
-    margin: 0 auto;
+    margin: 0 368px;
     height: 50px;
-    padding-right: 10px;
+    /*padding-right: 10px;*/
 }
 .header-nav .main-nav{
     position: relative;
     width: 100%;
 }
 .header-nav .main-nav li{
-    width: 100px;
+    width: 10%;
     float: left;
+}
+.header-nav .main-nav li>ul>li{
+    width: 100% !important;
 }
 .navbar-default{
     border:none;
@@ -215,6 +221,7 @@ li{
     overflow: hidden;
     height: 0;
     transition: all 0.5s;
+    width: 10%;
 }
 .header-nav .main-nav li>ul>li{
     float: none;
@@ -228,12 +235,14 @@ li{
 .header-nav .main-nav li:hover ul{
     height: 200px;
 }
-
+.navbar-header{
+    width: 10%;
+}
 .header-nav .main-nav li.spe{
     float: left;
     color: #339dd9;
     line-height: 50px;
-    padding: 0 20px;
+    padding: 0 1%;
     width: 1px;
     overflow: hidden;
 }
@@ -1211,9 +1220,7 @@ li{
     .box-right{
         width: 690px;
     }
-    .email{
-        display: none;
-    }
+
     .main-nav{
         width: 100%;
     }
@@ -1738,7 +1745,10 @@ a:hover{
     margin: 0 auto;
 }
 .heads{
-    padding: 0
+    padding: 0;
+    background-color: #0084cf;
+    margin: 0;
+    width: 100%;
 }
 .notice{
     height: 50px;
@@ -1753,30 +1763,15 @@ a:hover{
 }
 
 .email{
-    position: absolute;
-    top: 20px;
-    width: 100px;
-    height: 44px;
+
+    width: 3%;
+    height: 50px;
     /*background-color: red;*/
-    right:14%
+    background: url("../img/eami.png") no-repeat right;
+    float: right;
 }
-.email a{
-    line-height: 24px;
-    color: #999;
-}
-.email a i{
-    float: left;
-    display: block;
-    width: 24px;
-    height: 20px;
-    margin-right: 6px;
-    background: url(../img/ico1.png) no-repeat;
-}
-.email h4{
-    color: #0084cf;
-    height: 16px;
-    line-height: 23px;
-    font-size: 12px;
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    padding: 0;
 }
 .notice{
 
@@ -1824,10 +1819,30 @@ a:hover{
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-#part2 ul li a{
+#part2 ul li a {
     font-size: 15px;
     color: #0084cf;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+.tag{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    bottom:0;
+    right: -124px;
+    display: none;
+}
+.tag p{
+    color:#fff;
+    line-height: 25px;
+}
+.first-li{
+    width: 80% !important;
+}
+.first-spe{
+    float: right !important;
+    padding: 0 10% !important;
+}
+

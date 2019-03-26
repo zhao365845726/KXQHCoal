@@ -2284,35 +2284,59 @@ $(".li3").click(function () {
     });
 });
 $(".li4").click(function () {
-    $.ajax({
-        type: "post",
-        url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
-        dateType: "json",
-        data: {
-            "categoryid": "ac1e5571-d81f-4fc7-886c-c4ba6d7a871a",
-            "PageIndex": 1,
-            "PageSize": 12
-        },
-        success: function (data) {
-            console.log(data.data);
-            $(".patha").text("公司要闻");
-            $(".title").text("公司要闻");
-            $(".ma-center ul").css("display", "block");
-            $(".firstli").css("display", "block");
 
-            for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
-                // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
-                $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
-                $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
-                $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
-                $(".ma-center .wenben").css("display", "none");
-                $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
+    var companyListData =function(){
+        $.ajax({
+            type: "post",
+            url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
+            dateType: "json",
+            data: {
+                "categoryid": "ac1e5571-d81f-4fc7-886c-c4ba6d7a871a",
+                "PageIndex": 1,
+                "PageSize": 12
+            },
+            success: function (data) {
+                // console.log(data.data);
+                $(".patha").text("公司要闻");
+                $(".title").text("公司要闻");
+                $(".ma-center ul").css("display", "block");
+                $(".firstli").css("display", "block");
+
+                for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
+                    // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
+                    $(".ma-center li a").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
+                    $(".ma-center li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                    $(".x-zi a").attr("id",data.data.lst_categoryarticlelist[0].Id)
+                    $(".ma-center .wenben").css("display", "none");
+                    $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
+                }
+//                 /*页码*/
+//
+//                     $("#pageBar").whjPaging("setPage", currPages, Math.ceil(data.Count / 6));
+//
+// // fenye
+//                 var page = function (i) {
+//                     $('#pageBar').whjPaging({
+//                         totalPage: i,
+//                         showPageNum: 4,
+//                         isShowFL: true,//首末页面
+//                         isShowPageSizeOpt: false,
+//                         isShowSkip: false,
+//                         isShowRefresh: false,
+//                         isShowTotalPage: false,
+//                         isResetPage: true,
+//                         callBack: function (currPage, pageSize) {
+//                             companyListData.PageIndex = currPage;
+//                             currPages = currPage;
+//                             companyListData();
+//                         }
+//                     });
+//                 };
+//                 page()
             }
-        },
-        error: function () {
-            console.log("sss")
-        }
-    });
+        });
+    }
+    companyListData()
     $.ajax({
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
@@ -3558,28 +3582,3 @@ $(".x-zi a").click(function () {
         }
     })
 })
-// /*页码*/
-// if (firstFalg) {
-//     page(Math.ceil(data.Count / 6));
-//     firstFalg = false;
-// } else {
-//     $("#pageBar").whjPaging("setPage", currPages, Math.ceil(data.Count / 6));
-// }
-// // fenye
-// var page = function (i) {
-//     $('#pageBar').whjPaging({
-//         totalPage: i,
-//         showPageNum: 4,
-//         isShowFL: true,//首末页面
-//         isShowPageSizeOpt: false,
-//         isShowSkip: false,
-//         isShowRefresh: false,
-//         isShowTotalPage: false,
-//         isResetPage: true,
-//         callBack: function (currPage, pageSize) {
-//             companyListParam.PageIndex = currPage;
-//             currPages = currPage;
-//             companyListData();
-//         }
-//     });
-// };
