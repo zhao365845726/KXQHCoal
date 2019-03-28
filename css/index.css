@@ -7,6 +7,9 @@ a{
 li{
     cursor: pointer
 }
+.bgfa{
+    display: none;
+}
 /*-----------------------------头部样式------------------------*/
 .header{
     height: 236px;
@@ -18,10 +21,11 @@ li{
     width: 100%;
     background: url(../img/logobgc.png) no-repeat center;
     /*-webkit-background-size: 100%;*/
-    background-size: 100%;
+    background-size: 100% 100%;
     position: relative;
 }
 .header .header-top img{
+    /*width: 36%;*/
     margin-left: 19%;
     margin-top: 40px;
 }
@@ -109,12 +113,12 @@ li{
 .search-box{
     height: 44px;
     position: absolute;
-    width: 260px;
+    width: 250px;
     bottom: 26px;
     right: 361px;
 }
 .search-box .search{
-    width: 190px;
+    width: 70%;
     vertical-align: top;
     height: 42px;
     font-size: 16px;
@@ -132,7 +136,7 @@ li{
     overflow: hidden;
     border: none;
     background: #2980c8;
-    width: 70px;
+    width: 30%;
     outline: none;
     border-radius: 0 22px 22px 0;
     font: 16px/44px "Microsoft Yahei";
@@ -141,23 +145,16 @@ li{
     cursor: pointer;
     text-align: center;
 }
-@media screen and (max-width:992px){
-    .links{
-        display: none;
+@media screen and (max-width:880px){
+    .header .header-top img {
+        /* width: 36%; */
+        margin-left: 10%;
+        margin-top: 40px;
     }
 }
-@media screen and (max-width:768px){
-    .search-box{
-        width: 300px;
-        height: 60px;
-        top: 10px;
-        right: 30px;
-    }
-    .search-box .search{
-        width: 200px;
-    }
-    .search-box .button{
-        width: 100px;
+@media screen and (max-width:764px){
+    .navbar-header {
+        width: 40%;
     }
 }
 .header-banner{
@@ -170,15 +167,95 @@ li{
     font-weight: bold;
     color: red;
 }
+@media screen and (max-width:1514px){
+    .search-box {
+        height: 44px;
+        position: absolute;
+        width: 16%;
+        bottom: 43px;
+        right: 250px;
+    }
+    .header .header-top img {
+        /* width: 36%; */
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:1476px){
+    .search-box .search{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1360px){
+    .search-box {
+        height: 44px;
+        position: absolute;
+        width: 16%;
+        bottom: 43px;
+        right: 156px;
+    }
+}
+
 @media screen and (max-width:1200px){
     .header-banner{
         top: 64px;
         left: 98px;
         font-size: 20px;
     }
-
+    /*.navbar-collapse li:nth-child(11),*/
+    /*.navbar-collapse li:nth-child(12),*/
+    /*.navbar-collapse li:nth-child(13){*/
+        /*display: none;*/
+    /*}*/
+    .search-box {
+        height: 40px;
+        position: absolute;
+        /*width: 16%;*/
+        bottom: -45px;
+        right: 152px;
+        z-index: 9999;
+        width: 19%;
+    }
+    .search-box .search{
+        height: 42px;
+        font-size: 13px;
+    }
+    .search-box .button{
+        height: 42px;
+        font-size: 13px;
+    }
 
 }
+@media screen and (max-width:1134px){
+    .search-box {
+        height: 40px;
+        position: absolute;
+        /*width: 16%;*/
+        bottom: -45px;
+        right: 159px;
+        z-index: 9999;
+        width: 17%;
+    }
+    .search-box .search{
+        font-size: 12px;
+        /*width: 71%;*/
+    }
+    .search-box .button{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:1134px){
+    .search-box {
+        height: 40px;
+        position: absolute;
+        /* width: 16%; */
+        bottom: -45px;
+        right: 108px;
+        z-index: 9999;
+        width: 20%;
+    }
+}
+
 
 @media screen and (max-width:992px){
     .header-banner{
@@ -195,8 +272,9 @@ li{
 .header-nav{
     position: relative;
     background: #0084cf;
-    margin: 0 368px;
+    margin: 0 auto;
     height: 50px;
+    padding: 0;
     /*padding-right: 10px;*/
 }
 .header-nav .main-nav{
@@ -1103,7 +1181,12 @@ li{
     top: 10px;
     right: 250px;
 }
+@media screen and (max-width:1500px){
+    .header-nav .main-nav li a{
+        font-size: 16px;
+    }
 
+}
 
 
 
@@ -1119,6 +1202,7 @@ li{
     .bgc{
         background-color: #fff;
         margin-top: 30px;
+        height: 445px;
     }
     .center-banner{
         display: none;
@@ -1211,34 +1295,13 @@ li{
     .header-nav .main-nav li:nth-child(11),
     .header-nav .main-nav li:nth-child(10)
     {
-        display: none;
+        /*display: none;*/
     }
 
 }
 
 @media screen and (max-width:768px){
-    .box-right{
-        width: 690px;
-    }
 
-    .main-nav{
-        width: 100%;
-    }
-    .header-nav{
-        top: -62px;
-    }
-    .navbar-collapse{
-        background-color: #0084cf;
-    }
-    .navbar-collapse li:nth-child(1){
-        width: 90px;
-    }
-    .header-nav .main-nav li:nth-child(7),
-    .header-nav .main-nav li:nth-child(9),
-    .header-nav .main-nav li:nth-child(10)
-    {
-        display: block;
-    }
     .footer{
         display: none;
     }
@@ -1246,45 +1309,8 @@ li{
 a:hover{
     color: #0084cf;
 }
-@media screen and (max-width: 730px){
-    .header-banner h3 {
-        font-size: 20px;
-    }
-    .header-banner{
-        top: 35px;
-        left: 75px;
-    }
-}
-@media screen and (max-width:666px){
-    .search-box{
-        position: absolute;
-        top: 99px;
-        width: 300px;
-        right: 14%;
 
-    }
-    .header-nav{
-        position: absolute;
-        top: 160px;
-        width: 92%;
-    }
-    #logo{
-        margin-left: 10%;
-    }
-    .header-banner{
-        left: 36%;
-    }
-    .content{
-        margin-top: 20px;
-    }
-    .header-nav .main-nav li{
-        width: 11%;
 
-    }
-    .header-nav .main-nav li a{
-        font-size: 12px;
-    }
-}
 
 .ma-content{
     padding: 10px;
@@ -1768,6 +1794,7 @@ a:hover{
     height: 50px;
     /*background-color: red;*/
     background: url("../img/eami.png") no-repeat right;
+    background-size: 100% ;
     float: right;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
@@ -1846,3 +1873,57 @@ a:hover{
     padding: 0 10% !important;
 }
 
+@media screen and (max-width:764px){
+    .navbar-header {
+        width: 65%;
+    }
+    .bgfa{
+        display: block !important;
+    }
+    .first-li {
+        width: 20% !important;
+    }
+    .search-box {
+        height: 40px;
+        position: absolute;
+        /* width: 16%; */
+        bottom: -45px;
+        right: 12px;
+        z-index: 9999;
+        width: 28%;
+    }
+    .header .header-top img {
+        /* width: 36%; */
+        margin-left: 3%;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:666px){
+
+    .header-nav {
+        position: absolute;
+        top: 180px;
+        width: 100%;
+    }
+    .search-box {
+        height: 40px;
+        position: absolute;
+        /* width: 16%; */
+        bottom: -51px;
+        right: 12px;
+        z-index: 9999;
+        width: 28%;
+    }
+    .header-nav .main-nav li a{
+        font-size: 12px;
+    }
+    .header .header-top img {
+        width: 87%;
+        margin-left: 3%;
+        margin-top: 40px;
+    }
+    .ma-center ul li span{
+        font-size: 12px;
+        width: 15%;
+    }
+}
