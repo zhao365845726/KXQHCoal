@@ -211,7 +211,7 @@ var routes = [
                     </div>
                 </div>
             </div>
-            <div class="row content-banner"><img src="img/5bcd378b51126.jpg" alt=""></div>
+            <div class="row content-banner"><img src="img/banner.jpg" alt=""></div>
             <div class="row news-content">
            
                 <div class="col-lg-4">
