@@ -1451,6 +1451,7 @@ a:hover{
 .ma-right .xx-zi span{
     background: url(../img/a_29.png) no-repeat left center;
     padding: 0 30px;
+    background-size: 16% 140%;
 }
 .ma-center ul{
     margin-top: 16px;
@@ -1926,4 +1927,28 @@ a:hover{
         font-size: 12px;
         width: 15%;
     }
+}
+.pageInfo{
+    margin-top: 100px;
+}
+.pageInfo .Prevpage{
+    float: left;
+    width: 45%;
+}
+.pageInfo .Prevpage b{
+    font-size: 15px;
+    color: #3376bd;
+}
+.pageInfo .Nextpage{
+    float: right;
+}
+.pageInfo .Nextpage b{
+    font-size: 15px;
+    color: #3376bd;
+}
+.pageInfo span{
+    font-size: 14px;
+}
+.pageInfo span:hover{
+    cursor: pointer;
 }

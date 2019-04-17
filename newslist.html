@@ -146,52 +146,58 @@
     </div>
     <!--内容-->
     <div class="content-in">
-        <div class="path container">
-            <em>您的位置：</em><a href="/">首页</a>
-            &gt;<a href="" class="patha"></a>
-        </div>
-        <div class="ma-content container row">
-            <div class="ma-left col-lg-3">
-                <h3>专栏</h3>
-                <div class="">
-                    <ul class="menuList">
-                        <li><a href="javascript:;" class="li4"></a></li>
-                        <li><a href="javascript:;" class="li5"></a></li>
-                        <li><a href="javascript:;" class="li6"></a></li>
-                        <li><a href="javascript:;" class="li7"></a></li>
-                    </ul>
-                </div>
+    <div class="path container">
+        <em>您的位置：</em><a href="/">首页</a>
+        &gt;<a href="" class="patha"></a>
+    </div>
+    <div class="ma-content container row">
+        <div class="ma-left col-lg-3">
+            <h3>专栏</h3>
+            <div class="">
+                <ul class="menuList">
+                    <li><a href="javascript:;" class="li4"></a></li>
+                    <li><a href="javascript:;" class="li5"></a></li>
+                    <li><a href="javascript:;" class="li6"></a></li>
+                    <li><a href="javascript:;" class="li7"></a></li>
+                </ul>
             </div>
-            <div class="ma-right col-lg-9">
-                <h3 class="title"></h3>
-                <div class="ma-center">
-                    <img src="" alt="">
-                    <div class="firstli">
-                        <div class="x-pic">
-                            <img src="" alt="">
-                        </div>
-                        <div class="x-zi">
-                            <h1></h1>
-                            <h3>
-                                <p></p>
-                                <a>查看详情</a>
-                            </h3>
-                        </div>
+        </div>
+        <div class="ma-right col-lg-9">
+            <h3 class="title"></h3>
+            <div class="ma-center">
+                <img src="" alt="">
+
+                <div class="firstli">
+                    <div class="x-pic">
+                        <img src="" alt="">
                     </div>
-                    <ul>
-                        <li><a class="aa1"></a><span class="date"></span></li>
-                        <li><a class="aa2"></a><span class="date"></span></li>
-                        <li><a class="aa3"></a><span class="date"></span></li>
-                        <li><a class="aa4"></a><span class="date"></span></li>
-                        <li><a class="aa5"></a><span class="date"></span></li>
-                    </ul>
-                    <div id="pageBar"></div>
-                    <div class="wenben"></div>
-                    <div class="xq"></div>
+                    <div class="x-zi">
+                        <h1></h1>
+                        <h3>
+                            <p></p>
+                            <a>查看详情</a>
+                        </h3>
+                    </div>
                 </div>
+                <ul>
+                    <li><a class="aa1"></a><span class="date"></span></li>
+                    <li><a class="aa2"></a><span class="date"></span></li>
+                    <li><a class="aa3"></a><span class="date"></span></li>
+                    <li><a class="aa4"></a><span class="date"></span></li>
+                    <li><a class="aa5"></a><span class="date"></span></li>
+                </ul>
+                <div class="wenben"></div>
+                <div class="xq"></div>
+
+
+            </div>
+            <div class="pageInfo" style="display: none;">
+                <div class="Prevpage"><b>上一篇: </b><span></span></div>
+                <div class="Nextpage"><b>下一篇: </b><span></span></div>
             </div>
         </div>
     </div>
+</div>
     <div id="search" style="display: none">
         <div class="path container">
             <em>您的位置：</em><a href="/">首页</a>
@@ -262,6 +268,7 @@
 <script src="js/uitlity/pagination.min.js"></script>
 <script src="js/index.js"></script>
 <script>
+    $(".pageInfo").css("display","none");
     $.ajax({
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getnavcategorylist",
@@ -319,10 +326,8 @@
             $(".firstli img").attr('src',data.data.CoverPhoto);
             $(".firstli h1").text(data.data.Title);
             $(".firstli p").html(data.data.Body);
-
         },
     });
-
 </script>
 </body>
 </html>

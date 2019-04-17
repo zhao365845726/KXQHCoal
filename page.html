@@ -10,6 +10,48 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <style>
+        .mylists ul li{
+            float: left;
+            width: 32%;
+            height: 250px;
+            margin-right: 10px;
+            background-color: #f1f4f9;
+            margin-top: 10px;
+        }
+        .mylists1 ul li{
+            float: left;
+            width: 32%;
+            height: 250px;
+            margin-right: 10px;
+            background-color: #f1f4f9;
+            margin-top: 10px;
+        }
+        .mylists ul li img{
+            width: 100%;
+            height: 210px;
+            /*background-color: blue;*/
+        }
+        .mylists1 ul li img{
+            width: 100%;
+            height: 210px;
+            /*background-color: blue;*/
+        }
+        .mylists ul li p{
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            color: #333333;
+            font-weight: 500;
+        }
+        .mylists1 ul li p{
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            color: #333333;
+            font-weight: 500;
+        }
+    </style>
 </head>
 <body>
 <div id="main">
@@ -27,27 +69,7 @@
             </div>
         </div>
         <div class="container">
-            <!--<div class="header-top-logo">-->
-            <!--<h1 title="科兴前和煤业" id="logo" class="navbar-left"><a href="index.html"><img src="img/logo.png" alt=""></a></h1>-->
-            <!--<span class="links ">-->
-            <!--<a href="#">微信公众号</a>-->
-            <!--</span> -->
-            <!--<div class="email">-->
-            <!--<a href=""><i class="icon1"></i>矿长邮箱</a>-->
-            <!--<div><h4>qhkzxx@163.com</h4></div>-->
-            <!--</div>-->
-            <!--<div class="search-box">-->
-            <!--<form action="">-->
-            <!--<input type="text" class="search" placeholder="请输入关键字">-->
-            <!--<div  class="button">-->
-            <!--搜索-->
-            <!--</div>-->
-            <!--</form>-->
-            <!--</div>-->
-            <!--<div class="header-banner">-->
-            <!--<h3>山西高平科兴前和煤业有限公司</h3>-->
-            <!--</div>-->
-            <!--</div>-->
+
         </div>
         <div class="heads">
             <div class="header-nav container">
@@ -165,11 +187,12 @@
             <div class="ma-right col-lg-9">
                 <h3 class="title"></h3>
                 <div class="xx-zi">
-                    <span name="time">发表时间　2019-03-05 08:33:38</span>
-                    <span name="name">发表编辑　admin</span>
+                    <span class="time">　</span>
+                    <span class="name"></span>
                 </div>
                 <div class="ma-center">
                     <img src="" alt="">
+                    <div class="control">
                     <div class="firstli">
                         <div class="x-pic">
                             <img src="" alt="">
@@ -193,6 +216,34 @@
 
                     </div>
                     <div class="xq"></div>
+                    </div>
+                </div>
+                <div class="mylists">
+                    <ul>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                    </ul>
+                </div>
+                <div class="mylists1">
+                    <ul>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                        <li><a><img src="" alt=""><p></p></a></li>
+                    </ul>
+                </div>
+                <div class="pageInfo" style="display: none;">
+                <div class="Prevpage"><b>上一篇: </b><span></span></div>
+                <div class="Nextpage"><b>下一篇: </b><span></span></div>
                 </div>
             </div>
         </div>
@@ -231,15 +282,10 @@
         </div>
     </div>
 </div>
+
     <!--底部-->
     <div class="footer container">
         <div class="fotcontent row">
-            <!--<div class="fot-left col-lg-2">-->
-            <!--<ul>-->
-            <!--<li class="li1"><a href="http://www.cyberpolice.cn/wfjb/" target="_blank" title="举报有奖"><img src="img/pic-jbyj.png?v=MntvsbHzY8AmWS0qagQxwznej8LilHaubOq8eZdpiDY" alt=""></a></li>-->
-            <!--<li class="li2"><a href="http://bszs.conac.cn/sitename?method=show&amp;id=09ADF8C01B97068EE053012819AC9E9A" target="_blank" title="党政机关"><img src="img/pic-dzjg.png?v=mqPDb2lnHxxemYM5LIwA41CgXWOd0emx5_kt4qvL-94" alt=""></a></li>-->
-            <!--</ul>-->
-            <!--</div>-->
             <div class="fot-right">
                 <div class="footNav">
                     <li>
@@ -271,6 +317,7 @@
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 <script src="js/index.js"></script>
 <script>
+    $(".pageInfo").css("display","none");
     $.ajax({
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getnavcategorylist",
@@ -302,11 +349,13 @@
             $(".patha").text(data.data.Title);
             $(".ma-center .wenben").html(data.data.Body);
             $(".ma-center ul").css("display","none");
-            $(".ma-center .firstli").css("display","none")
+            $(".ma-center .firstli").css("display","none");
+            $(".xx-zi .time").text("发表时间   "+data.data.CreateTime);
+            $(".xx-zi .name").text("发表编辑  "+data.data.UserId);
+            $(".mylists").css("display","none");
+            $(".mylists1").css("display","none");
         },
     });
-    
-
 
 </script>
 </body>

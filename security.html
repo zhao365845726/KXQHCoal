@@ -188,6 +188,11 @@
                     <div class="wenben">
                     </div>
                     <div class="xq"></div>
+
+                </div>
+                <div class="pageInfo" style="display: none;">
+                    <div class="Prevpage"><b>上一篇: </b><span></span></div>
+                    <div class="Nextpage"><b>下一篇: </b><span></span></div>
                 </div>
             </div>
         </div>
@@ -265,6 +270,7 @@
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 <script src="js/index.js"></script>
 <script>
+    $(".pageInfo").css("display","none");
     $.ajax({
         type: "POST",
         url: "http://kxqh.api.milisx.xyz/api/content/getnavcategorylist",
