@@ -23,7 +23,6 @@ var routes = [
                     </div>
                  </div>           
             </div>
-            
             <div class="slider row">
                 <!--轮播图-->
                 <div class="focusNews col-lg-6">
@@ -66,13 +65,11 @@ var routes = [
                         </ul>
                     </div>
                 </div>
-              
                 <div class="box-right col-lg-6">
                     <div class="box-new">
                         <div class="hd1">
                             <ul>
                                 <li class="on"><a href="#">公司要闻</a></li>
-                                <li class="" style="display: none"><a title="视频" href="#">视频</a></li>
                             </ul>
                         </div>
                         <div class="bd1">
@@ -97,16 +94,13 @@ var routes = [
                                     <span class="date"></span>
                                     <a to="/page1" class="a5"></a>
                                 </li>
-                               
                             </ul>
-                            
                         </div>
                     </div>
                     <div class="box-new">
                         <div class="hd2">
                             <ul>
                                 <li class="on"><a title="基层动态" href="#">基层动态</a></li>
-                                <li class="" style="display: none"><a title="外界视点" href="#">外界</a></li>
                             </ul>
                         </div>
                         <div class="bd2">
@@ -131,16 +125,13 @@ var routes = [
                                     <span class="date"></span>
                                     <a to="/page1" class="a10"></a>
                                 </li>
-                               
                             </ul>
-                            
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row content-banner"><img src="img/banner.jpg" alt=""></div>
             <div class="row news-content">
-           
                 <div class="col-lg-4">
                     <div class="news-head">
                         <ul>
@@ -192,100 +183,12 @@ var routes = [
                                 </li>
                             </ul>
                         </div>
-                        <div style="display: none;">
-                            <ul>
-                                <li>
-                                    <span class="date">02-25</span>
-                                    <a href=""></a>
-                                </li>
-                                <li>
-                                    <span class="date">02-25</span>
-                                    <a >
-                                    </a>
-                                </li>
-                                <li>
-                                    <span class="date">02-25</span>
-                                    <a>
-                                    </a>
-                                </li>
-                                <li>
-                                    <span class="date">02-25</span>
-                                    <a>
-                                    </a>
-                                </li>
-                                <li>
-                                    <span class="date">02-25</span>
-                                    <a></a>
-                                </li>
-                                <li>
-                                    <span class="date">02-25</span>
-                                    <a>
-                                    </a>
-                                </li>
-                                <li>
-                                    <span class="date">02-22</span>
-                                    <a >放失业保险稳岗补贴4.3亿元</a>
-                                </li>
-                                <li>
-                                    <span class="date">02-22</span>
-                                    <a></a>
-                                </li>
-                                <li>
-                                    <span class="date">02-22</span>
-                                    <a></a>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div style="display: none;">
-                            <ul>
-                                <li>
-                                    <span class="date">02-26</span>
-                                    <a></a>
-                                </li>
-                                <li>
-                                    <span class="date">02-26</span>
-                                    <a></a>
-                                </li>
-                                <li>
-                                    <span class="date">02-26</span>
-                                    <a></a>
-                                </li>
-                                <li>
-                                    <span class="date">02-26</span>
-                                    <a></a>
-                                </li>
-                                <li>
-                                    <span class="date">02-26</span>
-                                    <a></a>
-                                </li>
-                                <li>
-                                    <span class="date">02-26</span>
-                                    <a ></a>
-                                </li>
-                                <li>
-                                    <span class="date">02-26</span>
-                                    <a></a>
-                                </li>
-                                <li>
-                                    <span class="date">02-26</span>
-                                    <a></a>
-                                </li>
-                                <li>
-                                    <span class="date">02-25</span>
-                                    <a></a>
-                                </li>
-
-                            </ul>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 bgc">
                     <div class="news-head1">
                         <ul>
                             <li class="on"><a href="">前和党建</a><a href="qianhe.html">+more</a></li>
-                            <li class="" style="display: none"><a  href=""></a></li>
-                            <li class="" style="display: none"><a  href=""></a></li>
                         </ul>
                     </div>
                     <div class="new-center1">
@@ -333,8 +236,6 @@ var routes = [
                                 </li>
                             </ul>
                         </div>
-                        
-                        
                     </div>
                 </div>
                 <div class="col-lg-4 bgc">
@@ -387,7 +288,6 @@ var routes = [
                     </div>
                 </div>
             </div>
-            
             <!--政务公开-->
             <div class="row meili">
                 <div class="meli-head"><h3>魅力前和</h3></div>
@@ -397,49 +297,11 @@ var routes = [
                     <div class="pic-r"><img src="img/8.png" alt=""><img src="img/9.png" alt=""><img src="img/3.png" alt=""></div>
                 </div>
             </div>
-            <!--推荐专栏-->
-            
-            <!--专题专栏-->
-            
-            <!--走进高平-->
-            
         </div>
     </div>
-         
            `
         }
     },
-    {
-        path: "/callme",
-        component: {
-            template: `
-                <div>
-    <div class="path container">
-        <em>您的位置：</em><a href="/">首页</a>
-        &gt;<a href="">联系我们</a>
-    </div>
-    <div class="ma-content container row">
-        <div class="ma-left col-lg-3">
-            <h3>联系我们</h3>
-        </div>
-        <div class="ma-right col-lg-9">
-            <h3 class="title">联系我们</h3>
-            <div class="property">
-                <span>【字体：<a href="javascript:;">小</a> <a href="javascript:;">大</a>】</span>
-            </div>
-            <div class="ma-center">
-                <p>地址：山西省高平市原村乡前河村03565919999</p>
-                <p>邮编：048400</p>
-                <p>宣传科邮箱：<a href="">qhmypxzx@163.com</a></p>
-                <p>矿长邮箱：<a href="">qhkzxx@163.com</a></p>
-            </div>
-        </div>
-    </div>
-</div> 
-            `
-        }
-    },
-
     {
         path: "/page1",
         component: {
@@ -447,7 +309,7 @@ var routes = [
               <div id="newlist">
     <div class="path container">
         <em>您的位置：</em><a href="/">首页</a>
-        &gt;<a href="" class="aa1">公司要闻</a>
+        &gt;<a href="" class="aa1"></a>
     </div>
     <div class="ma-content container row">
         <div class="ma-left col-lg-3">
@@ -465,93 +327,11 @@ var routes = [
                 <div>
                 </div>
             </div>
-            
         </div>
-        
     </div>
-</div>
-            `
+</div>  `
         }
-    },
-
-        {
-            path:"/page3",
-            component:{
-                template:`
-              <div id="management">
-    <div class="path container">
-        <em>您的位置：</em><a href="/">首页</a>
-        &gt;<a href="" class="aa1"></a>
-    </div>
-    <div class="ma-content container row">
-        <div class="ma-left col-lg-3">
-            <h3>专栏</h3>
-            <div class="bd">
-                <ul class="menuList">
-                    <li><a href="security.html">生产动态</a></li>
-                    <li><a href="security.html">安全文化</a></li>
-                    <li><a href="security.html">法律法规</a></li>
-                    <li><a href="security.html">生态矿山</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="ma-right col-lg-9">
-            <h3 class="title"></h3>
-            
-            <div class="ma-center">
-            <img src="" alt="">
-                <div>
-
-                </div>
-            </div>
-            <div class="pageInfo">
-            <div class="Prevpage"><b>上一篇: </b><span></span></div>
-            <div class="Nextpage"><b>下一篇: </b><span></span></div>
-             </div>
-        </div>
-    </div>
-</div>
-             `
-            }
-        },
-    {
-        path: "/page2",
-        component: {
-            template: `
-              <div id="qianhe">
-    <div class="path container">
-        <em>您的位置：</em><a href="/">首页</a>
-        &gt;<a href="" class="aa1"></a>
-    </div>
-    <div class="ma-content container row">
-        <div class="ma-left col-lg-3">
-            <h3>专栏</h3>
-            <div class="bd">
-                <ul class="menuList">
-                    <li><a href="qianhe.html">党建动态</a></li>
-                    <li><a href="qianhe.html">廉政建设</a></li>
-                    <li><a href="qianhe.html">上级精神</a></li>
-                    <li><a href="qianhe.html">团建工作</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="ma-right col-lg-9">
-            <h3 class="title"></h3>
-            <div class="ma-center">
-            <img src="" alt="">
-                <div>
-                </div>
-            </div>
-            <div class="pageInfo">
-            <div class="Prevpage"><b>上一篇: </b><span></span></div>
-            <div class="Nextpage"><b>下一篇: </b><span></span></div>
-             </div>
-        </div>
-    </div>
-</div>
-            `
-        }
-    },
+    }
 ];
 const routers = new VueRouter({
     routes: routes,
@@ -606,52 +386,7 @@ function changeCircl() {
     var n = idxa <= 4 ? idxa : 0;
     $cilclesLi.eq(n).addClass("on").siblings().removeClass("on");
 }
-// 选项卡
-//     $(".hd6 li").mouseenter(function ()
-//     {
-//         $(this).addClass("on").siblings().removeClass("on");
-//         $(".bd6 ul").hide().eq($(this).index()).show();
-//     });
-//     $(".hd7 li").mouseenter(function ()
-//     {
-//         $(this).addClass("on").siblings().removeClass("on");
-//         $(".bd7 ul").hide().eq($(this).index()).show();
-//     });
-//     $(".hd1 li").mouseenter(function ()
-//     {
-//         //获取点击的元素给其添加样式，讲其兄弟元素的样式移除
-//         $(this).addClass("on").siblings().removeClass("on");
-//         //获取选中元素的下标
-//         $(".bd1 ul").hide().eq($(this).index()).show();
-//     });
-//     $(".hd2 li").mouseenter(function ()
-//     {
-//         $(this).addClass("on").siblings().removeClass("on");
-//         $(".bd2 ul").hide().eq($(this).index()).show();
-//     });
-//     $(".news-head li").mouseenter(function ()
-//     {
-//         $(this).addClass("on").siblings().removeClass("on");
-//         $(".new-center div").hide().eq($(this).index()).show();
-//     });
-//     $(".news-head1 li").mouseenter(function ()
-//     {
-//         $(this).addClass("on").siblings().removeClass("on");
-//         $(".new-center1 div").hide().eq($(this).index()).show();
-//     });
-//
-//     $(".hd5 li").mouseenter(function ()
-//     {
-//         $(this).addClass("on").siblings().removeClass("on");
-//         $(".bd5 ul").hide().eq($(this).index()).show();
-//     });
-//
-//     $(".about-photo-hd li").mouseenter(function ()
-//     {
-//         $(this).addClass("on").siblings().removeClass("on");
-//         $(".about-photo-bd ul").hide().eq($(this).index()).show();
-//     });
-// 获取数据
+
 $(function () {
     function loadData() {
         // 首页数据
@@ -697,10 +432,7 @@ $(function () {
                 }
             },
             success: function (data) {
-                console.log(data)
                 for (var i = 0; i < data.data.lst_part_one.length; i++) {
-                    // console.log(data.data.lst_part_one[i].Id);
-                    // var url = '/newslist.html?title=' + data.data.lst_part_one[i].Title + '$id='+ data.data.lst_part_one[i].Id;
                     $(".bd1 li a").eq(i).text(data.data.lst_part_one[i].Title);
                     $(".bd1 li a").eq(i).attr("id",data.data.lst_part_one[i].Id);
                     $(".bd1 .date").eq(i).text(data.data.lst_part_one[i].CreateTime);
@@ -776,7 +508,6 @@ $(function () {
 
 
 $("#scroll2 li").on("click", "a", function () {
-    // console.log($(this).attr("id"))
     $.ajax({
         type: "post",
         url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
@@ -941,7 +672,6 @@ $(".bd2 li").on("click", "a", function () {
             "ArticleId": $(this).attr("id")
         },
         success: function (data) {
-            // console.log(data.data);
             $(".aa1").text("基层动态");
             $(".ma-right h3").text(data.data.Title);
             $(".ma-center div").html(data.data.Body);
@@ -1066,8 +796,6 @@ $(".li0").click(function () {
         },
     });
 
-
-
 });
 
 
@@ -1090,12 +818,12 @@ $(".li1").click(function () {
             $(".ma-center ul").css("display", "block");
             $(".firstli").css("display", "block");
             $(".ma-center").css("display","none");
-            $(".mylists1").css("display","none");
-            $(".mylists").css("display","block");
+            $(".mylists").css("display","none");
+            $(".mylists1").css("display","block");
             for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].Id);
-                $(".mylists li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
-                $(".mylists li p").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
+                $(".mylists1 li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".mylists1 li p").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
             }
         },
         error: function () {
@@ -1110,7 +838,7 @@ $(".li1").click(function () {
             "ArticleId": "91a8822e-2cbd-4c1e-a1ea-dab964457a5c"
         },
         success: function (data) {
-            $(".mylists img").eq(0).attr('src', data.data.CoverPhoto);
+            $(".mylists1 img").eq(0).attr('src', data.data.CoverPhoto);
         },
     });
     $.ajax({
@@ -1121,7 +849,7 @@ $(".li1").click(function () {
             "ArticleId": "2cb159e9-ceeb-4aaa-9f86-d0b486e606bc"
         },
         success: function (data) {
-            $(".mylists img").eq(1).attr('src', data.data.CoverPhoto);
+            $(".mylists1 img").eq(1).attr('src', data.data.CoverPhoto);
         },
     });
     $.ajax({
@@ -1132,7 +860,7 @@ $(".li1").click(function () {
             "ArticleId": "c34ce2b1-e8f3-4279-a130-85f9b7775431"
         },
         success: function (data) {
-            $(".mylists img").eq(2).attr('src', data.data.CoverPhoto);
+            $(".mylists1 img").eq(2).attr('src', data.data.CoverPhoto);
         },
     });
     $.ajax({
@@ -1143,7 +871,7 @@ $(".li1").click(function () {
             "ArticleId": "177512b7-9850-4e3a-8b51-2084dfb989fc"
         },
         success: function (data) {
-            $(".mylists img").eq(3).attr('src', data.data.CoverPhoto);
+            $(".mylists1 img").eq(3).attr('src', data.data.CoverPhoto);
         },
     });
     $.ajax({
@@ -1154,7 +882,7 @@ $(".li1").click(function () {
             "ArticleId": "3ac96430-3257-443b-b564-ac9432f3ad40"
         },
         success: function (data) {
-            $(".mylists img").eq(4).attr('src', data.data.CoverPhoto);
+            $(".mylists1 img").eq(4).attr('src', data.data.CoverPhoto);
         },
     });
     $.ajax({
@@ -1165,7 +893,7 @@ $(".li1").click(function () {
             "ArticleId": ""
         },
         success: function (data) {
-            $(".mylists img").eq(5).attr('src', data.data.CoverPhoto);
+            $(".mylists1 img").eq(5).attr('src', data.data.CoverPhoto);
         },
     });
 });
@@ -1215,12 +943,12 @@ $(".li3").click(function () {
             $(".firstli").css("display", "block");
             $(".ma-center").css("display","none");
             $(".xx-zi").css("display","none");
-            $(".mylists").css("display","none");
-            $(".mylists1").css("display","block");
+            $(".mylists1").css("display","none");
+            $(".mylists").css("display","block");
             for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                 // console.log(data.data.lst_categoryarticlelist[i].CreateTime);
-                $(".mylists1 li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
-                $(".mylists1 li p").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
+                $(".mylists li a").eq(i).attr("id", data.data.lst_categoryarticlelist[i].Id);
+                $(".mylists li p").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
             }
         },
         error: function () {
@@ -1235,7 +963,7 @@ $(".li3").click(function () {
             "ArticleId": "896a48d1-de14-4b2a-84fb-18862f481902"
         },
         success: function (data) {
-            $(".mylists1 img").eq(0).attr('src', data.data.CoverPhoto);
+            $(".mylists img").eq(0).attr('src', data.data.CoverPhoto);
         },
     });
     $.ajax({
@@ -1246,7 +974,7 @@ $(".li3").click(function () {
             "ArticleId": "a6a8d7c1-1857-4651-ac6a-0a8b6cb93f12"
         },
         success: function (data) {
-            $(".mylists1 img").eq(1).attr('src', data.data.CoverPhoto);
+            $(".mylists img").eq(1).attr('src', data.data.CoverPhoto);
         },
     });
     $.ajax({
@@ -1257,7 +985,7 @@ $(".li3").click(function () {
             "ArticleId": "88c3fd94-f699-4139-a71d-7f0c606617cf"
         },
         success: function (data) {
-            $(".mylists1 img").eq(2).attr('src', data.data.CoverPhoto);
+            $(".mylists img").eq(2).attr('src', data.data.CoverPhoto);
         },
     });
     $.ajax({
@@ -1268,7 +996,7 @@ $(".li3").click(function () {
             "ArticleId": "d39b8212-a9bf-4440-a2f0-cd3d15aeaa0e"
         },
         success: function (data) {
-            $(".mylists1 img").eq(3).attr('src', data.data.CoverPhoto);
+            $(".mylists img").eq(3).attr('src', data.data.CoverPhoto);
         },
     });
     $.ajax({
@@ -1279,7 +1007,7 @@ $(".li3").click(function () {
             "ArticleId": "9e94c7b0-0e77-4e16-b02e-24ba0ec204e5"
         },
         success: function (data) {
-            $(".mylists1 img").eq(4).attr('src', data.data.CoverPhoto);
+            $(".mylists img").eq(4).attr('src', data.data.CoverPhoto);
         },
     });
     $.ajax({
@@ -1290,7 +1018,7 @@ $(".li3").click(function () {
             "ArticleId": ""
         },
         success: function (data) {
-            $(".mylists1 img").eq(5).attr('src', data.data.CoverPhoto);
+            $(".mylists img").eq(5).attr('src', data.data.CoverPhoto);
         },
     });
 });
@@ -1321,29 +1049,6 @@ $(".li4").click(function () {
                     $(".ma-center .wenben").css("display", "none");
                     $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime)
                 }
-//                 /*页码*/
-//
-//                     $("#pageBar").whjPaging("setPage", currPages, Math.ceil(data.Count / 6));
-//
-// // fenye
-//                 var page = function (i) {
-//                     $('#pageBar').whjPaging({
-//                         totalPage: i,
-//                         showPageNum: 4,
-//                         isShowFL: true,//首末页面
-//                         isShowPageSizeOpt: false,
-//                         isShowSkip: false,
-//                         isShowRefresh: false,
-//                         isShowTotalPage: false,
-//                         isResetPage: true,
-//                         callBack: function (currPage, pageSize) {
-//                             companyListData.PageIndex = currPage;
-//                             currPages = currPage;
-//                             companyListData();
-//                         }
-//                     });
-//                 };
-//                 page()
             }
         });
     }
@@ -1394,9 +1099,6 @@ $(".li5").click(function () {
                 $(".pageInfo").css("display","none");
             }
         },
-        error: function () {
-            console.log("sss")
-        }
     });
     $.ajax({
         type: "POST",
@@ -1494,9 +1196,6 @@ $(".li7").click(function () {
                 $(".pageInfo").css("display","none");
             }
         },
-        error: function () {
-            console.log("sss")
-        }
     });
     $.ajax({
         type: "POST",
@@ -1543,9 +1242,6 @@ $(".li8").click(function () {
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".pageInfo").css("display","none");
             }
-        },
-        error: function () {
-            console.log("sss")
         }
     });
     $.ajax({
@@ -1593,9 +1289,6 @@ $(".li9").click(function () {
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".pageInfo").css("display","none");
             }
-        },
-        error: function () {
-            console.log("sss")
         }
     });
     $.ajax({
@@ -1613,7 +1306,6 @@ $(".li9").click(function () {
             $(".ma-center .xq").css("display", "none")
             $(".ma-center>img").css("display", "none");
             $(".pageInfo").css("display","none");
-
         },
     });
 });
@@ -1643,9 +1335,6 @@ $(".li10").click(function () {
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".pageInfo").css("display","none");
             }
-        },
-        error: function () {
-            console.log("sss")
         }
     });
     $.ajax({
@@ -1693,9 +1382,6 @@ $(".li11").click(function () {
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".pageInfo").css("display","none");
             }
-        },
-        error: function () {
-            console.log("sss")
         }
     });
     $.ajax({
@@ -1743,9 +1429,6 @@ $(".li12").click(function () {
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".pageInfo").css("display","none");
             }
-        },
-        error: function () {
-            console.log("sss")
         }
     });
     $.ajax({
@@ -1763,8 +1446,7 @@ $(".li12").click(function () {
             $(".ma-center .xq").css("display", "none")
             $(".ma-center>img").css("display", "none");
             $(".pageInfo").css("display","none");
-
-        },
+        }
     });
 });
 $(".li13").click(function () {
@@ -1843,9 +1525,6 @@ $(".li14").click(function () {
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".pageInfo").css("display","none");
             }
-        },
-        error: function () {
-            console.log("sss")
         }
     });
     $.ajax({
@@ -1893,10 +1572,8 @@ $(".li15").click(function () {
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".pageInfo").css("display","none");
             }
-        },
-        error: function () {
-            console.log("sss")
         }
+
     });
     $.ajax({
         type: "POST",
@@ -1914,7 +1591,7 @@ $(".li15").click(function () {
             $(".ma-center>img").css("display", "none");
             $(".pageInfo").css("display","none");
 
-        },
+        }
     });
 });
 $(".li16").click(function () {
@@ -1943,9 +1620,6 @@ $(".li16").click(function () {
                 $(".ma-center .date").eq(i).text(data.data.lst_categoryarticlelist[i].CreateTime);
                 $(".pageInfo").css("display","none");
             }
-        },
-        error: function () {
-            console.log("sss")
         }
     });
     $.ajax({
@@ -2512,33 +2186,6 @@ $(".li27").click(function () {
     });
 });
 
-
-// //
-// window.location.reload()
-// (function () {
-//     location.reload(0)
-// })();
-// var texa = "";
-// // for(var i = 0; i < $(".macenter li").length; i ++){
-// $.ajax({
-//     type: "POST",
-//     url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
-//     dateType: "json",
-//     data: {
-//         "categoryid": "ac1e5571-d81f-4fc7-886c-c4ba6d7a871a",
-//         "PageIndex": 1,
-//         "PageSize": 12
-//     },
-//     success: function (data) {
-//         // li[i].id = data.data[i].Id
-//         for (var i = 0; i < 5; i++) {
-//             $(".ma-center li")[i].id = data.data.lst_categoryarticlelist[i].Id;
-//
-//             texa =$(".ma-center li")[i].id
-//             console.log(texa);
-//         }
-//     }
-// });
 $(".ma-center li").on("click", "a", function () {
     $(".pageInfo").css("display","block");
     $.ajax({
@@ -2686,4 +2333,4 @@ $(".x-zi a").click(function () {
             $(".ma-center>img").css("display", "block")
         }
     })
-})
+});
