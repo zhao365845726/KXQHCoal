@@ -205,7 +205,7 @@ li{
     /*.navbar-collapse li:nth-child(11),*/
     /*.navbar-collapse li:nth-child(12),*/
     /*.navbar-collapse li:nth-child(13){*/
-        /*display: none;*/
+    /*display: none;*/
     /*}*/
     .search-box {
         height: 40px;
@@ -422,7 +422,7 @@ li{
 
 }
 @media screen and (max-width:992px){
-  
+
 
 }
 .headNew .headNew-content ul li:nth-child(1){
@@ -1133,15 +1133,15 @@ li{
     margin-top: 5px;
 }
 /*.fot-left{*/
-    /*float: left;*/
-    /*width: 240px;*/
-    /*text-align: left;*/
-    /*padding-top: 10px;*/
-    /*padding-left: 60px;*/
+/*float: left;*/
+/*width: 240px;*/
+/*text-align: left;*/
+/*padding-top: 10px;*/
+/*padding-left: 60px;*/
 /*}*/
 /*.fot-left ul li{*/
-    /*display: inline;*/
-    /*margin: 0 5px;*/
+/*display: inline;*/
+/*margin: 0 5px;*/
 /*}*/
 .fot-right{
     text-align: center;
@@ -1451,7 +1451,6 @@ a:hover{
 .ma-right .xx-zi span{
     background: url(../img/a_29.png) no-repeat left center;
     padding: 0 30px;
-    background-size: 16% 140%;
 }
 .ma-center ul{
     margin-top: 16px;
@@ -1637,7 +1636,7 @@ a:hover{
     padding: 0;
     overflow-x: hidden;
 
-    
+
 }
 .banner img{
     width: 100%;
@@ -1928,6 +1927,50 @@ a:hover{
         width: 15%;
     }
 }
+.carousel .m_unit{
+    width: 9000px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.carousel .m_unit{
+    list-style: none;
+}
+.carousel .m_unit li{
+    float: left;
+    width: 1170px;
+    height: 350px;
+    overflow: hidden;
+}
+.circles{
+    position: absolute;
+    bottom: 0;
+    right: 460px;
+    width: 150px;
+    height: 18px;
+}
+.circles ol{
+    list-style: none;
+}
+.circles ol li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: grey;
+    cursor: pointer;
+}
+.circles ol li.cur{
+    background-color: #060c38;
+}
+.pushtime{
+    color: #0084cf;
+    text-align: center;
+    font-size: 14px !important;;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
 .pageInfo{
     margin-top: 100px;
 }
@@ -1951,4 +1994,47 @@ a:hover{
 }
 .pageInfo span:hover{
     cursor: pointer;
+}
+.mylists ul li{
+    float: left;
+    width: 32%;
+    height: 250px;
+    margin-right: 10px;
+    background-color: #f1f4f9;
+    margin-top: 10px;
+}
+.mylists1 ul li{
+    float: left;
+    width: 32%;
+    height: 250px;
+    margin-right: 10px;
+    background-color: #f1f4f9;
+    margin-top: 10px;
+}
+.mylists ul li img{
+    width: 100%;
+    height: 210px;
+    /*background-color: blue;*/
+}
+.mylists1 ul li img{
+    width: 100%;
+    height: 210px;
+    /*background-color: blue;*/
+}
+.mylists ul li p{
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+}
+.mylists1 ul li p{
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+}
+.xx-zz{
+    margin-top: -20px;
 }
