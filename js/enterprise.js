@@ -433,15 +433,22 @@
                 url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
                 dateType: "json",
                 data: {
-                    "ArticleId": "833fa9c6-d6e5-40b7-a1ea-829f5a0ebc15"
+                    "ArticleId": "af142646-6993-4ca2-b8e5-e7dd045b5213"
                 },
                 success: function (data) {
+                    // console.log(data)
+                    var prefix = 'http://kxqh.admin.milisx.xyz';
                     $(".mylists1").css("display","none");
                     $(".mylists").css("display","none");
                     $(".ma-center").css("display","block")
                     var htmlfirst = '';
                     htmlfirst += '<div class="pushtime">发表时间:'+data.data.CreateTime+'</div><div>'+data.data.Body+'</div>'
                     $(".ma-center").html(htmlfirst);
+                    for(var i = 0; i< $(".ma-center p img").length;i++){
+                        var src = $($(".ma-center p img")[i]).attr('src');
+                        var src1 = prefix + src;
+                        $($(".ma-center p img")[i]).attr('src',src1);
+                    }
                     $(".title").text(data.data.Title)
                 },
             });
