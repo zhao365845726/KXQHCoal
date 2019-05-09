@@ -239,7 +239,7 @@
                     url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
                     success: function(data, type) {
 
-                        console.log(data.data);
+                        // console.log(data.data);
                         var html = '',url ='';
                         $.each(data.data.lst_categoryarticlelist, function(index, item) {
                             url = '/aritice/securityaritice.html?title=' + item.Title + '&id='+ item.Id;
@@ -271,11 +271,28 @@
                             url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
                             success: function(data, type) {
                                 if (data.data) {
+                                    var a = data.data.Body;
+						            var arring = [];
+						            var prefix = 'http://kxqh.admin.milisx.xyz';
+						            var newarring ='';
+						            var newarrings = [];
+                                    a.replace(/<img [^>]*src=['"]([^'"]+)[^>]*>/gi, function (match, capture) {
+                                        arring.push(capture);
+                                        for (let i =0; i< arring.length;i ++ ) {
+                                            newarring = prefix+arring[i];
+                                            newarrings.push(newarring);
+                                            a = a.replace(new RegExp(capture, 'g'), newarrings[i])
+                                        }
+                                });
+
+
+
                                     $(".firstli img").attr('src',data.data.CoverPhoto);
                                     $(".firstli h1").text(data.data.Title);
-                                    $(".firstli p").html(data.data.Body);
+                                    $(".firstli p").html(a);
                                     var urla ='aritice/securityaritice.html?title=' + data.data.Title + '&id='+ data.data.Id;
                                     $(".firstli a").attr('href',urla);
+                                    // console.log(a)
                                 }
                             }
                         })
@@ -283,10 +300,9 @@
                     }
                 })
             };
-            $.when().done(function(){
+            
                 getariticeData();
 
-            });
         })
     })(window, jQuery);
 

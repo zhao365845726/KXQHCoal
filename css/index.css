@@ -722,7 +722,7 @@ li{
     white-space: nowrap;
     text-overflow: ellipsis;
     display: inline-block;
-    width: 272px;
+    width: 70%;
 }
 .news-content .new-center1 ul li a{
     padding-left: 12px;
