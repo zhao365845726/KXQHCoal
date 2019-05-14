@@ -107,7 +107,7 @@ var jQuery = $ || {};
                 url = '/aritice/newslistaritice.html?title=' + item.Title + '&id='+ item.Id;
                 html +='<li><a href="'+url+'">'+item.Title+'</a><span class="date">'+item.CreateTime+'</span></li>';
             });
-            $('.bd2 ul').html(html);
+            $('#jiceng ul').html(html);
         };
         var fourhomedataData = function(data){
             var url = '',html = '';

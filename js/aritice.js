@@ -38,11 +38,11 @@ var jQuery = $ || {};
                 url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
                 success: function(data, type) {
 						 var prefix = 'http://kxqh.admin.milisx.xyz';
-                        $(".detalic").html(data.data.Body);
-                        for(var i = 0; i< $(".detalic p img").length;i++){
-                            var src = $($(".detalic p img")[i]).attr('src');
+                        $(".ma-center").html(data.data.Body);
+                        for(var i = 0; i< $(".ma-center p img").length;i++){
+                            var src = $($(".ma-center p img")[i]).attr('src');
                             var src1 = prefix + src;
-                            $($(".detalic p img")[i]).attr('src',src1);
+                            $($(".ma-center p img")[i]).attr('src',src1);
                         }
                         // document.getElementById('detalic').innerHTML= a; 
                         // $(".ma-center img").attr("src",data.data.CoverPhoto);
@@ -69,11 +69,11 @@ var jQuery = $ || {};
                     var prefix = 'http://kxqh.admin.milisx.xyz';
                     $(".patha").text(data.data.Title);
                     $(".title").text(data.data.Title);
-                    $(".detalic").html(data.data.Body);
-                    for(var i = 0; i< $(".detalic p img").length;i++){
-                        var src = $($(".detalic p img")[i]).attr('src');
+                    $(".ma-center").html(data.data.Body);
+                    for(var i = 0; i< $(".ma-center p img").length;i++){
+                        var src = $($(".ma-center p img")[i]).attr('src');
                         var src1 = prefix + src;
-                        $($(".detalic p img")[i]).attr('src',src1);
+                        $($(".ma-center p img")[i]).attr('src',src1);
                     }
                     // document.getElementById('detalic').innerHTML= a;
                     // $(".ma-center img").attr('src', data.data.CoverPhoto);
@@ -95,11 +95,11 @@ var jQuery = $ || {};
                     var prefix = 'http://kxqh.admin.milisx.xyz';
                     // console.log(data.data);
                     $(".ma-right h3").text(data.data.Title);
-                    $(".detalic").html(data.data.Body);
-                    for(var i = 0; i< $(".detalic p img").length;i++){
-                        var src = $($(".detalic p img")[i]).attr('src');
+                    $(".ma-center").html(data.data.Body);
+                    for(var i = 0; i< $(".ma-center p img").length;i++){
+                        var src = $($(".ma-center p img")[i]).attr('src');
                         var src1 = prefix + src;
-                        $($(".detalic p img")[i]).attr('src',src1);
+                        $($(".ma-center p img")[i]).attr('src',src1);
                     }
                     // document.getElementById('detalic').innerHTML= a;
                     // $(".ma-center img").attr('src', data.data.CoverPhoto);
@@ -109,6 +109,296 @@ var jQuery = $ || {};
                 }
             })
         });
+
+        $(".taba").click(function () {
+            $.ajax({
+                type: "post",
+                url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
+                dateType: "json",
+                data: {
+                    "categoryid": "b1c97066-0750-49d8-9b34-cb3f85f3a097",
+                    "PageIndex": 1,
+                    "PageSize": 12
+                },
+                success: function (data) {
+                    // console.log(data.data);
+                    $(".patha").text("企业文化");
+                    $(".title").text("企业文化");
+                    $(".mylists").css("display","none");
+                    $(".mylists1").css("display","block");
+                    $(".ma-center").css("display","none");
+                    $(".pageInfo").css("display","block")
+                        for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
+                        url = '/aritice/enaritice.html?title=' + data.data.lst_categoryarticlelist[i].Title + '&id='+ data.data.lst_categoryarticlelist[i].Id
+                        $(".mylists1 li a").eq(i).attr("href", url);
+                        $(".mylists1 li p").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
+                    }
+                }
+            });
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": "91a8822e-2cbd-4c1e-a1ea-dab964457a5c"
+                },
+                success: function (data) {
+                    $(".mylists1 img").eq(0).attr('src', data.data.CoverPhoto);
+                },
+            });
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": "2cb159e9-ceeb-4aaa-9f86-d0b486e606bc"
+                },
+                success: function (data) {
+                    $(".mylists1 img").eq(1).attr('src', data.data.CoverPhoto);
+                },
+            });
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": "c34ce2b1-e8f3-4279-a130-85f9b7775431"
+                },
+                success: function (data) {
+                    $(".mylists1 img").eq(2).attr('src', data.data.CoverPhoto);
+                },
+            });
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": "177512b7-9850-4e3a-8b51-2084dfb989fc"
+                },
+                success: function (data) {
+                    $(".mylists1 img").eq(3).attr('src', data.data.CoverPhoto);
+                },
+            });
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": "3ac96430-3257-443b-b564-ac9432f3ad40"
+                },
+                success: function (data) {
+                    $(".mylists1 img").eq(4).attr('src', data.data.CoverPhoto);
+                },
+            });
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": ""
+                },
+                success: function (data) {
+                    $(".mylists1 img").eq(5).attr('src', data.data.CoverPhoto);
+                },
+            });
+        });
+        $(".tabb").click(function(){
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": "af142646-6993-4ca2-b8e5-e7dd045b5213"
+                },
+                success: function (data) {
+                    // console.log(data)
+                    var a = data.data.Body;
+                    // console.log(a)
+					var arring = [];
+                    a.replace(/<img [^>]*src=['"]([^'"]+)[^>]*>/gi, function (match, capture) {
+                        arring.push(capture);
+                        });     
+                    var prefix = 'http://kxqh.admin.milisx.xyz';
+                    $(".mylists1").css("display","none");
+                    $(".mylists").css("display","none");
+                    $(".ma-center").css("display","block");
+                    $(".pageInfo").css("display","none")
+                    var htmlfirst = '';
+                    for(let i = 0 ; i< arring.length ; i ++){
+                        var firstsrc = arring[0];
+                        var firstsrc = prefix+firstsrc
+                        $("#img").attr('src',firstsrc)
+                    }
+                    htmlfirst += "<div class='box_image'><img src='"+arring[0]+"'</div>"
+                    $(".ma-center").html(htmlfirst).bind('click', function() {$(".mask").css("display","block");$(".mask_box").css("display","block")});
+                    for(var i = 0; i< $(".ma-center  img").length;i++){
+                        var src = $($(".ma-center  img")[i]).attr('src');
+                        var src1 = prefix + src;
+                        $($(".ma-center  img")[i]).attr('src',src1);
+                    }
+                    $(".title").text(data.data.Title)
+                    
+                },
+            });
+        });
+        $(".tabc").click(function () {
+            $.ajax({
+                type: "post",
+                url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
+                dateType: "json",
+                data: {
+                    "categoryid": "11dea9ec-4d9b-4c09-9926-97d12929920c",
+                    "PageIndex": 1,
+                    "PageSize": 12
+                },
+                success: function (data) {
+                    // console.log(data.data);
+                    $(".title").text("产品介绍");
+                    $(".patha").text("产品介绍");
+                    $(".ma-center").css("display", "none");
+                    $(".mylists1").css("display", "none");
+                    $(".mylists").css("display", "block");
+                    $(".pageInfo").css("display","none");
+                    for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
+                        var url =''
+                        url = '/aritice/enaritice.html?title=' + data.data.lst_categoryarticlelist[i].Title + '&id='+ data.data.lst_categoryarticlelist[i].Id
+                        $(".mylists li a").eq(i).attr("href", url);
+                        $(".mylists li p").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
+                    }
+                }
+            });
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": "896a48d1-de14-4b2a-84fb-18862f481902"
+                },
+                success: function (data) {
+                    $(".mylists img").eq(0).attr('src', data.data.CoverPhoto);
+                },
+            });
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": "a6a8d7c1-1857-4651-ac6a-0a8b6cb93f12"
+                },
+                success: function (data) {
+                    $(".mylists img").eq(1).attr('src', data.data.CoverPhoto);
+                },
+            });
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": "88c3fd94-f699-4139-a71d-7f0c606617cf"
+                },
+                success: function (data) {
+                    $(".mylists img").eq(2).attr('src', data.data.CoverPhoto);
+                },
+            });
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": "d39b8212-a9bf-4440-a2f0-cd3d15aeaa0e"
+                },
+                success: function (data) {
+                    $(".mylists img").eq(3).attr('src', data.data.CoverPhoto);
+                },
+            });
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": "9e94c7b0-0e77-4e16-b02e-24ba0ec204e5"
+                },
+                success: function (data) {
+                    $(".mylists img").eq(4).attr('src', data.data.CoverPhoto);
+                },
+            });
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": ""
+                },
+                success: function (data) {
+                    $(".mylists img").eq(5).attr('src', data.data.CoverPhoto);
+                },
+            });
+        });
+        
+        $(".mask").click(function(){
+            $(".mask").css("display","none");
+            $(".mask_box").css("display","none")
+        })
+        
+        var num = 2;
+        $("#goback").click(function(){
+            
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": "af142646-6993-4ca2-b8e5-e7dd045b5213"
+                },
+                success: function (data) {
+                    var a = data.data.Body;
+                    var arring = [];
+                    a.replace(/<img [^>]*src=['"]([^'"]+)[^>]*>/gi, function (match, capture) { 
+                         arring.push(capture);
+                         });  
+                    
+                        var prefix = 'http://kxqh.admin.milisx.xyz';
+                        var firstsrc = arring[num];
+                        var firstsrc = prefix+firstsrc;
+                        // console.log(num)
+                        $("#img").attr('src',firstsrc)
+                        if(num == arring.length-1){
+                            num = 1
+                        }else{
+                            num ++
+                        }    
+                }
+            })
+        })
+        $("#advance").click(function(){
+            $.ajax({
+                type: "POST",
+                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                dateType: "json",
+                data: {
+                    "ArticleId": "af142646-6993-4ca2-b8e5-e7dd045b5213"
+                },
+                success: function (data) {
+                    var a = data.data.Body;
+                    var arring = [];
+                    a.replace(/<img [^>]*src=['"]([^'"]+)[^>]*>/gi, function (match, capture) {
+                         arring.push(capture);
+                         });     
+                        var prefix = 'http://kxqh.admin.milisx.xyz';
+                        var firstsrc = arring[num];
+                        var firstsrc = prefix+firstsrc;
+                        // console.log(arring);
+                        // console.log(num)
+                        $("#img").attr('src',firstsrc)
+                        if(num == 1){
+                            num = arring.length-1
+                        }else{
+                            num --
+                        }    
+                }
+            })
+        })
+
     })
 })(window, jQuery);
 

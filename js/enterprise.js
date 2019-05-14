@@ -110,7 +110,7 @@
                             url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
                             success: function(data, type) {
                                 if (data.data) {
-                                    console.log(data.data);
+                                    // console.log(data.data);
                                     var htmlfirst = '';
                                     htmlfirst += '<div class="xx-zi xx-zz"><span class="time">发表时间:</span>'+data.data.CreateTime+'</div><div>'+data.data.Body+'</div>'
                                     $(".ma-center").html(htmlfirst);
@@ -317,16 +317,33 @@
                     url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
                     dateType: "json",
                     data: {
-                        "ArticleId": "833fa9c6-d6e5-40b7-a1ea-829f5a0ebc15"
+                        "ArticleId": "af142646-6993-4ca2-b8e5-e7dd045b5213"
                     },
                     success: function (data) {
-                        $(".mylists1").css("display","none");
-                        $(".mylists").css("display","none");
-                        $(".ma-center").css("display","block")
-                        var htmlfirst = '';
-                        htmlfirst += '<div class="pushtime">发表时间:'+data.data.CreateTime+'</div><div>'+data.data.Body+'</div>'
-                        $(".ma-center").html(htmlfirst);
-                        $(".title").text(data.data.Title)
+                        var a = data.data.Body;
+                    // console.log(a)
+					var arring = [];
+                    a.replace(/<img [^>]*src=['"]([^'"]+)[^>]*>/gi, function (match, capture) {
+                        arring.push(capture);
+                        });     
+                    var prefix = 'http://kxqh.admin.milisx.xyz';
+                    $(".mylists1").css("display","none");
+                    $(".mylists").css("display","none");
+                    $(".ma-center").css("display","block")
+                    var htmlfirst = '';
+                    for(let i = 0 ; i< arring.length ; i ++){
+                        var firstsrc = arring[0];
+                        var firstsrc = prefix+firstsrc
+                        $("#img").attr('src',firstsrc)
+                    }
+                    htmlfirst += "<div class='box_image'><img src='"+arring[0]+"'</div>"
+                    $(".ma-center").html(htmlfirst).bind('click', function() {$(".mask").css("display","block");$(".mask_box").css("display","block")});
+                    for(var i = 0; i< $(".ma-center  img").length;i++){
+                        var src = $($(".ma-center  img")[i]).attr('src');
+                        var src1 = prefix + src;
+                        $($(".ma-center  img")[i]).attr('src',src1);
+                    }
+                    $(".title").text(data.data.Title)
                     },
                 });
             };
@@ -437,19 +454,31 @@
                 },
                 success: function (data) {
                     // console.log(data)
+                    var a = data.data.Body;
+                    // console.log(a)
+					var arring = [];
+                    a.replace(/<img [^>]*src=['"]([^'"]+)[^>]*>/gi, function (match, capture) {
+                        arring.push(capture);
+                        });     
                     var prefix = 'http://kxqh.admin.milisx.xyz';
                     $(".mylists1").css("display","none");
                     $(".mylists").css("display","none");
                     $(".ma-center").css("display","block")
                     var htmlfirst = '';
-                    htmlfirst += '<div class="pushtime">发表时间:'+data.data.CreateTime+'</div><div>'+data.data.Body+'</div>'
-                    $(".ma-center").html(htmlfirst);
-                    for(var i = 0; i< $(".ma-center p img").length;i++){
-                        var src = $($(".ma-center p img")[i]).attr('src');
+                    for(let i = 0 ; i< arring.length ; i ++){
+                        var firstsrc = arring[0];
+                        var firstsrc = prefix+firstsrc
+                        $("#img").attr('src',firstsrc)
+                    }
+                    htmlfirst += "<div class='box_image'><img src='"+arring[0]+"'</div>"
+                    $(".ma-center").html(htmlfirst).bind('click', function() {$(".mask").css("display","block");$(".mask_box").css("display","block")});
+                    for(var i = 0; i< $(".ma-center  img").length;i++){
+                        var src = $($(".ma-center  img")[i]).attr('src');
                         var src1 = prefix + src;
-                        $($(".ma-center p img")[i]).attr('src',src1);
+                        $($(".ma-center  img")[i]).attr('src',src1);
                     }
                     $(".title").text(data.data.Title)
+                    
                 },
             });
         });
@@ -464,7 +493,7 @@
                     "PageSize": 12
                 },
                 success: function (data) {
-                    console.log(data.data);
+                    // console.log(data.data);
                     $(".title").text("产品介绍");
                     $(".patha").text("产品介绍");
                     $(".ma-center").css("display", "none");
@@ -545,6 +574,69 @@
                 },
             });
         });
+    })
+    $(".mask").click(function(){
+        $(".mask").css("display","none");
+        $(".mask_box").css("display","none")
+    })
+    
+    var num = 2;
+    $("#goback").click(function(){
+        
+        $.ajax({
+            type: "POST",
+            url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+            dateType: "json",
+            data: {
+                "ArticleId": "af142646-6993-4ca2-b8e5-e7dd045b5213"
+            },
+            success: function (data) {
+                var a = data.data.Body;
+                var arring = [];
+                a.replace(/<img [^>]*src=['"]([^'"]+)[^>]*>/gi, function (match, capture) {
+                     arring.push(capture);
+                     });  
+                
+                    var prefix = 'http://kxqh.admin.milisx.xyz';
+                    var firstsrc = arring[num];
+                    var firstsrc = prefix+firstsrc;
+                    // console.log(num)
+                    $("#img").attr('src',firstsrc)
+                    if(num == arring.length-1){
+                        num = 1
+                    }else{
+                        num ++
+                    }    
+            }
+        })
+    })
+    $("#advance").click(function(){
+        $.ajax({
+            type: "POST",
+            url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+            dateType: "json",
+            data: {
+                "ArticleId": "af142646-6993-4ca2-b8e5-e7dd045b5213"
+            },
+            success: function (data) {
+                var a = data.data.Body;
+                var arring = [];
+                a.replace(/<img [^>]*src=['"]([^'"]+)[^>]*>/gi, function (match, capture) {
+                     arring.push(capture);
+                     });     
+                    var prefix = 'http://kxqh.admin.milisx.xyz';
+                    var firstsrc = arring[num];
+                    var firstsrc = prefix+firstsrc;
+                    // console.log(arring);
+                    // console.log(num)
+                    $("#img").attr('src',firstsrc)
+                    if(num == 1){
+                        num = arring.length-1
+                    }else{
+                        num --
+                    }    
+            }
+        })
     })
 })(window, jQuery);
 
