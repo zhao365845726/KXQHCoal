@@ -1703,6 +1703,12 @@ a:hover{
     margin:0 auto ;
     position: relative;
     background-color: #fff;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+.meli-pic img{
+    width: 281px;
+    height: 200px;
 }
 .meli-pic>div{
     /*overflow: hidden;*/
