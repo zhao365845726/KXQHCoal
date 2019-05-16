@@ -317,7 +317,7 @@
                     url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
                     dateType: "json",
                     data: {
-                        "ArticleId": "af142646-6993-4ca2-b8e5-e7dd045b5213"
+                        "ArticleId": "80313a54-2fa4-4305-af64-d69d62e3ec32"
                     },
                     success: function (data) {
                         var a = data.data.Body;
@@ -373,76 +373,12 @@
                     for (var i = 0; i < data.data.lst_categoryarticlelist.length; i++) {
                         url = '/aritice/enaritice.html?title=' + data.data.lst_categoryarticlelist[i].Title + '&id='+ data.data.lst_categoryarticlelist[i].Id
                         $(".mylists1 li a").eq(i).attr("href", url);
+                        $(".mylists1 li a img").eq(i).attr("src", data.data.lst_categoryarticlelist[i].CoverPhoto);
                         $(".mylists1 li p").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                     }
                 }
             });
-            $.ajax({
-                type: "POST",
-                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
-                dateType: "json",
-                data: {
-                    "ArticleId": "91a8822e-2cbd-4c1e-a1ea-dab964457a5c"
-                },
-                success: function (data) {
-                    $(".mylists1 img").eq(0).attr('src', data.data.CoverPhoto);
-                },
-            });
-            $.ajax({
-                type: "POST",
-                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
-                dateType: "json",
-                data: {
-                    "ArticleId": "2cb159e9-ceeb-4aaa-9f86-d0b486e606bc"
-                },
-                success: function (data) {
-                    $(".mylists1 img").eq(1).attr('src', data.data.CoverPhoto);
-                },
-            });
-            $.ajax({
-                type: "POST",
-                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
-                dateType: "json",
-                data: {
-                    "ArticleId": "c34ce2b1-e8f3-4279-a130-85f9b7775431"
-                },
-                success: function (data) {
-                    $(".mylists1 img").eq(2).attr('src', data.data.CoverPhoto);
-                },
-            });
-            $.ajax({
-                type: "POST",
-                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
-                dateType: "json",
-                data: {
-                    "ArticleId": "177512b7-9850-4e3a-8b51-2084dfb989fc"
-                },
-                success: function (data) {
-                    $(".mylists1 img").eq(3).attr('src', data.data.CoverPhoto);
-                },
-            });
-            $.ajax({
-                type: "POST",
-                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
-                dateType: "json",
-                data: {
-                    "ArticleId": "3ac96430-3257-443b-b564-ac9432f3ad40"
-                },
-                success: function (data) {
-                    $(".mylists1 img").eq(4).attr('src', data.data.CoverPhoto);
-                },
-            });
-            $.ajax({
-                type: "POST",
-                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
-                dateType: "json",
-                data: {
-                    "ArticleId": ""
-                },
-                success: function (data) {
-                    $(".mylists1 img").eq(5).attr('src', data.data.CoverPhoto);
-                },
-            });
+            
         });
         $(".tabb").click(function(){
             $.ajax({
@@ -450,7 +386,7 @@
                 url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
                 dateType: "json",
                 data: {
-                    "ArticleId": "af142646-6993-4ca2-b8e5-e7dd045b5213"
+                    "ArticleId": "80313a54-2fa4-4305-af64-d69d62e3ec32"
                 },
                 success: function (data) {
                     // console.log(data)
@@ -503,75 +439,10 @@
                         var url =''
                         url = '/aritice/enaritice.html?title=' + data.data.lst_categoryarticlelist[i].Title + '&id='+ data.data.lst_categoryarticlelist[i].Id
                         $(".mylists li a").eq(i).attr("href", url);
+                        $(".mylists li  a img").eq(i).attr("src", data.data.lst_categoryarticlelist[i].CoverPhoto);
                         $(".mylists li p").eq(i).text(data.data.lst_categoryarticlelist[i].Title);
                     }
                 }
-            });
-            $.ajax({
-                type: "POST",
-                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
-                dateType: "json",
-                data: {
-                    "ArticleId": "896a48d1-de14-4b2a-84fb-18862f481902"
-                },
-                success: function (data) {
-                    $(".mylists img").eq(0).attr('src', data.data.CoverPhoto);
-                },
-            });
-            $.ajax({
-                type: "POST",
-                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
-                dateType: "json",
-                data: {
-                    "ArticleId": "a6a8d7c1-1857-4651-ac6a-0a8b6cb93f12"
-                },
-                success: function (data) {
-                    $(".mylists img").eq(1).attr('src', data.data.CoverPhoto);
-                },
-            });
-            $.ajax({
-                type: "POST",
-                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
-                dateType: "json",
-                data: {
-                    "ArticleId": "88c3fd94-f699-4139-a71d-7f0c606617cf"
-                },
-                success: function (data) {
-                    $(".mylists img").eq(2).attr('src', data.data.CoverPhoto);
-                },
-            });
-            $.ajax({
-                type: "POST",
-                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
-                dateType: "json",
-                data: {
-                    "ArticleId": "d39b8212-a9bf-4440-a2f0-cd3d15aeaa0e"
-                },
-                success: function (data) {
-                    $(".mylists img").eq(3).attr('src', data.data.CoverPhoto);
-                },
-            });
-            $.ajax({
-                type: "POST",
-                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
-                dateType: "json",
-                data: {
-                    "ArticleId": "9e94c7b0-0e77-4e16-b02e-24ba0ec204e5"
-                },
-                success: function (data) {
-                    $(".mylists img").eq(4).attr('src', data.data.CoverPhoto);
-                },
-            });
-            $.ajax({
-                type: "POST",
-                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
-                dateType: "json",
-                data: {
-                    "ArticleId": ""
-                },
-                success: function (data) {
-                    $(".mylists img").eq(5).attr('src', data.data.CoverPhoto);
-                },
             });
         });
     })
@@ -588,7 +459,7 @@
             url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
             dateType: "json",
             data: {
-                "ArticleId": "af142646-6993-4ca2-b8e5-e7dd045b5213"
+                "ArticleId": "80313a54-2fa4-4305-af64-d69d62e3ec32"
             },
             success: function (data) {
                 var a = data.data.Body;
@@ -616,7 +487,7 @@
             url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
             dateType: "json",
             data: {
-                "ArticleId": "af142646-6993-4ca2-b8e5-e7dd045b5213"
+                "ArticleId": "80313a54-2fa4-4305-af64-d69d62e3ec32"
             },
             success: function (data) {
                 var a = data.data.Body;
