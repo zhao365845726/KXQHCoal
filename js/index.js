@@ -7,37 +7,37 @@ var jQuery = $ || {};
             "part_one": {
                 "categoryid": "ac1e5571-d81f-4fc7-886c-c4ba6d7a871a",
                 "PageIndex": 1,
-                "PageSize": 10
+                "PageSize": 5
             },
             "part_two": {
                 "categoryid": "a460675f-8a68-4bbb-b0cd-825f7578fe00",
                 "PageIndex": 1,
-                "PageSize": 10
+                "PageSize": 5
             },
             "part_three": {
                 "categoryid": "e6e0ea92-0f43-418b-b838-b88b69744e57",
                 "PageIndex": 1,
-                "PageSize": 10
+                "PageSize": 5
             },
             "part_four": {
                 "navid": "fefb6175-f4b7-4205-ae94-5f655757d926",
                 "PageIndex": 1,
-                "PageSize": 10
+                "PageSize": 5
             },
             "part_five": {
                 "navid": "b5af22c8-59b7-4cbd-94c0-6d8ed6c2473a",
                 "PageIndex": 1,
-                "PageSize": 10
+                "PageSize": 5
             },
             "part_six": {
                 "categoryid": "c8e12965-b96e-4d88-986b-5063e79bac7a",
                 "PageIndex": 1,
-                "PageSize": 10
+                "PageSize": 5
             },
             "part_seven": {
                 "categoryid": "71839a52-fbf9-47b7-a864-36e727b86023",
                 "PageIndex": 1,
-                "PageSize": 10
+                "PageSize": 5
             }
         };
         getfriendlinklistparam ={
@@ -92,6 +92,7 @@ var jQuery = $ || {};
         };
         // 首页数据
         var onehomedataData = function(data){
+            console.log(data)
             var url = '',html = '';
         	data && data.length > 0 && $.each(data, function(index, item) {
         		url = '/aritice/newslistaritice.html?title=' + item.Title + '&id='+ item.Id;
@@ -102,6 +103,7 @@ var jQuery = $ || {};
         	$('.bd1 ul').html(html);
         };
         var twohomedataData = function(data){
+            console.log(data)
             var url = '',html = '';
             data && data.length > 0 && $.each(data, function(index, item) {
                 url = '/aritice/newslistaritice.html?title=' + item.Title + '&id='+ item.Id;
@@ -110,6 +112,10 @@ var jQuery = $ || {};
             $('#jiceng ul').html(html);
         };
         var fourhomedataData = function(data){
+            console.log(data)
+            // data.splice()
+            // data.slice(0,5)
+            // console.log(data)
             var url = '',html = '';
             data && data.length > 0 && $.each(data, function(index, item) {
                 url = '/aritice/securityaritice.html?title=' + item.Title + '&id='+ item.Id;
@@ -118,6 +124,7 @@ var jQuery = $ || {};
             $('.new-center ul').html(html);
         };
         var fivehomedataData = function(data){
+            console.log(data)
             var url = '',html = '';
             data && data.length > 0 && $.each(data, function(index, item) {
                 url = '/aritice/qianhearitice.html?title=' + item.Title + '&id='+ item.Id;
@@ -126,6 +133,7 @@ var jQuery = $ || {};
             $('.new-center1 ul').html(html);
         };
         var sixhomedataData = function(data){
+            console.log(data)
             var url = '',html = '';
             data && data.length > 0 && $.each(data, function(index, item) {
                 url = '/aritice/newslistaritice.html?title=' + item.Title + '&id='+ item.Id;
