@@ -627,7 +627,7 @@ li{
 }
 
 .news-content{
-    height: 450px;
+    height: 290px;
     /*border-top: 2px solid #0080c9;*/
     /*margin-bottom: 15px;*/
     background-color: #fff;
@@ -697,13 +697,13 @@ li{
     color:#0080c9
 }
 .news-content .new-center{
-    height: 300px;
+    height: 200px;
 }
 .news-content .new-center1{
-    height: 300px;
+    height: 200px;
 }
 #jiceng{
-    height: 300px;
+    height: 200px;
 }
 .news-content .new-center ul li{
     height: 37px;
