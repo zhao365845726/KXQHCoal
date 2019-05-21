@@ -7,7 +7,7 @@ var jQuery = $ || {};
             "part_one": {
                 "categoryid": "ac1e5571-d81f-4fc7-886c-c4ba6d7a871a",
                 "PageIndex": 1,
-                "PageSize": 5
+                "PageSize": 10
             },
             "part_two": {
                 "categoryid": "a460675f-8a68-4bbb-b0cd-825f7578fe00",
