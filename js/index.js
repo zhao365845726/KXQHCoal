@@ -92,7 +92,7 @@ var jQuery = $ || {};
         };
         // 首页数据
         var onehomedataData = function(data){
-            console.log(data)
+            // console.log(data)
             var url = '',html = '';
         	data && data.length > 0 && $.each(data, function(index, item) {
         		url = '/aritice/newslistaritice.html?title=' + item.Title + '&id='+ item.Id;
@@ -103,7 +103,7 @@ var jQuery = $ || {};
         	$('.bd1 ul').html(html);
         };
         var twohomedataData = function(data){
-            console.log(data)
+            // console.log(data)
             var url = '',html = '';
             data && data.length > 0 && $.each(data, function(index, item) {
                 url = '/aritice/newslistaritice.html?title=' + item.Title + '&id='+ item.Id;
@@ -112,7 +112,7 @@ var jQuery = $ || {};
             $('#jiceng ul').html(html);
         };
         var fourhomedataData = function(data){
-            console.log(data)
+            // console.log(data)
             // data.splice()
             // data.slice(0,5)
             // console.log(data)
@@ -124,7 +124,7 @@ var jQuery = $ || {};
             $('.new-center ul').html(html);
         };
         var fivehomedataData = function(data){
-            console.log(data)
+            // console.log(data)
             var url = '',html = '';
             data && data.length > 0 && $.each(data, function(index, item) {
                 url = '/aritice/qianhearitice.html?title=' + item.Title + '&id='+ item.Id;
@@ -133,7 +133,7 @@ var jQuery = $ || {};
             $('.new-center1 ul').html(html);
         };
         var sixhomedataData = function(data){
-            console.log(data)
+            // console.log(data)
             var url = '',html = '';
             data && data.length > 0 && $.each(data, function(index, item) {
                 url = '/aritice/newslistaritice.html?title=' + item.Title + '&id='+ item.Id;
