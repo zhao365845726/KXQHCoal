@@ -92,5 +92,6 @@ var jQuery = $ || {};
 
         });
     })
-})(window, jQuery);
 
+
+})(window, jQuery);

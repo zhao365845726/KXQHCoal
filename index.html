@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
@@ -8,6 +8,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    <style type="text/css">
+        a:hover {
+            border: 1px solid #E5E5E5;
+            background: #F9F9F9;
+        }
+        .current {
+            border: 1px solid #83E7E4;
+            background: #DFF9F8;
+            margin: 1px;
+            color: #27CBC7;
+        }
+        #info {
+            width: auto;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 456px;
+            font-size: 16px;
+            margin-right: 3px;
+        }
+        .a1 {
+            font-size: 16px;
+            margin-right: 3px;
+        }
+    </style>
 </head>
 <body>
 <div id="main">
@@ -157,7 +181,7 @@
                 </div>
             </div>
             <div class="slider row">
-                <div class="focusNews col-lg-6">
+                <div class="focusNews col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="bd">
                         <ul class="test">
                             <li>
@@ -198,7 +222,7 @@
                     </div>
                 </div>
 
-                <div class="box-right col-lg-6">
+                <div class="box-right col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="box-new hei4">
                         <div class="hd1 hei4">
                             <ul>
@@ -234,7 +258,7 @@
             </div>
             <div class="row content-banner"><img src="img/banner.jpg" alt=""></div>
             <div class="row news-content marbt">
-                <div class="col-lg-6">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="news-head">
                         <ul>
                             <li class="on"><a>安全生产</a><a href="security.html">+more</a></li>
@@ -287,7 +311,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 bgc">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 bgc">
                     <div class="news-head1">
                         <ul>
                             <li class="on"><a href="">基层动态</a><a href="newslist.html">+more</a></li>
@@ -341,8 +365,9 @@
                     </div>
                 </div>
             </div>
+            
             <div class="row news-content">
-                <div class="col-lg-6" style="display: none">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 " style="display: none">
                     <div class="news-head">
                         <ul>
                             <li class="on"><a>安全生产</a><a href="security.html">+more</a></li>
@@ -395,7 +420,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 bgc">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 bgc">
                     <div class="news-head1">
                         <ul>
                             <li class="on"><a href="">前和党建</a><a href="qianhe.html">+more</a></li>
@@ -448,7 +473,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 bgc">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 bgc">
                     <div class="news-head">
                         <h3><span>热点专题</span><a href="newslist.html">+more</a></h3>
                     </div>
@@ -565,6 +590,8 @@
     var $m_unit = $(".m_unit");
     var $imageLis = $(".m_unit li");
     var $cilclesLis = $(".circles ol li");
+    $imageLis.width($carousel.width());
+    $m_unit.width($imageLis.width() * ($imageLis.length+1));
     $(".m_unit").append($imageLis.eq(0).clone());
     var idx = 0;
     var timer = setInterval(rightBtnHandler, 5000);
@@ -578,7 +605,7 @@
     function rightBtnHandler() {
         if ($m_unit.is(":animated")) return;
         idx++;
-        $m_unit.animate({"left": -1170 * idx}, 300, function () {
+        $m_unit.animate({"left": -($imageLis.width() * idx)}, 300, function () {
             if (idx > 2) {
                 idx = 0;
                 $m_unit.css("left", 0);
@@ -591,14 +618,14 @@
         idx--;
         if(idx < 0){
             idx = 2;
-            $m_unit.css("left",-3 * 1170);
+            $m_unit.css("left",-3 * $imageLis.width());
         }
-        $m_unit.animate({"left" : -1170 * idx},300);
+        $m_unit.animate({"left" : -($imageLis.width() * idx)},300);
         changeCircle();
     });
     $cilclesLis.click(function(){
         idx = $(this).index();
-        $m_unit.animate({"left" : -1170 * idx},300);
+        $m_unit.animate({"left" : -($imageLis.width() * idx)},300);
         changeCircle();
     });
     function changeCircle(){

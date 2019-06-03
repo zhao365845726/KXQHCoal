@@ -1228,12 +1228,23 @@ li{
     .main-nav{
         width: 100%;
     }
-    .bgc{
+    .bgc {
         background-color: #fff;
-        margin-top: 30px;
-        height: 445px;
+        /*margin-top: 30px;*/
+        /*height: 445px;*/
+        height: auto;
+        border-top:10px solid #f3f4f5;
     }
-    .center-banner{
+    .marbt {
+        margin-bottom: 0!important;
+    }
+    .notice {
+        margin-bottom: 10px;
+    }
+    .news-content{
+        height:auto;
+    }
+    .center-banner {
         display: none;
     }
     .pub-file{
@@ -1333,6 +1344,9 @@ li{
 
     .footer{
         display: none;
+    }
+    .carousel .m_unit li,.banner img {
+        height: 175px!important;
     }
 }
 a:hover{
@@ -1840,7 +1854,7 @@ a:hover{
 }
 .notice .part1 {
     float: left;
-    width: 13%;
+    width: 92px;
     height: 30px;
 }
 .notice .part1 h3{
@@ -1854,7 +1868,7 @@ a:hover{
 }
 .notice .part2 {
     float: left;
-    width: 87%;
+    width: calc(100% - 92px);
     height: 50px;
     text-indent: 1em;
     overflow: hidden;
