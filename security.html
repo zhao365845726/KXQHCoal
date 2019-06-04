@@ -332,11 +332,40 @@
         });
         function getData(pageIndex, pageSize) {
             var getnavcategorylistparam;
-            getnavcategorylistparam = {
-                "categoryid": 'a5a566c1-0bc3-4bcb-a43d-aaf9644c13cd',
-                "pageIndex": pageIndex,
-                "pageSize": pageSize
-            };
+            //getnavcategorylistparam = {
+            //    "categoryid": 'a5a566c1-0bc3-4bcb-a43d-aaf9644c13cd',
+            //    "pageIndex": pageIndex,
+            //    "pageSize": pageSize
+            //};
+            function UrlSearch() {
+                    var name, value, value1;
+                    var str = location.href;
+                    var num = str.indexOf("?");
+                    str = str.substr(num + 1);
+                    var arr = str.split("&");
+                    //
+                    // console.log(arr);
+                    for (var i = 0; i < arr.length; i++) {
+                        num = arr[i].indexOf("=");
+                        if (num > 0) {
+                            name = arr[i].substring(0, num);
+                            value = arr[i].substr(num + 1);
+                            value1 = arr[0].substr(num + 1);
+                            // console.log(value1);
+                            this[name] = value;
+                        }
+                        // var select = decodeURI(value1).substr(3)
+                        // console.log(decodeURI(this[name]));
+                        // $(".title").text(decodeURI(value1).substr(3));
+                        $(".patha").text(decodeURI(value1).substr(3));
+                    }
+                    getnavcategorylistparam = {
+                        "categoryid": this[name],
+                        "PageIndex": pageIndex,
+                        "PageSize": pageSize
+                    };
+                }
+                UrlSearch();
              $.ajax({
                         type: "POST",
                         data: getnavcategorylistparam,
@@ -356,9 +385,10 @@
                                 html += '<li><a href="' + url + '">' + item.Title + '</a><span class="date">' + item.CreateTime + '</span></li>';
                             });
                             $('.ma-center ul').html(html);
-                            var paraml = {
-                                   "ArticleId":  data.data.lst_categoryarticlelist[0].Id
-                                };
+                            //var paraml = {
+                            //       "ArticleId":  data.data.lst_categoryarticlelist[0].Id
+                                //    };
+                                var paraml = this[name]
                             $.ajax({
                                 type: "POST",
                                 data: param1,

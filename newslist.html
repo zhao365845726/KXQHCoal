@@ -268,7 +268,6 @@
     <script src="js/listdata.js"></script>
     <script>
         $('#pagination1').jqPaginator({
-            visiblepages: 1,   //展示页数
             currentpage: 1,    //当前页数
             totalCounts: 100,   //总条目数
             pageSize: 6,
@@ -282,13 +281,44 @@
                 getData(pages, 6);
             }
         });
+        //获取动态
         function getData(pageIndex, pageSize) {
             var getnavcategorylistparam;
+            //getnavcategorylistparam = {
+            //    "categoryid": "ac1e5571-d81f-4fc7-886c-c4ba6d7a871a",
+            //    "pageIndex": pageIndex,
+            //    "pageSize": pageSize
+            //};
+             function UrlSearch() {
+            var name, value, value1;
+            var str = location.href;
+            var num = str.indexOf("?");
+            str = str.substr(num + 1);
+            var arr = str.split("&");
+             console.log(arr);
+            for (var i = 0; i < arr.length; i++) {
+                num = arr[i].indexOf("=");
+                if (num > 0) {
+                    name = arr[i].substring(0, num);
+                    value = arr[i].substr(num + 1);
+                    value1 = arr[0].substr(num + 1);
+                    // console.log(value1);
+                    this[name] = value;
+                }
+                // var select = decodeURI(value1).substr(3)
+                // console.log(decodeURI(this[name]));
+                // $(".title").text(decodeURI(value1).substr(3));
+                $(".patha").text(decodeURI(value1).substr(3));
+            }
             getnavcategorylistparam = {
-                "categoryid": 'ac1e5571-d81f-4fc7-886c-c4ba6d7a871a',
-                "pageIndex": pageIndex,
-                "pageSize": pageSize
+                "categoryid": this[name],
+                "PageIndex": pageIndex,
+                "PageSize": pageSize
             };
+        }
+        UrlSearch();
+
+
               $.ajax({
                 type: "POST",
                 data: getnavcategorylistparam,
@@ -301,16 +331,19 @@
                         console.log(data.data.articlecount);
                         // 修改总条目数
                          $('#pagination1').jqPaginator('option', {
-                                totalCounts: data.data.articlecount //总页数
+                             totalCounts: data.data.articlecount //总页数
+                             
                             });
                         $.each(data.data.lst_categoryarticlelist, function(index, item) {
                             url = '/aritice/newslistaritice.html?title=' + item.Title + '&id='+ item.Id;
                             html +='<li><a href="'+url+'">'+item.Title+'</a><span class="date">'+item.CreateTime+'</span></li>';
                         });
                         $('.ma-center ul').html(html);
-                      var param1 = {
-                            "ArticleId": data.data.lst_categoryarticlelist[0].Id
-                        }
+                        //var param1 = {
+                        //    "ArticleId": data.data.lst_categoryarticlelist[0].Id,
+                        //};
+                        //var paraml = this[0].Id
+                        var paraml = this[name]
                         $.ajax({
                             type: "POST",
                             data: param1,
