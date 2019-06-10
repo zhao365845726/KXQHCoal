@@ -239,15 +239,74 @@ var jQuery = $ || {};
             $cilclesLi.eq(n).addClass("on").siblings().removeClass("on");
         }
         // 搜索
+        //$(".button").click(function () {
+        //    $(".carousel").css("display","none");
+        //    $(".content").css("display","none");
+        //    $(".content-in").css("display","none");
+        //    $("#search").css("display","block");
+        //    var txt = $(".search").val();
+        //    console.log(txt.length)
+        //    if (txt.length == 0) {
+        //        alert("请输入要搜索的内容")
+    
+        //    } else {
+        //        $.ajax({
+        //            type: "post",
+        //            url: "http://kxqh.api.milisx.xyz/api/content/getarticlesearchlist",
+        //            dateType: "json",
+        //            data: {
+        //                "Title": txt,
+        //                "PageIndex": 1,
+        //                "PageSize": 12
+        //            },
+        //            success: function (data) {
+        //                // console.log(data);
+
+        //                $("#ma").css("display","none")
+        //                $(".searchcon ul").empty();
+        //                for (var i = 0; i < data.data.lst_articlesearchlist.length; i++) {
+        //                    // console.log(data.data.lst_articlesearchlist[i].Id)
+        //                    $(".searchcon ul").append(" <li id=" + data.data.lst_articlesearchlist[i].Id + ">" + data.data.lst_articlesearchlist[i].Title + "<span>" + data.data.lst_articlesearchlist[i].CreateTime + "</span>" + "</li>")
+        //                }
+        //            }
+        //        })
+        //    }
+
+        //});
+        //$(".searchcon ul").on("click", "li", function () {
+        //    $.ajax({
+        //        type: "POST",
+        //        url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+        //        dataType: "json",
+        //        data: {
+        //            "ArticleId": $(this).attr("id"),
+        //        },
+        //        success: function (data) {
+        //            console.log(data);
+
+        //            $(".searchcon").empty();
+        //            $(".searchcon").append("<img src=" + data.data.CoverPhoto + ">" + "<div>" + data.data.Body + "</div>");
+        //        }
+        //    })
+        //});
+
+        $(document).ready(function () {
+            $('.button').click(function () {
+                $('.search').toggle();
+            })
+        })
         $(".button").click(function () {
-            $(".carousel").css("display","none");
-            $(".content").css("display","none");
-            $(".content-in").css("display","none");
-            $("#search").css("display","block");
+            $(".carousel").css("display", "none");
+            $(".content").css("display", "none");
+            $(".content-in").css("display", "none");
+            $("#search").css("display", "block");
+            //$('.search').toggle();
             var txt = $(".search").val();
             console.log(txt.length)
             if (txt.length == 0) {
-                alert("请输入要搜索的内容")
+                //alert("请输入要搜索的内容")
+                //prompt("请输入要搜索的内容")
+
             } else {
                 $.ajax({
                     type: "post",
@@ -259,9 +318,9 @@ var jQuery = $ || {};
                         "PageSize": 12
                     },
                     success: function (data) {
-                        // console.log(data);
+                         //console.log(data);
 
-                        $("#ma").css("display","none")
+                        $("#ma").css("display", "none")
                         $(".searchcon ul").empty();
                         for (var i = 0; i < data.data.lst_articlesearchlist.length; i++) {
                             // console.log(data.data.lst_articlesearchlist[i].Id)
@@ -288,7 +347,6 @@ var jQuery = $ || {};
                 }
             })
         });
-
     })
 
 })(window, jQuery);
