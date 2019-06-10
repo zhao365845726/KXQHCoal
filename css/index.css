@@ -2084,8 +2084,8 @@ a:hover{
             display:block;
         }
     .header-nav .main-nav div li a:hover {
-        color:red;
-        background-color:white;
+        color: white;
+        background-color: #337ab7;
     }
     .header-nav .main-nav div li ul li {
         color:black;
