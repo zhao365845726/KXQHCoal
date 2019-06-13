@@ -17,7 +17,7 @@
         <div class="search-box">
             <form action="">
                 <input type="text" class="search" placeholder="请输入关键字">
-                <div  class="button">
+                <div  class="button" id="btn_search">
                     搜索
                 </div>
             </form>
@@ -33,7 +33,7 @@
                         <a href="index.html">首页</a>
                     </li>
                     <li class="bgfa first-li dropdown">
-                        <a href="/page.html?title=首善前和&id=f0bc988f-77a4-4044-af50-1c93f1859fa8" class="dropdown-toggle" data-toggle="dropdoen">首善前和</a>
+                        <a href="/enterprise.html?title=%E9%A6%96%E5%96%84%E5%89%8D%E5%92%8C&id=f0bc988f-77a4-4044-af50-1c93f1859fa8" class="dropdown-toggle" data-toggle="dropdoen">首善前和</a>
                         <ul class="dropdown-menu">
                             <li><a href="/enterprise.html?title=企业简介&id=f0bc988f-77a4-4044-af50-1c93f1859fa8">企业简介</a></li>
                             <li><a href="/enterprise.html?title=企业文化&id=b1c97066-0750-49d8-9b34-cb3f85f3a097">企业文化</a></li>
@@ -168,7 +168,7 @@
             </div>
 
 
-            <ul class="pagination" id="pagination1" style="margin-left: auto;"></ul>
+            <ul class="pagination" id="pagination1" ></ul>
         
         
         
@@ -181,12 +181,13 @@
         <em>您的位置：</em><a href="/">首页</a>
     </div>
     <div class="ma-content container row">
-        <div class="searchcon">
-            <p>搜索到一下结果:</p>
-            <ul></ul>
-        </div>
+      <div class="searchcon">
+        <p>搜索到一下结果:</p>
+        <ul></ul>
+      </div>
+      <ul class="pagination" id="pagination2"></ul>
     </div>
-</div></div>
+</div>
 <div class="footer container">
     <div class="fotcontent row">
         <div class="fot-right">
@@ -385,6 +386,82 @@
                     }
                 })
             };
+
+    </script>
+  <!--搜索分页-->
+    <script>
+    $(function () {
+      $("#btn_search").click(function () {
+        $(".carousel").css("display", "none");
+        $(".content").css("display", "none");
+        $(".content-in").css("display", "none");
+        $("#search").css("display", "block");
+        getData(1, 6);
+      })
+    })
+
+    $('#pagination2').jqPaginator({
+      visiblepages: 1,   //展示页数
+      currentpage: 1,    //当前页数
+      totalCounts: 100,   //总条目数
+      pageSize:6,
+      first: '<li><a href="javascript:void(0);">首页</a></li>',
+      prev: '<li><a href="javascript:void(0);">上一页</a></li>',
+      next: '<li><a href="javascript:void(0);">下一页</a></li>',
+      last: '<li><a href="javascript:void(0);">末页</a></li>',
+      page: '<li><a href="javascript:void(0);">{{page}}</a></li>',
+      onPageChange: function (pages) {                            //回调函数
+        $('#text').html('当前第' + pages + '页');
+        getData(pages, 6);
+      },
+    });
+
+    function getData(pageIndex, pageSize) {
+      var txt = $(".search").val();
+      //console.log(txt.length)
+      if (txt.length == 0) {
+        //alert("请输入要搜索的内容")
+        //prompt("请输入要搜索的内容")
+      } else {
+        $.ajax({
+          type: "post",
+          url: "http://kxqh.api.milisx.xyz/api/content/getarticlesearchlist",
+          dateType: "json",
+          data: {
+            "Title": txt,
+            "PageIndex": pageIndex,
+            "PageSize": pageSize,
+          },
+          success: function (data) {
+            console.log(data);
+            if (data.data.lst_articlesearchlist.length > 0) {
+              $("#ma").css("display", "none")
+              $(".searchcon ul").empty();
+              for (var i = 0; i <data.data.lst_articlesearchlist.length; i++) {
+                $(".searchcon ul").append(" <li id=" + data.data.lst_articlesearchlist[i].Id + ">" + data.data.lst_articlesearchlist[i].Title + "<span>" + data.data.lst_articlesearchlist[i].CreateTime + "</span>" + "</li>")
+              }
+              $('#pagination2').jqPaginator('option', {
+                  totalCounts: data.data.articlecount,//总页数
+              });
+              $(".searchcon ul").on("click", "li", function () {
+                $.ajax({
+                  type: "POST",
+                  url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                  dataType: "json",
+                  data: {
+                    "ArticleId": $(this).attr("id"),
+                  },
+                  success: function (data) {
+                    $(".searchcon").empty();
+                    $(".searchcon").append("<img src=" + data.data.CoverPhoto + ">" + "<div>" + data.data.Body + "</div>");
+                  }
+                })
+              });
+            }
+          }
+        })
+      }
+    }
 
     </script>
 </body>

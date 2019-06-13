@@ -4,12 +4,14 @@ body{
 a{
     cursor: pointer;
 }
+
 li{
     cursor: pointer
 }
 .bgfa{
     display: none;
 }
+
 /*-----------------------------头部样式------------------------*/
 .header{
     height: 236px;
@@ -131,9 +133,7 @@ li{
     background: #fff url(../img/icons-home.png) no-repeat 15px 10px;
     padding: 0 4px 0 45px;
 }
-.search {
-    display:none;
-}
+
 .search-box .button{
     height: 42px;
     overflow: hidden;
@@ -141,7 +141,7 @@ li{
     background: #2980c8;
     width: 30%;
     outline: none;
-    border-radius: 10px;
+    border-radius: 0 22px 22px 0;
     font: 16px/44px "Microsoft Yahei";
     color: #fff;
     float: right;
@@ -242,7 +242,6 @@ li{
     /*.search-box .search{
         font-size: 12px;
         /*width: 71%;*/
-
         .search-box .search {
             font-size: 12px;
             /* width: 71%; */
@@ -251,20 +250,20 @@ li{
             width: 33%;
             margin-left:216px;
             margin-top:-6px;
+            display:none;
         }
-
-    /*.search-box .button{
+  /*.search-box .button{
         font-size: 12px;
     }*/
-
-        .search-box .button {
-            font-size: 12px;
-            height: 26px;
-            width: 35px;
-            text-align: center;
-            font: 10px/26px "Microsoft Yahei";
-            margin-top:-6px;
-        }
+  .search-box .button {
+    font-size: 12px;
+    height: 26px;
+    width: 35px;
+    text-align: center;
+    font: 10px/26px "Microsoft Yahei";
+    margin-top: -6px;
+    border-radius: 22px;
+  }
    
  .heads > .header-nav > ul li ul li{
         float:none;
@@ -326,6 +325,9 @@ li{
     width: 10%;
     float: left;
 }
+    .header-nav .main-nav li :hover {
+            border:0px ;
+    }
 .header-nav .main-nav li>ul>li{
     width: 100% !important;
 }
@@ -1395,7 +1397,44 @@ a:hover{
 }
 
 
-
+@media screen and (max-width:600px) {
+    .ma-content {
+        width:140%;
+    }
+    .path {
+        width:100%;
+    }
+    .searchcon {
+        height:24em;
+    }
+    .searchcon p{
+        text-align:center;
+        text-indent:-190px;
+    }
+    .ma-content .pagination {
+        display:inline;
+        margin-right:3em;
+    }
+    .searchcon ul li {
+         font-size:12px;
+    }
+    .searchcon ul {
+        text-align:left;
+        text-indent:84px;
+    }
+        .searchcon ul li span{
+           display:inline-block;
+           margin-right:8px;
+           margin-top:-35px;
+           margin-left:31px;
+        }
+    .ma-left {
+        margin-left:-11px;
+    }
+   .ma-center>p{
+          display:initial;    
+   }
+}
 .ma-content{
     padding: 10px;
     background: #fff;
@@ -1406,6 +1445,10 @@ a:hover{
     text-align: left;
     margin:0 auto;
 }
+    .ma-content .pagination {
+        margin-left: 416px;
+        margin-top: 40px;
+    }
 .fot-right div{
     text-align: center;
     line-height: 26px;
@@ -1475,6 +1518,16 @@ a:hover{
 }
 @media(max-width:400px) {
     .ma-right h1{font-size:12px;}
+    .ma-right {
+       width:72%;
+    }
+    .ma-right h3 {
+        margin-left:18px;
+    }
+
+    .ma-center img {
+        width:100%;
+    }
 }
 .property {
     font-size: 14px;
@@ -1692,18 +1745,21 @@ a:hover{
 .searchcon p{
     font-size: 18px;
     color:#1a91d4;
+    margin-left:-186px;
+    margin-top:29px;
 }
 .searchcon ul{
     margin-top: 30px;
 }
 .searchcon ul li{
     display: block;
-    width: 100%;
+    width: 157%;
     float: left;
     padding: 0 12px;
     height: 40px;
     border-bottom: 1px solid #7ecef4;
     line-height: 40px;
+    margin-left:-200px;
 }
 .searchcon ul li span {
     /*width: 14%;*/
@@ -1912,6 +1968,7 @@ a:hover{
     font-weight: 400;
     background-color: #0084cf;
     letter-spacing: 5px;
+    text-indent:5px;
 }
 .notice .part2 {
     float: left;
@@ -2037,10 +2094,12 @@ a:hover{
         font-size: 12px;
         width: 22%;
         margin-top: 2px;
+        /*margin-right:85px;*/
     }
     .ma-center ul li a {
         font-size:12px;
         width:60%;
+        margin-left:-9px;
     }
     .ma-center .firstli .x-pic img {
            width:90px;
@@ -2193,7 +2252,29 @@ a:hover{
     height: 210px;
     /*background-color: blue;*/
 }
-.mylists ul li p{
+
+@media screen and (max-width:600px) {
+    .mylists1 ul li  {
+        margin-left:20px;
+        width:39%;
+    }
+    .box_image img {
+        width:330px!important;
+        margin-left:0px;
+    }
+    .mylists ul li {
+        margin-left:20px;
+        width:39%;
+    }
+}
+
+
+
+
+
+
+
+.mylists ul li p {
     line-height: 40px;
     text-align: center;
     font-size: 18px;

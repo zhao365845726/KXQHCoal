@@ -10,227 +10,305 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<!--头部-->
-<div class="header navbar navbar-default">
+  <!--头部-->
+  <div class="header navbar navbar-default">
     <div class="header-top navbar-header">
-        <img src="img/logo.png" alt="">
-        <div class="search-box">
-            <form action="">
-                <input type="text" class="search" placeholder="请输入关键字">
-                <div  class="button">
-                    搜索
-                </div>
-            </form>
-        </div>
+      <img src="img/logo.png" alt="">
+      <div class="search-box">
+        <form action="">
+          <input type="text" class="search" placeholder="请输入关键字">
+          <div class="button" id="btn_search">
+            搜索
+          </div>
+        </form>
+      </div>
     </div>
     <div class="container">
     </div>
     <div class="heads">
-        <div class="header-nav container">
-            <ul class="main-nav navbar-left">
-                <div class="navbar-header ">
-                    <li class="first-li">
-                        <a href="index.html">首页</a>
-                    </li>
-                    <li class="bgfa first-li dropdown">
-                        <a href="/page.html?title=首善前和&id=f0bc988f-77a4-4044-af50-1c93f1859fa8" class="dropdown-toggle" data-toggle="dropdoen">首善前和</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/enterprise.html?title=企业简介&id=f0bc988f-77a4-4044-af50-1c93f1859fa8">企业简介</a></li>
-                            <li><a href="/enterprise.html?title=企业文化&id=b1c97066-0750-49d8-9b34-cb3f85f3a097">企业文化</a></li>
-                            <li><a href="/enterprise.html?title=企业荣誉&id=da7e14d0-a637-40fd-b85f-9961ded4babb">企业荣誉</a></li>
-                            <li><a href="/enterprise.html?title=产品介绍&id=11dea9ec-4d9b-4c09-9926-97d12929920c">产品介绍</a></li>
-                        </ul>
-                    </li>
-                    <li class="first-li bgfa">
-                        <a href="/newslist.html?title=新闻时讯&id=ac1e5571-d81f-4fc7-886c-c4ba6d7a871a">新闻时讯</a>
-                        <ul class="two2">
-                            <li><a href="/newslist.html?title=公司要闻&id=ac1e5571-d81f-4fc7-886c-c4ba6d7a871a">公司要闻</a></li>
-                            <li><a href="/newslist.html?title=基层动态&id=a460675f-8a68-4bbb-b0cd-825f7578fe00">基层动态</a></li>
-                            <li><a href="/newslist.html?title=特别报道&id=e6e0ea92-0f43-418b-b838-b88b69744e57">特别报道</a></li>
-                            <li><a href="/newslist.html?title=热点专题&id=c8e12965-b96e-4d88-986b-5063e79bac7a">热点专题</a></li>
-                        </ul>
-                    </li>
-                    <li class="first-li bgfa">
-                        <a href="/qianhe.html?title=前和党建&id=b5af22c8-59b7-4cbd-94c0-6d8ed6c2473a">前和党建</a>
-                        <ul class="two2">
-                            <li><a href="/qianhe.html?title=党建动态&id=cd5c323e-5d09-41f6-82b7-9a98b2431370">党建动态</a></li>
-                            <li><a href="/qianhe.html?title=廉政建设&id=37a17e18-c055-43e6-80be-147a81e78350">廉政建设</a></li>
-                            <li><a href="/qianhe.html?title=上级精神&id=27faa66a-c165-410c-8139-ad7318d41bfd">上级精神</a></li>
-                            <li><a href="/qianhe.html?title=团建工作&id=722c2e2f-35d1-4712-84fb-4d78516ce7be">团建工作</a></li>
-                        </ul>
-                    </li>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <li>
-                        <a class="navt" href="/enterprise.html?title=首善前和&id=f0bc988f-77a4-4044-af50-1c93f1859fa8"></a>
-                        <ul>
-                            <li><a href="/enterprise.html?title=企业简介&id=f0bc988f-77a4-4044-af50-1c93f1859fa8" class="navc"></a></li>
-                            <li><a href="/enterprise.html?title=企业文化&id=b1c97066-0750-49d8-9b34-cb3f85f3a097" class="navc"></a></li>
-                            <li><a href="/enterprise.html?title=企业荣誉&id=da7e14d0-a637-40fd-b85f-9961ded4babb" class="navc"></a></li>
-                            <li><a href="/enterprise.html?title=产品介绍&id=11dea9ec-4d9b-4c09-9926-97d12929920c" class="navc"></a></li>
-                        </ul>
-                    </li>
-                    <li class="spe">|</li>
-                    <li>
-                        <a class="navt" href="/newslist.html?title=新闻时讯&id=ac1e5571-d81f-4fc7-886c-c4ba6d7a871a"></a>
-                        <ul>
-                            <li><a href="/newslist.html?title=公司要闻&id=ac1e5571-d81f-4fc7-886c-c4ba6d7a871a" class="navc"></a></li>
-                            <li><a href="/newslist.html?title=基层动态&id=a460675f-8a68-4bbb-b0cd-825f7578fe00" class="navc"></a></li>
-                            <li><a href="/newslist.html?title=特别报道&id=e6e0ea92-0f43-418b-b838-b88b69744e57" class="navc"></a></li>
-                            <li><a href="/newslist.html?title=热点专题&id=c8e12965-b96e-4d88-986b-5063e79bac7a" class="navc"></a></li>
-                        </ul>
-                    </li>
-                    <li class="spe">|</li>
-                    <li>
-                        <a class="navt" href="/security.html?title=安全生产&id=a5a566c1-0bc3-4bcb-a43d-aaf9644c13cd"></a>
-                        <ul>
-                            <li><a href="/security.html?title=生产动态&id=a5a566c1-0bc3-4bcb-a43d-aaf9644c13cd" class="navc"></a></li>
-                            <li><a href="/security.html?title=安全文化&id=b6b4e273-fe79-4a92-9232-05d48696b2af" class="navc"></a></li>
-                            <li><a href="/security.html?title=法律法规&id=f790e6c8-db86-4271-a4da-00ac17b0ac37" class="navc"></a></li>
-                            <li><a href="/security.html?title=生态矿山&id=64235dcc-ba31-4f35-8fcd-48a8b0982165" class="navc"></a></li>
-                        </ul>
-                    </li>
-                    <li class="spe">|</li>
-                    <li>
-                        <a class="navt" href="/qianhe.html?title=前和党建&id=cd5c323e-5d09-41f6-82b7-9a98b2431370"></a>
-                        <ul>
-                            <li><a href="/qianhe.html?title=党建动态&id=cd5c323e-5d09-41f6-82b7-9a98b2431370" class="navc"></a></li>
-                            <li><a href="/qianhe.html?title=廉政建设&id=37a17e18-c055-43e6-80be-147a81e78350" class="navc"></a></li>
-                            <li><a href="/qianhe.html?title=上级精神&id=27faa66a-c165-410c-8139-ad7318d41bfd" class="navc"></a></li>
-                            <li><a href="/qianhe.html?title=团建工作&id=722c2e2f-35d1-4712-84fb-4d78516ce7be" class="navc"></a></li>
-                        </ul>
-                    </li>
-                    <li class="spe">|</li>
-                    <li>
-                        <a class="navt" href="/Management.html?title=经营管理&id=7a14ec45-a68d-4be0-a698-2a70e9122bf8"></a>
-                        <ul>
-                            <li><a href="/Management.html?title=经营动态&id=7a14ec45-a68d-4be0-a698-2a70e9122bf8" class="navc"></a></li>
-                            <li><a href="/Management.html?title=创新高地&id=24d61bb2-7670-40c0-bc62-a5f6324df3d2" class="navc"></a></li>
-                            <li><a href="/Management.html?title=降本增效&id=9be72063-ec73-4fa5-8be2-6f106f9591eb" class="navc"></a></li>
-                            <li><a href="/Management.html?title=行业聚焦&id=6c8b4cdd-ef4b-4e3d-ae87-901be775867d" class="navc"></a></li>
-                        </ul>
-                    </li>
-                    <li class="spe">|</li>
-                    <li>
-                        <a class="navt" href="/happiness.html?title=幸福前和&id=ac435425-69ea-4aa9-bc1c-4952e72bae63"></a>
-                        <ul>
-                            <li><a href="/happiness.html?title=人文活动&id=ac435425-69ea-4aa9-bc1c-4952e72bae63" class="navc"></a></li>
-                            <li><a href="/happiness.html?title=职工风采&id=4cbfe924-8359-48cb-a11a-e20c8dbf69c5" class="navc"></a></li>
-                            <li><a href="/happiness.html?title=前和故事&id=ca89efd2-a5de-46c4-af68-78a8a962fb62" class="navc"></a></li>
-                            <li><a href="/happiness.html?title=帮扶济困&id=830e9ffd-6d44-40ab-9aa9-fd38141e1d5c" class="navc"></a></li>
-                        </ul>
-                    </li>
-                    <li class="spe">|</li>
-                    <li>
-                        <a class="navt" href="/Culture.html?title=前和文苑&id=49d74a56-ec5b-4383-b3f8-7ee7bd995dd6"></a>
-                        <ul>
-                            <li><a href="/Culture.html?title=魅力前和&id=49d74a56-ec5b-4383-b3f8-7ee7bd995dd6" class="navc"></a></li>
-                            <li><a href="/Culture.html?title=原创天地&id=9d0f6295-6b2e-42b5-84ad-ced75a776fc1" class="navc"></a></li>
-                            <li><a href="/Culture.html?title=书香前和&id=77378bd9-b680-404b-b6eb-ba2e5530e275" class="navc"></a></li>
-                            <li><a href="/Culture.html?title=阅读推荐&id=186120af-fdfa-4d89-b853-361afe92810b" class="navc"></a></li>
-                        </ul>
-                    </li>
-                    <div class="email"><div class="tag"><p>矿长邮箱:</p><p>qhkzxx@163.com</p></div></div>
-                </div>
-            </ul>
-        </div>
+      <div class="header-nav container">
+        <ul class="main-nav navbar-left">
+          <div class="navbar-header ">
+            <li class="first-li">
+              <a href="index.html">首页</a>
+            </li>
+            <li class="bgfa first-li dropdown">
+              <a href="/enterprise.html?title=%E9%A6%96%E5%96%84%E5%89%8D%E5%92%8C&id=f0bc988f-77a4-4044-af50-1c93f1859fa8" class="dropdown-toggle" data-toggle="dropdoen">首善前和</a>
+              <ul class="dropdown-menu">
+                <li><a href="/enterprise.html?title=企业简介&id=f0bc988f-77a4-4044-af50-1c93f1859fa8">企业简介</a></li>
+                <li><a href="/enterprise.html?title=企业文化&id=b1c97066-0750-49d8-9b34-cb3f85f3a097">企业文化</a></li>
+                <li><a href="/enterprise.html?title=企业荣誉&id=da7e14d0-a637-40fd-b85f-9961ded4babb">企业荣誉</a></li>
+                <li><a href="/enterprise.html?title=产品介绍&id=11dea9ec-4d9b-4c09-9926-97d12929920c">产品介绍</a></li>
+              </ul>
+            </li>
+            <li class="first-li bgfa">
+              <a href="/newslist.html?title=新闻时讯&id=ac1e5571-d81f-4fc7-886c-c4ba6d7a871a">新闻时讯</a>
+              <ul class="two2">
+                <li><a href="/newslist.html?title=公司要闻&id=ac1e5571-d81f-4fc7-886c-c4ba6d7a871a">公司要闻</a></li>
+                <li><a href="/newslist.html?title=基层动态&id=a460675f-8a68-4bbb-b0cd-825f7578fe00">基层动态</a></li>
+                <li><a href="/newslist.html?title=特别报道&id=e6e0ea92-0f43-418b-b838-b88b69744e57">特别报道</a></li>
+                <li><a href="/newslist.html?title=热点专题&id=c8e12965-b96e-4d88-986b-5063e79bac7a">热点专题</a></li>
+              </ul>
+            </li>
+            <li class="first-li bgfa">
+              <a href="/qianhe.html?title=前和党建&id=b5af22c8-59b7-4cbd-94c0-6d8ed6c2473a">前和党建</a>
+              <ul class="two2">
+                <li><a href="/qianhe.html?title=党建动态&id=cd5c323e-5d09-41f6-82b7-9a98b2431370">党建动态</a></li>
+                <li><a href="/qianhe.html?title=廉政建设&id=37a17e18-c055-43e6-80be-147a81e78350">廉政建设</a></li>
+                <li><a href="/qianhe.html?title=上级精神&id=27faa66a-c165-410c-8139-ad7318d41bfd">上级精神</a></li>
+                <li><a href="/qianhe.html?title=团建工作&id=722c2e2f-35d1-4712-84fb-4d78516ce7be">团建工作</a></li>
+              </ul>
+            </li>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <li>
+              <a class="navt" href="/enterprise.html?title=首善前和&id=f0bc988f-77a4-4044-af50-1c93f1859fa8"></a>
+              <ul>
+                <li><a href="/enterprise.html?title=企业简介&id=f0bc988f-77a4-4044-af50-1c93f1859fa8" class="navc"></a></li>
+                <li><a href="/enterprise.html?title=企业文化&id=b1c97066-0750-49d8-9b34-cb3f85f3a097" class="navc"></a></li>
+                <li><a href="/enterprise.html?title=企业荣誉&id=da7e14d0-a637-40fd-b85f-9961ded4babb" class="navc"></a></li>
+                <li><a href="/enterprise.html?title=产品介绍&id=11dea9ec-4d9b-4c09-9926-97d12929920c" class="navc"></a></li>
+              </ul>
+            </li>
+            <li class="spe">|</li>
+            <li>
+              <a class="navt" href="/newslist.html?title=新闻时讯&id=ac1e5571-d81f-4fc7-886c-c4ba6d7a871a"></a>
+              <ul>
+                <li><a href="/newslist.html?title=公司要闻&id=ac1e5571-d81f-4fc7-886c-c4ba6d7a871a" class="navc"></a></li>
+                <li><a href="/newslist.html?title=基层动态&id=a460675f-8a68-4bbb-b0cd-825f7578fe00" class="navc"></a></li>
+                <li><a href="/newslist.html?title=特别报道&id=e6e0ea92-0f43-418b-b838-b88b69744e57" class="navc"></a></li>
+                <li><a href="/newslist.html?title=热点专题&id=c8e12965-b96e-4d88-986b-5063e79bac7a" class="navc"></a></li>
+              </ul>
+            </li>
+            <li class="spe">|</li>
+            <li>
+              <a class="navt" href="/security.html?title=安全生产&id=a5a566c1-0bc3-4bcb-a43d-aaf9644c13cd"></a>
+              <ul>
+                <li><a href="/security.html?title=生产动态&id=a5a566c1-0bc3-4bcb-a43d-aaf9644c13cd" class="navc"></a></li>
+                <li><a href="/security.html?title=安全文化&id=b6b4e273-fe79-4a92-9232-05d48696b2af" class="navc"></a></li>
+                <li><a href="/security.html?title=法律法规&id=f790e6c8-db86-4271-a4da-00ac17b0ac37" class="navc"></a></li>
+                <li><a href="/security.html?title=生态矿山&id=64235dcc-ba31-4f35-8fcd-48a8b0982165" class="navc"></a></li>
+              </ul>
+            </li>
+            <li class="spe">|</li>
+            <li>
+              <a class="navt" href="/qianhe.html?title=前和党建&id=cd5c323e-5d09-41f6-82b7-9a98b2431370"></a>
+              <ul>
+                <li><a href="/qianhe.html?title=党建动态&id=cd5c323e-5d09-41f6-82b7-9a98b2431370" class="navc"></a></li>
+                <li><a href="/qianhe.html?title=廉政建设&id=37a17e18-c055-43e6-80be-147a81e78350" class="navc"></a></li>
+                <li><a href="/qianhe.html?title=上级精神&id=27faa66a-c165-410c-8139-ad7318d41bfd" class="navc"></a></li>
+                <li><a href="/qianhe.html?title=团建工作&id=722c2e2f-35d1-4712-84fb-4d78516ce7be" class="navc"></a></li>
+              </ul>
+            </li>
+            <li class="spe">|</li>
+            <li>
+              <a class="navt" href="/Management.html?title=经营管理&id=7a14ec45-a68d-4be0-a698-2a70e9122bf8"></a>
+              <ul>
+                <li><a href="/Management.html?title=经营动态&id=7a14ec45-a68d-4be0-a698-2a70e9122bf8" class="navc"></a></li>
+                <li><a href="/Management.html?title=创新高地&id=24d61bb2-7670-40c0-bc62-a5f6324df3d2" class="navc"></a></li>
+                <li><a href="/Management.html?title=降本增效&id=9be72063-ec73-4fa5-8be2-6f106f9591eb" class="navc"></a></li>
+                <li><a href="/Management.html?title=行业聚焦&id=6c8b4cdd-ef4b-4e3d-ae87-901be775867d" class="navc"></a></li>
+              </ul>
+            </li>
+            <li class="spe">|</li>
+            <li>
+              <a class="navt" href="/happiness.html?title=幸福前和&id=ac435425-69ea-4aa9-bc1c-4952e72bae63"></a>
+              <ul>
+                <li><a href="/happiness.html?title=人文活动&id=ac435425-69ea-4aa9-bc1c-4952e72bae63" class="navc"></a></li>
+                <li><a href="/happiness.html?title=职工风采&id=4cbfe924-8359-48cb-a11a-e20c8dbf69c5" class="navc"></a></li>
+                <li><a href="/happiness.html?title=前和故事&id=ca89efd2-a5de-46c4-af68-78a8a962fb62" class="navc"></a></li>
+                <li><a href="/happiness.html?title=帮扶济困&id=830e9ffd-6d44-40ab-9aa9-fd38141e1d5c" class="navc"></a></li>
+              </ul>
+            </li>
+            <li class="spe">|</li>
+            <li>
+              <a class="navt" href="/Culture.html?title=前和文苑&id=49d74a56-ec5b-4383-b3f8-7ee7bd995dd6"></a>
+              <ul>
+                <li><a href="/Culture.html?title=魅力前和&id=49d74a56-ec5b-4383-b3f8-7ee7bd995dd6" class="navc"></a></li>
+                <li><a href="/Culture.html?title=原创天地&id=9d0f6295-6b2e-42b5-84ad-ced75a776fc1" class="navc"></a></li>
+                <li><a href="/Culture.html?title=书香前和&id=77378bd9-b680-404b-b6eb-ba2e5530e275" class="navc"></a></li>
+                <li><a href="/Culture.html?title=阅读推荐&id=186120af-fdfa-4d89-b853-361afe92810b" class="navc"></a></li>
+              </ul>
+            </li>
+            <div class="email"><div class="tag"><p>矿长邮箱:</p><p>qhkzxx@163.com</p></div></div>
+          </div>
+        </ul>
+      </div>
     </div>
-</div>
-<!--内容-->
-<div class="content-in">
+  </div>
+  <!--内容-->
+  <div class="content-in">
     <div class="path container">
-        <em>您的位置：</em><a href="/">首页</a>
-        ><a href="#" class="patha"></a>
+      <em>您的位置：</em><a href="/">首页</a>
+      ><a href="#" class="patha"></a>
     </div>
     <div class="ma-content container row">
-        <div class="ma-left col-lg-3">
-            <h3>专栏</h3>
-            <div class="">
-                <ul class="menuList"><li><a href="/enterprise.html?title=企业简介&amp;id=49d74a56-ec5b-4383-b3f8-7ee7bd995dd6">企业简介</a></li><li class="taba"><a >企业文化</a></li><li class="tabb"><a >企业荣誉</a></li><li class="tabc"><a >产品介绍</a></li></ul>
-            </div>
+      <div class="ma-left col-lg-3">
+        <h3>专栏</h3>
+        <div class="">
+          <ul class="menuList"><li><a href="/enterprise.html?title=企业简介&amp;id=49d74a56-ec5b-4383-b3f8-7ee7bd995dd6">企业简介</a></li><li class="taba"><a>企业文化</a></li><li class="tabb"><a>企业荣誉</a></li><li class="tabc"><a>产品介绍</a></li></ul>
         </div>
-        <div class="ma-right col-lg-9">
-            <h3 class="title"></h3>
-            <div class="ma-center">
-                <img src="" alt="">
+      </div>
+      <div class="ma-right col-lg-9">
+        <h3 class="title"></h3>
+        <div class="ma-center">
+          <img src="" alt="">
 
-            </div>
-            <div class="mylists" style="display: none">
-                <ul>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                </ul>
-            </div>
-            <div class="mylists1" style="display: none">
-                <ul>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                    <li><a><img src="" alt=""><p></p></a></li>
-                </ul>
-            </div>
         </div>
+        <div class="mylists" style="display: none">
+          <ul>
+            <li><a><img src="" alt=""><p></p></a></li>
+            <li><a><img src="" alt=""><p></p></a></li>
+            <li><a><img src="" alt=""><p></p></a></li>
+            <li><a><img src="" alt=""><p></p></a></li>
+            <li><a><img src="" alt=""><p></p></a></li>
+            <li><a><img src="" alt=""><p></p></a></li>
+          </ul>
+        </div>
+        <div class="mylists1" style="display: none">
+          <ul>
+            <li><a><img src="" alt=""><p></p></a></li>
+            <li><a><img src="" alt=""><p></p></a></li>
+            <li><a><img src="" alt=""><p></p></a></li>
+            <li><a><img src="" alt=""><p></p></a></li>
+            <li><a><img src="" alt=""><p></p></a></li>
+            <li><a><img src="" alt=""><p></p></a></li>
+            <li><a><img src="" alt=""><p></p></a></li>
+            <li><a><img src="" alt=""><p></p></a></li>
+            <li><a><img src="" alt=""><p></p></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div>
-<div id="search" style="display: none">
+  </div>
+  <div id="search" style="display: none">
     <div class="path container">
-        <em>您的位置：</em><a href="/">首页</a>
+      <em>您的位置：</em><a href="/">首页</a>
     </div>
     <div class="ma-content container row">
-        <div class="searchcon">
-            <p>搜索到一下结果:</p>
-            <ul></ul>
-        </div>
+      <div class="searchcon">
+        <p>搜索到一下结果:</p>
+        <ul></ul>
+      </div>
+      <ul class="pagination" id="pagination1"></ul>
     </div>
-</div></div>
-<div class="footer container">
+  </div>
+  <div class="footer container">
     <div class="fotcontent row">
-        <div class="fot-right">
-            <div class="footNav">
-                <li>
-                    <a class="tit" href="" title="关于我们">关于我们</a>
-                </li>
-                <li>
-                    <a class="tit"  title="联系我们">联系我们</a>
-                </li>
-                <li>
-                    <a class="tit" href="" title="网站地图">网站地图</a>
-                </li>
-                <li>
-                    <a class="tit" href="" title="版权声明">版权声明</a>
-                </li>
-                <li>
-                    <a class="tit" href="" title="友情链接">友情链接</a>
-                </li>
-            </div>
-            <p>Copyright ©️ 1999-2019 &nbsp;&nbsp;GaoPing Municipal KexingQianhe All Rights Reserved</p>
-            <p>科兴前和煤业 版权所有 1999-2019 &nbsp;&nbsp</p>
-            <p>地址：山西省高平市原村乡前河村 &nbsp; &nbsp;<a href="#"><span class="ba">座机：03565919999</span></a></p>
-            <div class="zc"><a href="#"><img src="img/erweima.jpg"></a></div>
+      <div class="fot-right">
+        <div class="footNav">
+          <li>
+            <a class="tit" href="" title="关于我们">关于我们</a>
+          </li>
+          <li>
+            <a class="tit" title="联系我们">联系我们</a>
+          </li>
+          <li>
+            <a class="tit" href="" title="网站地图">网站地图</a>
+          </li>
+          <li>
+            <a class="tit" href="" title="版权声明">版权声明</a>
+          </li>
+          <li>
+            <a class="tit" href="" title="友情链接">友情链接</a>
+          </li>
         </div>
+        <p>Copyright ©️ 1999-2019 &nbsp;&nbsp;GaoPing Municipal KexingQianhe All Rights Reserved</p>
+        <p>科兴前和煤业 版权所有 1999-2019 &nbsp;&nbsp</p>
+        <p>地址：山西省高平市原村乡前河村 &nbsp; &nbsp;<a href="#"><span class="ba">座机：03565919999</span></a></p>
+        <div class="zc"><a href="#"><img src="img/erweima.jpg"></a></div>
+      </div>
     </div>
-</div>
-<div class="mask none">
-    
-</div>
-<div class="mask_box none">
+  </div>
+  <div class="mask none">
+
+  </div>
+  <div class="mask_box none">
     <img src="img/goback.png" alt="" id="goback">
     <img src="img/advance.png" alt="" id="advance">
     <img src="" alt="" id="img">
-</div>
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/router.js"></script>
-<script src="js/index.js"></script>
-<script src="js/enterprise.js"></script>
+  </div>
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/enterprise.js"></script>
+  <script src="js/jqPaginator.js" type="text/javascript"></script>
+  <script>
+    $(function () {
+      $("#btn_search").click(function () {
+        $(".carousel").css("display", "none");
+        $(".content").css("display", "none");
+        $(".content-in").css("display", "none");
+        $("#search").css("display", "block");
+        getData(1, 6);
+      })
+    })
+
+    $('#pagination1').jqPaginator({
+      visiblepages: 1,   //展示页数
+      currentpage: 1,    //当前页数
+      totalCounts: 100,   //总条目数
+      pageSize:6,
+      first: '<li><a href="javascript:void(0);">首页</a></li>',
+      prev: '<li><a href="javascript:void(0);">上一页</a></li>',
+      next: '<li><a href="javascript:void(0);">下一页</a></li>',
+      last: '<li><a href="javascript:void(0);">末页</a></li>',
+      page: '<li><a href="javascript:void(0);">{{page}}</a></li>',
+      onPageChange: function (pages) {                            //回调函数
+        $('#text').html('当前第' + pages + '页');
+        getData(pages, 6);
+      },
+    });
+
+    function getData(pageIndex, pageSize) {
+      var txt = $(".search").val();
+      //console.log(txt.length)
+      if (txt.length == 0) {
+        //alert("请输入要搜索的内容")
+        //prompt("请输入要搜索的内容")
+      } else {
+        debugger
+        $.ajax({
+          type: "post",
+          url: "http://kxqh.api.milisx.xyz/api/content/getarticlesearchlist",
+          dateType: "json",
+          data: {
+            "Title": txt,
+            "PageIndex": pageIndex,
+            "PageSize": pageSize,
+          },
+          success: function (data) {
+            console.log(data);
+            if (data.data.lst_articlesearchlist.length > 0) {
+              $("#ma").css("display", "none")
+              $(".searchcon ul").empty();
+              for (var i = 0; i <data.data.lst_articlesearchlist.length; i++) {
+                $(".searchcon ul").append(" <li id=" + data.data.lst_articlesearchlist[i].Id + ">" + data.data.lst_articlesearchlist[i].Title + "<span>" + data.data.lst_articlesearchlist[i].CreateTime + "</span>" + "</li>")
+              }
+              $('#pagination1').jqPaginator('option', {
+                  totalCounts: data.data.articlecount,//总页数
+              });
+              $(".searchcon ul").on("click", "li", function () {
+                $.ajax({
+                  type: "POST",
+                  url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                  dataType: "json",
+                  data: {
+                    "ArticleId": $(this).attr("id"),
+                  },
+                  success: function (data) {
+                    $(".searchcon").empty();
+                    $(".searchcon").append("<img src=" + data.data.CoverPhoto + ">" + "<div>" + data.data.Body + "</div>");
+                  }
+                })
+              });
+            }
+          }
+        })
+      }
+    }
+
+  </script>
 </body>
 </html>
