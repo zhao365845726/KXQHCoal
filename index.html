@@ -35,7 +35,7 @@
               </li>
               <li class="bgfa first-li dropdown">
                 <a href="/enterprise.html?title=%E9%A6%96%E5%96%84%E5%89%8D%E5%92%8C&id=f0bc988f-77a4-4044-af50-1c93f1859fa8" class="dropdown-toggle" data-toggle="dropdoen">首善前和</a>
-                <ul class="dropdown-menu">
+                <ul class="two2">
                   <li><a href="/enterprise.html?title=企业简介&id=f0bc988f-77a4-4044-af50-1c93f1859fa8">企业简介</a></li>
                   <li><a href="/enterprise.html?title=企业文化&id=b1c97066-0750-49d8-9b34-cb3f85f3a097">企业文化</a></li>
                   <li><a href="/enterprise.html?title=企业荣誉&id=da7e14d0-a637-40fd-b85f-9961ded4babb">企业荣誉</a></li>
@@ -688,7 +688,6 @@
         //alert("请输入要搜索的内容")
         //prompt("请输入要搜索的内容")
       } else {
-        debugger
         $.ajax({
           type: "post",
           url: "http://kxqh.api.milisx.xyz/api/content/getarticlesearchlist",
@@ -704,7 +703,7 @@
               $("#ma").css("display", "none")
               $(".searchcon ul").empty();
               for (var i = 0; i <data.data.lst_articlesearchlist.length; i++) {
-                $(".searchcon ul").append(" <li id=" + data.data.lst_articlesearchlist[i].Id + ">" + data.data.lst_articlesearchlist[i].Title + "<span>" + data.data.lst_articlesearchlist[i].CreateTime + "</span>" + "</li>")
+                $(".searchcon ul").append(" <li id=" + data.data.lst_articlesearchlist[i].Id + ">" + "<p>"+ data.data.lst_articlesearchlist[i].Title +"</p>" ,"<span>" + data.data.lst_articlesearchlist[i].CreateTime + "</span>" + "</li>")
               }
               $('#pagination1').jqPaginator('option', {
                   totalCounts: data.data.articlecount,//总页数

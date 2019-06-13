@@ -1415,9 +1415,9 @@ a:hover{
         display:inline;
         margin-right:3em;
     }
-    .searchcon ul li {
-         font-size:12px;
-    }
+  .searchcon ul li {
+    font-size: 12px;
+  }
     .searchcon ul {
         text-align:left;
         text-indent:84px;
@@ -1434,6 +1434,9 @@ a:hover{
    .ma-center>p{
           display:initial;    
    }
+  .ma-left .menuList {
+        width:375px;
+  }
 }
 .ma-content{
     padding: 10px;
@@ -1607,11 +1610,12 @@ a:hover{
     display: inline-block;
     width: 80%;
     font-size: 16px;
-    line-height: 53px;
+    line-height: 13px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     color: #676767;
+    margin-top:16px;
 }
 .ma-center ul li span{
     width: 13%;
@@ -1753,7 +1757,7 @@ a:hover{
 }
 .searchcon ul li{
     display: block;
-    width: 157%;
+    width: 157%!important;
     float: left;
     padding: 0 12px;
     height: 40px;
@@ -2100,6 +2104,7 @@ a:hover{
         font-size:12px;
         width:60%;
         margin-left:-9px;
+        margin-top:20px;
     }
     .ma-center .firstli .x-pic img {
            width:90px;
@@ -2138,17 +2143,17 @@ a:hover{
         display: none;
         margin: auto;
         padding: inherit;
+        border-radius:2px;
     }
         .header-nav .main-nav div li:hover ul {
             display:block;
         }
     .header-nav .main-nav div li a:hover {
         color: white;
-        background-color: #337ab7;
     }
     .header-nav .main-nav div li ul li {
         color:black;
-        background-color:aqua;
+        border-radius:0px;
     }
 
 }

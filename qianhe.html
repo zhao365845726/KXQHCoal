@@ -34,7 +34,7 @@
             </li>
             <li class="bgfa first-li dropdown">
               <a href="/page.html?title=首善前和&id=f0bc988f-77a4-4044-af50-1c93f1859fa8" class="dropdown-toggle" data-toggle="dropdoen">首善前和</a>
-              <ul class="dropdown-menu">
+              <ul class="two2">
                 <li><a href="/enterprise.html?title=企业简介&id=f0bc988f-77a4-4044-af50-1c93f1859fa8">企业简介</a></li>
                 <li><a href="/enterprise.html?title=企业文化&id=b1c97066-0750-49d8-9b34-cb3f85f3a097">企业文化</a></li>
                 <li><a href="/enterprise.html?title=企业荣誉&id=da7e14d0-a637-40fd-b85f-9961ded4babb">企业荣誉</a></li>
@@ -230,10 +230,10 @@
             page: '<li><a href="javascript:void(0);">{{page}}</a></li>',
             onPageChange: function (pages) {                            //回调函数
                 $('#text').html('当前第' + pages + '页');
-                getData(pages, 6);
+                gettData(pages, 6);
             }
          });
-        function getData(pageIndex, pageSize) {
+        function gettData(pageIndex, pageSize) {
             var getnavcategorylistparam;
             getnavcategorylistparam = {
                 "categoryid": 'cd5c323e-5d09-41f6-82b7-9a98b2431370',
