@@ -536,9 +536,9 @@
       <div class="ma-content container row">
         <div class="searchcon">
           <p>搜索到一下结果:</p>
-          <ul></ul>
+          <ul  id="shouye"></ul>
         </div>
-        <ul class="pagination" id="pagination1"></ul>
+        <ul class="pagination" id="pagination2"></ul>
       </div>
     </div>
   </div>
@@ -665,7 +665,7 @@
       })
     })
 
-    $('#pagination1').jqPaginator({
+    $('#pagination2').jqPaginator({
       visiblepages: 1,   //展示页数
       currentpage: 1,    //当前页数
       totalCounts: 100,   //总条目数
@@ -701,14 +701,14 @@
             console.log(data);
             if (data.data.lst_articlesearchlist.length > 0) {
               $("#ma").css("display", "none")
-              $(".searchcon ul").empty();
+              $(".searchcon #shouye").empty();
               for (var i = 0; i <data.data.lst_articlesearchlist.length; i++) {
-                $(".searchcon ul").append(" <li id=" + data.data.lst_articlesearchlist[i].Id + ">" + "<p>"+ data.data.lst_articlesearchlist[i].Title +"</p>" ,"<span>" + data.data.lst_articlesearchlist[i].CreateTime + "</span>" + "</li>")
+                $(".searchcon #shouye").append(" <li id=" + data.data.lst_articlesearchlist[i].Id + ">" + "<p>"+ data.data.lst_articlesearchlist[i].Title +"</p>" ,"<span>" + data.data.lst_articlesearchlist[i].CreateTime + "</span>" + "</li>")
               }
-              $('#pagination1').jqPaginator('option', {
+              $('#pagination2').jqPaginator('option', {
                   totalCounts: data.data.articlecount,//总页数
               });
-              $(".searchcon ul").on("click", "li", function () {
+              $(".searchcon #shouye").on("click", "li", function () {
                 $.ajax({
                   type: "POST",
                   url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",

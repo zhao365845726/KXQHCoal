@@ -436,7 +436,7 @@
               $("#ma").css("display", "none")
               $(".searchcon ul").empty();
               for (var i = 0; i <data.data.lst_articlesearchlist.length; i++) {
-                $(".searchcon ul").append(" <li id=" + data.data.lst_articlesearchlist[i].Id + ">" + data.data.lst_articlesearchlist[i].Title + "<span>" + data.data.lst_articlesearchlist[i].CreateTime + "</span>" + "</li>")
+                $(".searchcon ul").append(" <li id=" + data.data.lst_articlesearchlist[i].Id + ">" + "<p>"+data.data.lst_articlesearchlist[i].Title+"</p>" + "<span>" + data.data.lst_articlesearchlist[i].CreateTime + "</span>" + "</li>")
               }
               $('#pagination2').jqPaginator('option', {
                   totalCounts: data.data.articlecount,//总页数
