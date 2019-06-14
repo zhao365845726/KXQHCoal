@@ -160,7 +160,7 @@ var jQuery = $ || {};
                     $(".ma-center").css("display","block");
                     $(".pageInfo").css("display","none")
                     var htmlfirst = '';
-                    for(let i = 0 ; i< arring.length ; i ++){
+                    for(var i = 0 ; i< arring.length ; i ++){
                         var firstsrc = arring[0];
                         var firstsrc = prefix+firstsrc
                         $("#img").attr('src',firstsrc)

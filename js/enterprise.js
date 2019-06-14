@@ -202,7 +202,7 @@
                     $(".mylists").css("display","none");
                     $(".ma-center").css("display","block")
                     var htmlfirst = '';
-                    for(let i = 0 ; i< arring.length ; i ++){
+                    for(var i = 0 ; i< arring.length ; i ++){
                         var firstsrc = arring[0];
                         var firstsrc = prefix+firstsrc
                         $("#img").attr('src',firstsrc)
@@ -272,7 +272,7 @@
                     $(".mylists").css("display","none");
                     $(".ma-center").css("display","block")
                     var htmlfirst = '';
-                    for(let i = 0 ; i< arring.length ; i ++){
+                    for(var i = 0 ; i< arring.length ; i ++){
                         var firstsrc = arring[0];
                         var firstsrc = prefix+firstsrc
                         $("#img").attr('src',firstsrc)
