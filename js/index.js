@@ -252,7 +252,7 @@ var jQuery = $ || {};
         //    } else {
         //        $.ajax({
         //            type: "post",
-        //            url: "http://kxqh.api.milisx.xyz/api/content/getarticlesearchlist",
+        //            url: "http://api.gpqhmy.com.cn/api/content/getarticlesearchlist",
         //            dateType: "json",
         //            data: {
         //                "Title": txt,
@@ -276,7 +276,7 @@ var jQuery = $ || {};
         //$(".searchcon ul").on("click", "li", function () {
         //    $.ajax({
         //        type: "POST",
-        //        url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+        //        url: "http://api.gpqhmy.com.cn/api/content/getarticledetail",
         //        dataType: "json",
         //        data: {
         //            "ArticleId": $(this).attr("id"),
@@ -312,7 +312,7 @@ var jQuery = $ || {};
         //    } else {
         //        $.ajax({
         //            type: "post",
-        //            url: "http://kxqh.api.milisx.xyz/api/content/getarticlesearchlist",
+        //            url: "http://api.gpqhmy.com.cn/api/content/getarticlesearchlist",
         //            dateType: "json",
         //            data: {
         //                "Title": txt,
@@ -336,7 +336,7 @@ var jQuery = $ || {};
         //$(".searchcon ul").on("click", "li", function () {
         //    $.ajax({
         //        type: "POST",
-        //        url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+        //        url: "http://api.gpqhmy.com.cn/api/content/getarticledetail",
         //        dataType: "json",
         //        data: {
         //            "ArticleId": $(this).attr("id"),

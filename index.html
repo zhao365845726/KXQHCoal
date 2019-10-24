@@ -688,9 +688,10 @@
         //alert("请输入要搜索的内容")
         //prompt("请输入要搜索的内容")
       } else {
+        
         $.ajax({
           type: "post",
-          url: "http://kxqh.api.milisx.xyz/api/content/getarticlesearchlist",
+          url: "http://api.gpqhmy.com.cn/api/content/getarticlesearchlist",
           dateType: "json",
           data: {
             "Title": txt,
@@ -711,7 +712,7 @@
               $(".searchcon #shouye").on("click", "li", function () {
                 $.ajax({
                   type: "POST",
-                  url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                  url: "http://api.gpqhmy.com.cn/api/content/getarticledetail",
                   dataType: "json",
                   data: {
                     "ArticleId": $(this).attr("id"),

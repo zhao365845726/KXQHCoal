@@ -40,7 +40,7 @@ var jQuery = $ || {};
                 type: "POST",
                 data: getnavcategorylistparam,
                 dataType: 'json',
-                url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
+                url: "http://api.gpqhmy.com.cn/api/content/getcategoryarticlelist",
                 success: function(data, type) {
 
                         console.log(data.data);
@@ -72,7 +72,7 @@ var jQuery = $ || {};
                             type: "POST",
                             data: param1,
                             dataType: 'json',
-                            url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                            url: "http://api.gpqhmy.com.cn/api/content/getarticledetail",
                             success: function(data, type) {
                                 if (data.data) {
                                     $(".firstli img").attr('src',data.data.CoverPhoto);

@@ -59,7 +59,7 @@
                 type: "POST",
                 data: param,
                 dataType: 'json',
-                url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
+                url: "http://api.gpqhmy.com.cn/api/content/getcategoryarticlelist",
                 success: function(data, type) {
                     if (data.data.lst_categoryarticlelist.length > 2) {
                         console.log(data.data);
@@ -91,7 +91,7 @@
                             type: "POST",
                             data: param1,
                             dataType: 'json',
-                            url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                            url: "http://api.gpqhmy.com.cn/api/content/getarticledetail",
                             success: function(data, type) {
                                 if (data.data) {
                                     $(".firstli img").attr('src',data.data.CoverPhoto);
@@ -107,7 +107,7 @@
                                 "ArticleId": "2c1c1594-1aea-4c28-8e71-65e864edcd86"
                             },
                             dataType: 'json',
-                            url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                            url: "http://api.gpqhmy.com.cn/api/content/getarticledetail",
                             success: function(data, type) {
                                 if (data.data) {
                                     // console.log(data.data);
@@ -127,7 +127,7 @@
             var tabc = function () {
                 $.ajax({
                     type: "post",
-                    url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
+                    url: "http://api.gpqhmy.com.cn/api/content/getcategoryarticlelist",
                     dateType: "json",
                     data: {
                         "categoryid": "11dea9ec-4d9b-4c09-9926-97d12929920c",
@@ -156,7 +156,7 @@
             var taba = function () {
                 $.ajax({
                     type: "post",
-                    url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
+                    url: "http://api.gpqhmy.com.cn/api/content/getcategoryarticlelist",
                     dateType: "json",
                     data: {
                         "categoryid": "b1c97066-0750-49d8-9b34-cb3f85f3a097",
@@ -185,7 +185,7 @@
             var tbb = function(){
                 $.ajax({
                     type: "POST",
-                    url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                    url: "http://api.gpqhmy.com.cn/api/content/getarticledetail",
                     dateType: "json",
                     data: {
                         "ArticleId": "80313a54-2fa4-4305-af64-d69d62e3ec32"
@@ -227,7 +227,7 @@
         $(".taba").click(function () {
             $.ajax({
                 type: "post",
-                url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
+                url: "http://api.gpqhmy.com.cn/api/content/getcategoryarticlelist",
                 dateType: "json",
                 data: {
                     "categoryid": "b1c97066-0750-49d8-9b34-cb3f85f3a097",
@@ -254,7 +254,7 @@
         $(".tabb").click(function(){
             $.ajax({
                 type: "POST",
-                url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                url: "http://api.gpqhmy.com.cn/api/content/getarticledetail",
                 dateType: "json",
                 data: {
                     "ArticleId": "80313a54-2fa4-4305-af64-d69d62e3ec32"
@@ -292,7 +292,7 @@
         $(".tabc").click(function () {
             $.ajax({
                 type: "post",
-                url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
+                url: "http://api.gpqhmy.com.cn/api/content/getcategoryarticlelist",
                 dateType: "json",
                 data: {
                     "categoryid": "11dea9ec-4d9b-4c09-9926-97d12929920c",
@@ -327,7 +327,7 @@
         
         $.ajax({
             type: "POST",
-            url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+            url: "http://api.gpqhmy.com.cn/api/content/getarticledetail",
             dateType: "json",
             data: {
                 "ArticleId": "80313a54-2fa4-4305-af64-d69d62e3ec32"
@@ -355,7 +355,7 @@
     $("#advance").click(function(){
         $.ajax({
             type: "POST",
-            url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+            url: "http://api.gpqhmy.com.cn/api/content/getarticledetail",
             dateType: "json",
             data: {
                 "ArticleId": "80313a54-2fa4-4305-af64-d69d62e3ec32"

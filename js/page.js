@@ -90,7 +90,7 @@ var jQuery = $ || {};
                 type: "POST",
                 data: param,
                 dataType: 'json',
-                url: "http://kxqh.api.milisx.xyz/api/content/getcategoryarticlelist",
+                url: "http://api.gpqhmy.com.cn/api/content/getcategoryarticlelist",
                 success: function(data, type) {
                     if (data.data.lst_categoryarticlelist.length > 2) {
                         console.log(data.data);
@@ -122,7 +122,7 @@ var jQuery = $ || {};
                             type: "POST",
                             data: param1,
                             dataType: 'json',
-                            url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                            url: "http://api.gpqhmy.com.cn/api/content/getarticledetail",
                             success: function(data, type) {
                                 if (data.data) {
                                     $(".firstli img").attr('src',data.data.CoverPhoto);
@@ -140,7 +140,7 @@ var jQuery = $ || {};
                                 "ArticleId": "2c1c1594-1aea-4c28-8e71-65e864edcd86"
                             },
                             dataType: 'json',
-                            url: "http://kxqh.api.milisx.xyz/api/content/getarticledetail",
+                            url: "http://api.gpqhmy.com.cn/api/content/getarticledetail",
                             success: function(data, type) {
                                 if (data.data) {
                                     console.log(data.data);
