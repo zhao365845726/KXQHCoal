@@ -37,7 +37,7 @@ var jQuery = $ || {};
                 dataType: 'json',
                 url: "http://api.gpqhmy.com.cn/api/content/getarticledetail",
                 success: function(data, type) {
-						 var prefix = 'http://kxqh.admin.milisx.xyz';
+						 var prefix = 'http://admin.gpqhmy.com.cn';
                         $(".ma-center").html(data.data.Body);
                         for(var i = 0; i< $(".ma-center p img").length;i++){
                             var src = $($(".ma-center p img")[i]).attr('src');
@@ -66,7 +66,7 @@ var jQuery = $ || {};
                     "ArticleId": $(this).attr("id")
                 },
                 success: function (data) {
-                    var prefix = 'http://kxqh.admin.milisx.xyz';
+                    var prefix = 'http://admin.gpqhmy.com.cn';
                     $(".patha").text(data.data.Title);
                     $(".title").text(data.data.Title);
                     $(".ma-center").html(data.data.Body);
@@ -92,7 +92,7 @@ var jQuery = $ || {};
                     "ArticleId": $(this).attr("id")
                 },
                 success: function (data) {
-                    var prefix = 'http://kxqh.admin.milisx.xyz';
+                    var prefix = 'http://admin.gpqhmy.com.cn';
                     // console.log(data.data);
                     $(".ma-right h3").text(data.data.Title);
                     $(".ma-center").html(data.data.Body);
@@ -154,7 +154,7 @@ var jQuery = $ || {};
                     a.replace(/<img [^>]*src=['"]([^'"]+)[^>]*>/gi, function (match, capture) {
                         arring.push(capture);
                         });     
-                    var prefix = 'http://kxqh.admin.milisx.xyz';
+                    var prefix = 'http://admin.gpqhmy.com.cn';
                     $(".mylists1").css("display","none");
                     $(".mylists").css("display","none");
                     $(".ma-center").css("display","block");
@@ -228,7 +228,7 @@ var jQuery = $ || {};
                          arring.push(capture);
                          });  
                     
-                        var prefix = 'http://kxqh.admin.milisx.xyz';
+                        var prefix = 'http://admin.gpqhmy.com.cn';
                         var firstsrc = arring[num];
                         var firstsrc = prefix+firstsrc;
                         // console.log(num)
@@ -255,7 +255,7 @@ var jQuery = $ || {};
                     a.replace(/<img [^>]*src=['"]([^'"]+)[^>]*>/gi, function (match, capture) {
                          arring.push(capture);
                          });     
-                        var prefix = 'http://kxqh.admin.milisx.xyz';
+                        var prefix = 'http://admin.gpqhmy.com.cn';
                         var firstsrc = arring[num];
                         var firstsrc = prefix+firstsrc;
                         // console.log(arring);
