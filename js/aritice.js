@@ -39,6 +39,7 @@ var jQuery = $ || {};
                 success: function(data, type) {
 						 var prefix = 'http://admin.gpqhmy.com.cn';
                         $(".ma-center").html(data.data.Body);
+                        $("#publish_date").html('发布时间&nbsp;&nbsp;&nbsp;&nbsp;' + data.data.CreateTime);
                         for(var i = 0; i< $(".ma-center p img").length;i++){
                             var src = $($(".ma-center p img")[i]).attr('src');
                             var src1 = prefix + src;
